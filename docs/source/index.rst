@@ -292,24 +292,23 @@ Run XOR check,
 Checklist for Open-MPW Submission
 =================================
 
+  | :octicon:`checkbox` The project repo adheres to the same directory structure in this repo.
 
-|:heavy_check_mark:| The project repo adheres to the same directory structure in this repo.
-   
-|:heavy_check_mark:| The project repo contain info.yaml at the project root.
+  | :octicon:`checkbox` The project repo contain info.yaml at the project root.
 
-|:heavy_check_mark:| Top level macro is named ``user_analog_project_wrapper``.
+  | :octicon:`checkbox` Top level macro is named ``user_analog_project_wrapper``.
 
-|:heavy_check_mark:| Full Chip Simulation passes for RTL and GL (gate-level)
+  | :octicon:`checkbox` Full Chip Simulation passes for RTL and GL (gate-level)
 
-|:heavy_check_mark:| The project contains a spice netlist for the ``user_analog_project_wrapper`` at netgen/user_analog_project_wrapper.spice
+  | :octicon:`checkbox` The project contains a spice netlist for the ``user_analog_project_wrapper`` at netgen/user_analog_project_wrapper.spice
 
-|:heavy_check_mark:| The hardened Macros are LVS and DRC clean
+  | :octicon:`checkbox` The hardened Macros are LVS and DRC clean
 
-|:heavy_check_mark:| The ``user_analog_project_wrapper`` adheres to empty wrapper template  order specified at  `user_analog_project_wrapper_empty <https://github.com/efabless/caravel/blob/master/mag/user_analog_project_wrapper_empty.mag>`__
+  | :octicon:`checkbox` The ``user_analog_project_wrapper`` adheres to empty wrapper template  order specified at  `user_analog_project_wrapper_empty <https://github.com/efabless/caravel/blob/master/mag/user_analog_project_wrapper_empty.mag>`__
 
-|:heavy_check_mark:| XOR check passes with zero total difference.
+  | :octicon:`checkbox` XOR check passes with zero total difference.
 
-|:heavy_check_mark:| Open-MPW-Precheck tool runs successfully. 
+  | :octicon:`checkbox` Open-MPW-Precheck tool runs successfully.
 
 
 .. |License| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
