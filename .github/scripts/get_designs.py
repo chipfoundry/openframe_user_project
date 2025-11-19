@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--design", help="The path to the design.")
     args = parser.parse_args()
 
-    config_file = f"{args.design}/lvs/openframe_project_wrapper/lvs_config.json"
+    config_file = f"{args.design}/lvs/user_project_wrapper/lvs_config.json"
     data = parse_lvs_config(config_file)
     f = open("harden_sequence.txt", "w")
     for d in data:
