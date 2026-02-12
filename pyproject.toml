@@ -1,0 +1,28 @@
+[project]
+name = "openframe_user_project"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Jeff DiCorpo", email = "jeffdi@chipfoundry.io"},
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "LICENSE"}
+dependencies = []
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+docs.composite = ["rm -rf docs/build", "sphinx-build docs/source/ docs/build/"]
+
+[dependency-groups]
+dev = [
+    "sphinx>=7.4.*",
+    "sphinxcontrib-yowasp-wavedrom>=1.8",
+    "sphinx-rtd-theme>=3.0.0",
+    "sphinx-autobuild>=2024.10.3",
+    "sphinx-design>=0.6.1",
+]
+
