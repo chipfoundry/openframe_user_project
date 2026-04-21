@@ -46,9 +46,7 @@ module user_proj_timer (
     input wb_rst_i,
 
     // IOs
-    input  [10:0] io_in,
     output [10:0] io_out,
-    output [10:0] io_oeb
 );
 
     wire [6:0] seven_seg;
@@ -62,7 +60,6 @@ module user_proj_timer (
     );
 
     assign io_out = {seven_seg, digit_en};
-    assign io_oeb = 11'd0;
     
 endmodule
 

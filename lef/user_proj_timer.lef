@@ -7,189 +7,13 @@ MACRO user_proj_timer
   FOREIGN user_proj_timer ;
   ORIGIN 0.000 0.000 ;
   SIZE 200.000 BY 3500.000 ;
-  PIN io_in[0]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 259.800 4.000 260.400 ;
-    END
-  END io_in[0]
-  PIN io_in[10]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 3238.200 4.000 3238.800 ;
-    END
-  END io_in[10]
-  PIN io_in[1]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 557.640 4.000 558.240 ;
-    END
-  END io_in[1]
-  PIN io_in[2]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 855.480 4.000 856.080 ;
-    END
-  END io_in[2]
-  PIN io_in[3]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1153.320 4.000 1153.920 ;
-    END
-  END io_in[3]
-  PIN io_in[4]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1451.160 4.000 1451.760 ;
-    END
-  END io_in[4]
-  PIN io_in[5]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1749.000 4.000 1749.600 ;
-    END
-  END io_in[5]
-  PIN io_in[6]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2046.840 4.000 2047.440 ;
-    END
-  END io_in[6]
-  PIN io_in[7]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2344.680 4.000 2345.280 ;
-    END
-  END io_in[7]
-  PIN io_in[8]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2642.520 4.000 2643.120 ;
-    END
-  END io_in[8]
-  PIN io_in[9]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2940.360 4.000 2940.960 ;
-    END
-  END io_in[9]
-  PIN io_oeb[0]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 458.360 4.000 458.960 ;
-    END
-  END io_oeb[0]
-  PIN io_oeb[10]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 3436.760 4.000 3437.360 ;
-    END
-  END io_oeb[10]
-  PIN io_oeb[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 756.200 4.000 756.800 ;
-    END
-  END io_oeb[1]
-  PIN io_oeb[2]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1054.040 4.000 1054.640 ;
-    END
-  END io_oeb[2]
-  PIN io_oeb[3]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1351.880 4.000 1352.480 ;
-    END
-  END io_oeb[3]
-  PIN io_oeb[4]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1649.720 4.000 1650.320 ;
-    END
-  END io_oeb[4]
-  PIN io_oeb[5]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 1947.560 4.000 1948.160 ;
-    END
-  END io_oeb[5]
-  PIN io_oeb[6]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2245.400 4.000 2246.000 ;
-    END
-  END io_oeb[6]
-  PIN io_oeb[7]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2543.240 4.000 2543.840 ;
-    END
-  END io_oeb[7]
-  PIN io_oeb[8]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 2841.080 4.000 2841.680 ;
-    END
-  END io_oeb[8]
-  PIN io_oeb[9]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 3138.920 4.000 3139.520 ;
-    END
-  END io_oeb[9]
   PIN io_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 359.080 4.000 359.680 ;
+        RECT 0.000 671.880 4.000 672.480 ;
     END
   END io_out[0]
   PIN io_out[10]
@@ -198,7 +22,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 3337.480 4.000 3338.080 ;
+        RECT 0.000 3364.680 4.000 3365.280 ;
     END
   END io_out[10]
   PIN io_out[1]
@@ -207,7 +31,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 656.920 4.000 657.520 ;
+        RECT 0.000 941.160 4.000 941.760 ;
     END
   END io_out[1]
   PIN io_out[2]
@@ -216,7 +40,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 954.760 4.000 955.360 ;
+        RECT 0.000 1210.440 4.000 1211.040 ;
     END
   END io_out[2]
   PIN io_out[3]
@@ -225,7 +49,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 1252.600 4.000 1253.200 ;
+        RECT 0.000 1479.720 4.000 1480.320 ;
     END
   END io_out[3]
   PIN io_out[4]
@@ -234,7 +58,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 1550.440 4.000 1551.040 ;
+        RECT 0.000 1749.000 4.000 1749.600 ;
     END
   END io_out[4]
   PIN io_out[5]
@@ -243,7 +67,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 1848.280 4.000 1848.880 ;
+        RECT 0.000 2018.280 4.000 2018.880 ;
     END
   END io_out[5]
   PIN io_out[6]
@@ -252,7 +76,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 2146.120 4.000 2146.720 ;
+        RECT 0.000 2287.560 4.000 2288.160 ;
     END
   END io_out[6]
   PIN io_out[7]
@@ -261,7 +85,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 2443.960 4.000 2444.560 ;
+        RECT 0.000 2556.840 4.000 2557.440 ;
     END
   END io_out[7]
   PIN io_out[8]
@@ -270,7 +94,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 2741.800 4.000 2742.400 ;
+        RECT 0.000 2826.120 4.000 2826.720 ;
     END
   END io_out[8]
   PIN io_out[9]
@@ -279,7 +103,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 3039.640 4.000 3040.240 ;
+        RECT 0.000 3095.400 4.000 3096.000 ;
     END
   END io_out[9]
   PIN vccd1
@@ -313,7 +137,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 61.240 4.000 61.840 ;
+        RECT 0.000 133.320 4.000 133.920 ;
     END
   END wb_clk_i
   PIN wb_rst_i
@@ -323,7 +147,7 @@ MACRO user_proj_timer
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 160.520 4.000 161.120 ;
+        RECT 0.000 402.600 4.000 403.200 ;
     END
   END wb_rst_i
   OBS
@@ -332,81 +156,37 @@ MACRO user_proj_timer
       LAYER li1 ;
         RECT 5.520 10.795 194.120 3487.125 ;
       LAYER met1 ;
-        RECT 4.210 10.640 194.120 3487.280 ;
+        RECT 0.530 10.640 194.120 3487.280 ;
       LAYER met2 ;
-        RECT 4.230 10.695 179.510 3487.225 ;
+        RECT 0.550 10.695 179.510 3487.225 ;
       LAYER met3 ;
-        RECT 3.990 3437.760 179.530 3487.205 ;
-        RECT 4.400 3436.360 179.530 3437.760 ;
-        RECT 3.990 3338.480 179.530 3436.360 ;
-        RECT 4.400 3337.080 179.530 3338.480 ;
-        RECT 3.990 3239.200 179.530 3337.080 ;
-        RECT 4.400 3237.800 179.530 3239.200 ;
-        RECT 3.990 3139.920 179.530 3237.800 ;
-        RECT 4.400 3138.520 179.530 3139.920 ;
-        RECT 3.990 3040.640 179.530 3138.520 ;
-        RECT 4.400 3039.240 179.530 3040.640 ;
-        RECT 3.990 2941.360 179.530 3039.240 ;
-        RECT 4.400 2939.960 179.530 2941.360 ;
-        RECT 3.990 2842.080 179.530 2939.960 ;
-        RECT 4.400 2840.680 179.530 2842.080 ;
-        RECT 3.990 2742.800 179.530 2840.680 ;
-        RECT 4.400 2741.400 179.530 2742.800 ;
-        RECT 3.990 2643.520 179.530 2741.400 ;
-        RECT 4.400 2642.120 179.530 2643.520 ;
-        RECT 3.990 2544.240 179.530 2642.120 ;
-        RECT 4.400 2542.840 179.530 2544.240 ;
-        RECT 3.990 2444.960 179.530 2542.840 ;
-        RECT 4.400 2443.560 179.530 2444.960 ;
-        RECT 3.990 2345.680 179.530 2443.560 ;
-        RECT 4.400 2344.280 179.530 2345.680 ;
-        RECT 3.990 2246.400 179.530 2344.280 ;
-        RECT 4.400 2245.000 179.530 2246.400 ;
-        RECT 3.990 2147.120 179.530 2245.000 ;
-        RECT 4.400 2145.720 179.530 2147.120 ;
-        RECT 3.990 2047.840 179.530 2145.720 ;
-        RECT 4.400 2046.440 179.530 2047.840 ;
-        RECT 3.990 1948.560 179.530 2046.440 ;
-        RECT 4.400 1947.160 179.530 1948.560 ;
-        RECT 3.990 1849.280 179.530 1947.160 ;
-        RECT 4.400 1847.880 179.530 1849.280 ;
-        RECT 3.990 1750.000 179.530 1847.880 ;
+        RECT 0.525 3365.680 179.530 3487.205 ;
+        RECT 4.400 3364.280 179.530 3365.680 ;
+        RECT 0.525 3096.400 179.530 3364.280 ;
+        RECT 4.400 3095.000 179.530 3096.400 ;
+        RECT 0.525 2827.120 179.530 3095.000 ;
+        RECT 4.400 2825.720 179.530 2827.120 ;
+        RECT 0.525 2557.840 179.530 2825.720 ;
+        RECT 4.400 2556.440 179.530 2557.840 ;
+        RECT 0.525 2288.560 179.530 2556.440 ;
+        RECT 4.400 2287.160 179.530 2288.560 ;
+        RECT 0.525 2019.280 179.530 2287.160 ;
+        RECT 4.400 2017.880 179.530 2019.280 ;
+        RECT 0.525 1750.000 179.530 2017.880 ;
         RECT 4.400 1748.600 179.530 1750.000 ;
-        RECT 3.990 1650.720 179.530 1748.600 ;
-        RECT 4.400 1649.320 179.530 1650.720 ;
-        RECT 3.990 1551.440 179.530 1649.320 ;
-        RECT 4.400 1550.040 179.530 1551.440 ;
-        RECT 3.990 1452.160 179.530 1550.040 ;
-        RECT 4.400 1450.760 179.530 1452.160 ;
-        RECT 3.990 1352.880 179.530 1450.760 ;
-        RECT 4.400 1351.480 179.530 1352.880 ;
-        RECT 3.990 1253.600 179.530 1351.480 ;
-        RECT 4.400 1252.200 179.530 1253.600 ;
-        RECT 3.990 1154.320 179.530 1252.200 ;
-        RECT 4.400 1152.920 179.530 1154.320 ;
-        RECT 3.990 1055.040 179.530 1152.920 ;
-        RECT 4.400 1053.640 179.530 1055.040 ;
-        RECT 3.990 955.760 179.530 1053.640 ;
-        RECT 4.400 954.360 179.530 955.760 ;
-        RECT 3.990 856.480 179.530 954.360 ;
-        RECT 4.400 855.080 179.530 856.480 ;
-        RECT 3.990 757.200 179.530 855.080 ;
-        RECT 4.400 755.800 179.530 757.200 ;
-        RECT 3.990 657.920 179.530 755.800 ;
-        RECT 4.400 656.520 179.530 657.920 ;
-        RECT 3.990 558.640 179.530 656.520 ;
-        RECT 4.400 557.240 179.530 558.640 ;
-        RECT 3.990 459.360 179.530 557.240 ;
-        RECT 4.400 457.960 179.530 459.360 ;
-        RECT 3.990 360.080 179.530 457.960 ;
-        RECT 4.400 358.680 179.530 360.080 ;
-        RECT 3.990 260.800 179.530 358.680 ;
-        RECT 4.400 259.400 179.530 260.800 ;
-        RECT 3.990 161.520 179.530 259.400 ;
-        RECT 4.400 160.120 179.530 161.520 ;
-        RECT 3.990 62.240 179.530 160.120 ;
-        RECT 4.400 60.840 179.530 62.240 ;
-        RECT 3.990 10.715 179.530 60.840 ;
+        RECT 0.525 1480.720 179.530 1748.600 ;
+        RECT 4.400 1479.320 179.530 1480.720 ;
+        RECT 0.525 1211.440 179.530 1479.320 ;
+        RECT 4.400 1210.040 179.530 1211.440 ;
+        RECT 0.525 942.160 179.530 1210.040 ;
+        RECT 4.400 940.760 179.530 942.160 ;
+        RECT 0.525 672.880 179.530 940.760 ;
+        RECT 4.400 671.480 179.530 672.880 ;
+        RECT 0.525 403.600 179.530 671.480 ;
+        RECT 4.400 402.200 179.530 403.600 ;
+        RECT 0.525 134.320 179.530 402.200 ;
+        RECT 4.400 132.920 179.530 134.320 ;
+        RECT 0.525 10.715 179.530 132.920 ;
   END
 END user_proj_timer
 END LIBRARY

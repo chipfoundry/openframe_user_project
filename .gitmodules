@@ -1,0 +1,3 @@
+[submodule "CF_gpio_config"]
+	path = CF_gpio_config
+	url = https://github.com/chipfoundry/CF_gpio_config

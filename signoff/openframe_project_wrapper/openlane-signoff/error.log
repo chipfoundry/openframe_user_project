@@ -1,0 +1,2 @@
+Macro/instance vccd1_connection has no power pins- add it to IGNORE_DISCONNECTED_MODULES if this is intentional
+Macro/instance vssd1_connection has no power pins- add it to IGNORE_DISCONNECTED_MODULES if this is intentional
