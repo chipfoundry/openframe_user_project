@@ -1,0 +1,940 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+Startpoint: gpio_loopback_zero[32] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: gpio_slow_sel[32] (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                      0.000000    0.000000    0.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000    0.000000   clock network delay (ideal)
+                                  2.000000    2.000000 ^ input external delay
+    11    0.381522    1.280444    0.896437    2.896437 ^ gpio_loopback_zero[32] (in)
+                                                         gpio_loopback_zero[32] (net)
+                      1.280739    0.000000    2.896437 ^ gpio_slow_sel[32] (out)
+                                              2.896437   data arrival time
+
+                      0.000000   10.000000   10.000000   clock __VIRTUAL_CLK__ (rise edge)
+                                  0.000000   10.000000   clock network delay (ideal)
+                                 -0.250000    9.750000   clock uncertainty
+                                  0.000000    9.750000   clock reconvergence pessimism
+                                 -2.000000    7.750000   output external delay
+                                              7.750000   data required time
+---------------------------------------------------------------------------------------------
+                                              7.750000   data required time
+                                             -2.896437   data arrival time
+---------------------------------------------------------------------------------------------
+                                              4.853563   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= min_ff_n40C_1v95 Corner ===================================
+
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+gpio_analog_en[15]                      0.500000    1.281062   -0.781062 (VIOLATED)
+gpio_slow_sel[15]                       0.500000    1.281059   -0.781059 (VIOLATED)
+gpio_dm0[15]                            0.500000    1.281058   -0.781058 (VIOLATED)
+gpio_dm1[15]                            0.500000    1.281059   -0.781059 (VIOLATED)
+gpio_analog_pol[15]                     0.500000    1.281057   -0.781057 (VIOLATED)
+gpio_analog_sel[15]                     0.500000    1.281043   -0.781043 (VIOLATED)
+gpio_dm2[15]                            0.500000    1.281038   -0.781038 (VIOLATED)
+gpio_holdover[15]                       0.500000    1.281031   -0.781031 (VIOLATED)
+gpio_out[15]                            0.500000    1.281019   -0.781019 (VIOLATED)
+gpio_vtrip_sel[15]                      0.500000    1.281013   -0.781013 (VIOLATED)
+gpio_ib_mode_sel[15]                    0.500000    1.281013   -0.781013 (VIOLATED)
+gpio_loopback_zero[15]                  0.500000    1.281004   -0.781004 (VIOLATED)
+gpio_slow_sel[32]                       0.500000    1.280739   -0.780739 (VIOLATED)
+gpio_dm1[32]                            0.500000    1.280732   -0.780732 (VIOLATED)
+gpio_analog_en[32]                      0.500000    1.280718   -0.780718 (VIOLATED)
+gpio_dm0[32]                            0.500000    1.280717   -0.780717 (VIOLATED)
+gpio_analog_pol[32]                     0.500000    1.280703   -0.780703 (VIOLATED)
+gpio_analog_sel[32]                     0.500000    1.280689   -0.780689 (VIOLATED)
+gpio_dm2[32]                            0.500000    1.280689   -0.780689 (VIOLATED)
+gpio_holdover[32]                       0.500000    1.280682   -0.780683 (VIOLATED)
+gpio_out[32]                            0.500000    1.280679   -0.780679 (VIOLATED)
+gpio_vtrip_sel[32]                      0.500000    1.280660   -0.780660 (VIOLATED)
+gpio_ib_mode_sel[32]                    0.500000    1.280656   -0.780656 (VIOLATED)
+gpio_loopback_zero[32]                  0.500000    1.280444   -0.780444 (VIOLATED)
+gpio_analog_en[20]                      0.500000    1.280258   -0.780258 (VIOLATED)
+gpio_slow_sel[20]                       0.500000    1.280256   -0.780256 (VIOLATED)
+gpio_dm0[20]                            0.500000    1.280255   -0.780255 (VIOLATED)
+gpio_dm1[20]                            0.500000    1.280255   -0.780255 (VIOLATED)
+gpio_analog_pol[20]                     0.500000    1.280253   -0.780253 (VIOLATED)
+gpio_analog_sel[20]                     0.500000    1.280240   -0.780240 (VIOLATED)
+gpio_dm2[20]                            0.500000    1.280235   -0.780235 (VIOLATED)
+gpio_holdover[20]                       0.500000    1.280228   -0.780228 (VIOLATED)
+gpio_out[20]                            0.500000    1.280217   -0.780217 (VIOLATED)
+gpio_vtrip_sel[20]                      0.500000    1.280211   -0.780211 (VIOLATED)
+gpio_ib_mode_sel[20]                    0.500000    1.280210   -0.780210 (VIOLATED)
+gpio_loopback_zero[20]                  0.500000    1.280202   -0.780202 (VIOLATED)
+gpio_analog_pol[21]                     0.500000    1.279766   -0.779766 (VIOLATED)
+gpio_dm0[21]                            0.500000    1.279764   -0.779764 (VIOLATED)
+gpio_analog_en[21]                      0.500000    1.279756   -0.779756 (VIOLATED)
+gpio_slow_sel[21]                       0.500000    1.279756   -0.779756 (VIOLATED)
+gpio_dm1[21]                            0.500000    1.279755   -0.779755 (VIOLATED)
+gpio_analog_sel[21]                     0.500000    1.279737   -0.779737 (VIOLATED)
+gpio_dm2[21]                            0.500000    1.279721   -0.779721 (VIOLATED)
+gpio_holdover[21]                       0.500000    1.279711   -0.779711 (VIOLATED)
+gpio_out[21]                            0.500000    1.279701   -0.779701 (VIOLATED)
+gpio_vtrip_sel[21]                      0.500000    1.279674   -0.779674 (VIOLATED)
+gpio_ib_mode_sel[21]                    0.500000    1.279667   -0.779667 (VIOLATED)
+gpio_loopback_zero[21]                  0.500000    1.279650   -0.779650 (VIOLATED)
+gpio_slow_sel[19]                       0.500000    1.278927   -0.778927 (VIOLATED)
+gpio_analog_en[19]                      0.500000    1.278926   -0.778926 (VIOLATED)
+gpio_dm1[19]                            0.500000    1.278926   -0.778926 (VIOLATED)
+gpio_analog_pol[19]                     0.500000    1.278925   -0.778925 (VIOLATED)
+gpio_dm0[19]                            0.500000    1.278926   -0.778926 (VIOLATED)
+gpio_analog_sel[19]                     0.500000    1.278922   -0.778922 (VIOLATED)
+gpio_dm2[19]                            0.500000    1.278922   -0.778922 (VIOLATED)
+gpio_holdover[19]                       0.500000    1.278921   -0.778921 (VIOLATED)
+gpio_out[19]                            0.500000    1.278920   -0.778920 (VIOLATED)
+gpio_vtrip_sel[19]                      0.500000    1.278918   -0.778918 (VIOLATED)
+gpio_ib_mode_sel[19]                    0.500000    1.278917   -0.778917 (VIOLATED)
+gpio_loopback_zero[19]                  0.500000    1.278910   -0.778910 (VIOLATED)
+gpio_slow_sel[34]                       0.500000    1.278763   -0.778763 (VIOLATED)
+gpio_dm1[34]                            0.500000    1.278757   -0.778757 (VIOLATED)
+gpio_analog_en[34]                      0.500000    1.278744   -0.778744 (VIOLATED)
+gpio_dm0[34]                            0.500000    1.278743   -0.778743 (VIOLATED)
+gpio_analog_pol[34]                     0.500000    1.278728   -0.778728 (VIOLATED)
+gpio_analog_sel[34]                     0.500000    1.278715   -0.778715 (VIOLATED)
+gpio_dm2[34]                            0.500000    1.278712   -0.778712 (VIOLATED)
+gpio_holdover[34]                       0.500000    1.278708   -0.778709 (VIOLATED)
+gpio_out[34]                            0.500000    1.278705   -0.778705 (VIOLATED)
+gpio_vtrip_sel[34]                      0.500000    1.278694   -0.778694 (VIOLATED)
+gpio_ib_mode_sel[34]                    0.500000    1.278683   -0.778683 (VIOLATED)
+gpio_loopback_zero[34]                  0.500000    1.278496   -0.778496 (VIOLATED)
+gpio_slow_sel[22]                       0.500000    1.278171   -0.778171 (VIOLATED)
+gpio_analog_en[22]                      0.500000    1.278169   -0.778169 (VIOLATED)
+gpio_dm1[22]                            0.500000    1.278170   -0.778170 (VIOLATED)
+gpio_dm0[22]                            0.500000    1.278169   -0.778169 (VIOLATED)
+gpio_analog_pol[22]                     0.500000    1.278168   -0.778168 (VIOLATED)
+gpio_analog_sel[22]                     0.500000    1.278160   -0.778160 (VIOLATED)
+gpio_dm2[22]                            0.500000    1.278149   -0.778149 (VIOLATED)
+gpio_holdover[22]                       0.500000    1.278139   -0.778139 (VIOLATED)
+gpio_out[22]                            0.500000    1.278131   -0.778131 (VIOLATED)
+gpio_ib_mode_sel[22]                    0.500000    1.278126   -0.778126 (VIOLATED)
+gpio_vtrip_sel[22]                      0.500000    1.278126   -0.778127 (VIOLATED)
+gpio_loopback_zero[22]                  0.500000    1.278118   -0.778118 (VIOLATED)
+gpio_dm1[23]                            0.500000    1.277410   -0.777410 (VIOLATED)
+gpio_slow_sel[23]                       0.500000    1.277410   -0.777410 (VIOLATED)
+gpio_analog_en[23]                      0.500000    1.277406   -0.777406 (VIOLATED)
+gpio_dm0[23]                            0.500000    1.277402   -0.777402 (VIOLATED)
+gpio_analog_pol[23]                     0.500000    1.277398   -0.777398 (VIOLATED)
+gpio_analog_sel[23]                     0.500000    1.277386   -0.777386 (VIOLATED)
+gpio_dm2[23]                            0.500000    1.277381   -0.777381 (VIOLATED)
+gpio_holdover[23]                       0.500000    1.277375   -0.777375 (VIOLATED)
+gpio_out[23]                            0.500000    1.277371   -0.777371 (VIOLATED)
+gpio_ib_mode_sel[23]                    0.500000    1.277364   -0.777364 (VIOLATED)
+gpio_vtrip_sel[23]                      0.500000    1.277365   -0.777365 (VIOLATED)
+gpio_loopback_zero[23]                  0.500000    1.277357   -0.777357 (VIOLATED)
+gpio_dm1[14]                            0.500000    1.276101   -0.776101 (VIOLATED)
+gpio_slow_sel[14]                       0.500000    1.276102   -0.776102 (VIOLATED)
+gpio_analog_en[14]                      0.500000    1.276101   -0.776101 (VIOLATED)
+gpio_analog_pol[14]                     0.500000    1.276100   -0.776100 (VIOLATED)
+gpio_dm0[14]                            0.500000    1.276100   -0.776100 (VIOLATED)
+gpio_analog_sel[14]                     0.500000    1.276097   -0.776097 (VIOLATED)
+gpio_dm2[14]                            0.500000    1.276097   -0.776097 (VIOLATED)
+gpio_holdover[14]                       0.500000    1.276096   -0.776096 (VIOLATED)
+gpio_out[14]                            0.500000    1.276096   -0.776096 (VIOLATED)
+gpio_ib_mode_sel[14]                    0.500000    1.276093   -0.776093 (VIOLATED)
+gpio_vtrip_sel[14]                      0.500000    1.276093   -0.776093 (VIOLATED)
+gpio_loopback_zero[14]                  0.500000    1.276091   -0.776091 (VIOLATED)
+gpio_slow_sel[18]                       0.500000    1.273840   -0.773840 (VIOLATED)
+gpio_analog_en[18]                      0.500000    1.273839   -0.773839 (VIOLATED)
+gpio_dm1[18]                            0.500000    1.273840   -0.773840 (VIOLATED)
+gpio_analog_pol[18]                     0.500000    1.273838   -0.773838 (VIOLATED)
+gpio_dm0[18]                            0.500000    1.273838   -0.773838 (VIOLATED)
+gpio_analog_sel[18]                     0.500000    1.273834   -0.773834 (VIOLATED)
+gpio_dm2[18]                            0.500000    1.273830   -0.773830 (VIOLATED)
+gpio_holdover[18]                       0.500000    1.273820   -0.773820 (VIOLATED)
+gpio_out[18]                            0.500000    1.273813   -0.773813 (VIOLATED)
+gpio_ib_mode_sel[18]                    0.500000    1.273808   -0.773808 (VIOLATED)
+gpio_vtrip_sel[18]                      0.500000    1.273809   -0.773809 (VIOLATED)
+gpio_loopback_zero[18]                  0.500000    1.273803   -0.773803 (VIOLATED)
+gpio_dm1[16]                            0.500000    1.273671   -0.773671 (VIOLATED)
+gpio_slow_sel[16]                       0.500000    1.273671   -0.773671 (VIOLATED)
+gpio_analog_en[16]                      0.500000    1.273670   -0.773670 (VIOLATED)
+gpio_dm0[16]                            0.500000    1.273669   -0.773669 (VIOLATED)
+gpio_analog_pol[16]                     0.500000    1.273668   -0.773668 (VIOLATED)
+gpio_analog_sel[16]                     0.500000    1.273661   -0.773661 (VIOLATED)
+gpio_dm2[16]                            0.500000    1.273651   -0.773651 (VIOLATED)
+gpio_holdover[16]                       0.500000    1.273642   -0.773642 (VIOLATED)
+gpio_out[16]                            0.500000    1.273634   -0.773634 (VIOLATED)
+gpio_ib_mode_sel[16]                    0.500000    1.273629   -0.773629 (VIOLATED)
+gpio_vtrip_sel[16]                      0.500000    1.273630   -0.773630 (VIOLATED)
+gpio_loopback_zero[16]                  0.500000    1.273624   -0.773624 (VIOLATED)
+gpio_slow_sel[31]                       0.500000    1.273461   -0.773461 (VIOLATED)
+gpio_dm1[31]                            0.500000    1.273456   -0.773456 (VIOLATED)
+gpio_analog_en[31]                      0.500000    1.273443   -0.773443 (VIOLATED)
+gpio_dm0[31]                            0.500000    1.273442   -0.773442 (VIOLATED)
+gpio_analog_pol[31]                     0.500000    1.273440   -0.773440 (VIOLATED)
+gpio_analog_sel[31]                     0.500000    1.273391   -0.773391 (VIOLATED)
+gpio_dm2[31]                            0.500000    1.273389   -0.773389 (VIOLATED)
+gpio_holdover[31]                       0.500000    1.273386   -0.773386 (VIOLATED)
+gpio_out[31]                            0.500000    1.273383   -0.773383 (VIOLATED)
+gpio_vtrip_sel[31]                      0.500000    1.273347   -0.773347 (VIOLATED)
+gpio_ib_mode_sel[31]                    0.500000    1.273344   -0.773344 (VIOLATED)
+gpio_loopback_zero[31]                  0.500000    1.273215   -0.773215 (VIOLATED)
+gpio_slow_sel[17]                       0.500000    1.272637   -0.772637 (VIOLATED)
+gpio_analog_en[17]                      0.500000    1.272636   -0.772636 (VIOLATED)
+gpio_analog_pol[17]                     0.500000    1.272636   -0.772636 (VIOLATED)
+gpio_dm0[17]                            0.500000    1.272636   -0.772636 (VIOLATED)
+gpio_dm1[17]                            0.500000    1.272637   -0.772637 (VIOLATED)
+gpio_analog_sel[17]                     0.500000    1.272633   -0.772633 (VIOLATED)
+gpio_dm2[17]                            0.500000    1.272633   -0.772633 (VIOLATED)
+gpio_holdover[17]                       0.500000    1.272632   -0.772632 (VIOLATED)
+gpio_out[17]                            0.500000    1.272632   -0.772632 (VIOLATED)
+gpio_ib_mode_sel[17]                    0.500000    1.272629   -0.772629 (VIOLATED)
+gpio_vtrip_sel[17]                      0.500000    1.272630   -0.772630 (VIOLATED)
+gpio_loopback_zero[17]                  0.500000    1.272625   -0.772625 (VIOLATED)
+gpio_slow_sel[25]                       0.500000    1.272054   -0.772054 (VIOLATED)
+gpio_dm1[25]                            0.500000    1.272047   -0.772047 (VIOLATED)
+gpio_analog_en[25]                      0.500000    1.272031   -0.772031 (VIOLATED)
+gpio_dm0[25]                            0.500000    1.272029   -0.772029 (VIOLATED)
+gpio_analog_pol[25]                     0.500000    1.272027   -0.772027 (VIOLATED)
+gpio_analog_sel[25]                     0.500000    1.271956   -0.771956 (VIOLATED)
+gpio_dm2[25]                            0.500000    1.271953   -0.771953 (VIOLATED)
+gpio_holdover[25]                       0.500000    1.271950   -0.771950 (VIOLATED)
+gpio_out[25]                            0.500000    1.271946   -0.771946 (VIOLATED)
+gpio_vtrip_sel[25]                      0.500000    1.271870   -0.771870 (VIOLATED)
+gpio_ib_mode_sel[25]                    0.500000    1.271858   -0.771858 (VIOLATED)
+gpio_loopback_zero[25]                  0.500000    1.271666   -0.771666 (VIOLATED)
+gpio_slow_sel[29]                       0.500000    1.271557   -0.771557 (VIOLATED)
+gpio_dm1[29]                            0.500000    1.271550   -0.771550 (VIOLATED)
+gpio_analog_en[29]                      0.500000    1.271536   -0.771535 (VIOLATED)
+gpio_dm0[29]                            0.500000    1.271534   -0.771534 (VIOLATED)
+gpio_analog_pol[29]                     0.500000    1.271532   -0.771532 (VIOLATED)
+gpio_analog_sel[29]                     0.500000    1.271461   -0.771461 (VIOLATED)
+gpio_dm2[29]                            0.500000    1.271458   -0.771458 (VIOLATED)
+gpio_holdover[29]                       0.500000    1.271455   -0.771455 (VIOLATED)
+gpio_out[29]                            0.500000    1.271452   -0.771452 (VIOLATED)
+gpio_vtrip_sel[29]                      0.500000    1.271385   -0.771385 (VIOLATED)
+gpio_ib_mode_sel[29]                    0.500000    1.271382   -0.771382 (VIOLATED)
+gpio_analog_en[0]                       0.500000    1.271351   -0.771351 (VIOLATED)
+gpio_dm1[0]                             0.500000    1.271351   -0.771352 (VIOLATED)
+gpio_slow_sel[0]                        0.500000    1.271352   -0.771352 (VIOLATED)
+gpio_analog_pol[0]                      0.500000    1.271351   -0.771351 (VIOLATED)
+gpio_inp_dis[0]                         0.500000    1.271350   -0.771350 (VIOLATED)
+gpio_analog_sel[0]                      0.500000    1.271348   -0.771348 (VIOLATED)
+gpio_dm2[0]                             0.500000    1.271348   -0.771348 (VIOLATED)
+gpio_holdover[0]                        0.500000    1.271347   -0.771347 (VIOLATED)
+gpio_out[0]                             0.500000    1.271346   -0.771347 (VIOLATED)
+gpio_ib_mode_sel[0]                     0.500000    1.271344   -0.771344 (VIOLATED)
+gpio_vtrip_sel[0]                       0.500000    1.271345   -0.771345 (VIOLATED)
+gpio_loopback_zero[0]                   0.500000    1.271341   -0.771341 (VIOLATED)
+gpio_loopback_zero[29]                  0.500000    1.271232   -0.771232 (VIOLATED)
+gpio_slow_sel[33]                       0.500000    1.270361   -0.770361 (VIOLATED)
+gpio_dm1[33]                            0.500000    1.270354   -0.770354 (VIOLATED)
+gpio_analog_en[33]                      0.500000    1.270339   -0.770339 (VIOLATED)
+gpio_dm0[33]                            0.500000    1.270338   -0.770338 (VIOLATED)
+gpio_analog_pol[33]                     0.500000    1.270336   -0.770336 (VIOLATED)
+gpio_analog_sel[33]                     0.500000    1.270277   -0.770277 (VIOLATED)
+gpio_dm2[33]                            0.500000    1.270274   -0.770274 (VIOLATED)
+gpio_holdover[33]                       0.500000    1.270271   -0.770271 (VIOLATED)
+gpio_out[33]                            0.500000    1.270267   -0.770267 (VIOLATED)
+gpio_vtrip_sel[33]                      0.500000    1.270196   -0.770196 (VIOLATED)
+gpio_ib_mode_sel[33]                    0.500000    1.270192   -0.770192 (VIOLATED)
+gpio_slow_sel[26]                       0.500000    1.270184   -0.770184 (VIOLATED)
+gpio_dm1[26]                            0.500000    1.270176   -0.770176 (VIOLATED)
+gpio_analog_en[26]                      0.500000    1.270161   -0.770161 (VIOLATED)
+gpio_dm0[26]                            0.500000    1.270159   -0.770159 (VIOLATED)
+gpio_analog_pol[26]                     0.500000    1.270158   -0.770158 (VIOLATED)
+gpio_analog_sel[26]                     0.500000    1.270081   -0.770081 (VIOLATED)
+gpio_dm2[26]                            0.500000    1.270078   -0.770078 (VIOLATED)
+gpio_holdover[26]                       0.500000    1.270074   -0.770074 (VIOLATED)
+gpio_out[26]                            0.500000    1.270071   -0.770071 (VIOLATED)
+gpio_loopback_zero[33]                  0.500000    1.270016   -0.770016 (VIOLATED)
+gpio_vtrip_sel[26]                      0.500000    1.270002   -0.770002 (VIOLATED)
+gpio_ib_mode_sel[26]                    0.500000    1.269998   -0.769998 (VIOLATED)
+gpio_loopback_zero[26]                  0.500000    1.269832   -0.769832 (VIOLATED)
+gpio_slow_sel[27]                       0.500000    1.269665   -0.769665 (VIOLATED)
+gpio_dm1[27]                            0.500000    1.269658   -0.769658 (VIOLATED)
+gpio_analog_en[27]                      0.500000    1.269644   -0.769644 (VIOLATED)
+gpio_dm0[27]                            0.500000    1.269643   -0.769643 (VIOLATED)
+gpio_slow_sel[35]                       0.500000    1.269642   -0.769642 (VIOLATED)
+gpio_analog_pol[27]                     0.500000    1.269641   -0.769641 (VIOLATED)
+gpio_dm1[35]                            0.500000    1.269633   -0.769633 (VIOLATED)
+gpio_slow_sel[24]                       0.500000    1.269630   -0.769630 (VIOLATED)
+gpio_dm1[24]                            0.500000    1.269623   -0.769623 (VIOLATED)
+gpio_analog_en[35]                      0.500000    1.269621   -0.769621 (VIOLATED)
+gpio_dm0[35]                            0.500000    1.269619   -0.769619 (VIOLATED)
+gpio_analog_pol[35]                     0.500000    1.269617   -0.769617 (VIOLATED)
+gpio_analog_en[24]                      0.500000    1.269608   -0.769608 (VIOLATED)
+gpio_dm0[24]                            0.500000    1.269606   -0.769606 (VIOLATED)
+gpio_analog_pol[24]                     0.500000    1.269604   -0.769604 (VIOLATED)
+gpio_analog_sel[27]                     0.500000    1.269567   -0.769567 (VIOLATED)
+gpio_dm2[27]                            0.500000    1.269564   -0.769564 (VIOLATED)
+gpio_holdover[27]                       0.500000    1.269561   -0.769561 (VIOLATED)
+gpio_out[27]                            0.500000    1.269557   -0.769557 (VIOLATED)
+gpio_slow_sel[36]                       0.500000    1.269558   -0.769558 (VIOLATED)
+gpio_dm1[36]                            0.500000    1.269551   -0.769551 (VIOLATED)
+gpio_analog_sel[35]                     0.500000    1.269544   -0.769544 (VIOLATED)
+gpio_analog_sel[24]                     0.500000    1.269541   -0.769541 (VIOLATED)
+gpio_dm2[35]                            0.500000    1.269542   -0.769542 (VIOLATED)
+gpio_dm2[24]                            0.500000    1.269538   -0.769538 (VIOLATED)
+gpio_holdover[35]                       0.500000    1.269539   -0.769539 (VIOLATED)
+gpio_analog_en[36]                      0.500000    1.269536   -0.769536 (VIOLATED)
+gpio_dm0[36]                            0.500000    1.269534   -0.769534 (VIOLATED)
+gpio_holdover[24]                       0.500000    1.269535   -0.769535 (VIOLATED)
+gpio_out[35]                            0.500000    1.269535   -0.769535 (VIOLATED)
+gpio_analog_pol[36]                     0.500000    1.269532   -0.769532 (VIOLATED)
+gpio_out[24]                            0.500000    1.269532   -0.769532 (VIOLATED)
+gpio_vtrip_sel[27]                      0.500000    1.269491   -0.769491 (VIOLATED)
+gpio_ib_mode_sel[27]                    0.500000    1.269488   -0.769488 (VIOLATED)
+gpio_vtrip_sel[35]                      0.500000    1.269467   -0.769467 (VIOLATED)
+gpio_ib_mode_sel[35]                    0.500000    1.269463   -0.769463 (VIOLATED)
+gpio_analog_sel[36]                     0.500000    1.269460   -0.769460 (VIOLATED)
+gpio_vtrip_sel[24]                      0.500000    1.269459   -0.769459 (VIOLATED)
+gpio_dm2[36]                            0.500000    1.269457   -0.769457 (VIOLATED)
+gpio_ib_mode_sel[24]                    0.500000    1.269455   -0.769455 (VIOLATED)
+gpio_holdover[36]                       0.500000    1.269454   -0.769454 (VIOLATED)
+gpio_out[36]                            0.500000    1.269451   -0.769451 (VIOLATED)
+gpio_vtrip_sel[36]                      0.500000    1.269387   -0.769387 (VIOLATED)
+gpio_ib_mode_sel[36]                    0.500000    1.269383   -0.769383 (VIOLATED)
+gpio_slow_sel[28]                       0.500000    1.269343   -0.769343 (VIOLATED)
+gpio_dm1[28]                            0.500000    1.269336   -0.769336 (VIOLATED)
+gpio_analog_en[28]                      0.500000    1.269321   -0.769321 (VIOLATED)
+gpio_dm0[28]                            0.500000    1.269320   -0.769320 (VIOLATED)
+gpio_analog_pol[28]                     0.500000    1.269318   -0.769318 (VIOLATED)
+gpio_loopback_zero[27]                  0.500000    1.269318   -0.769318 (VIOLATED)
+gpio_loopback_zero[35]                  0.500000    1.269303   -0.769303 (VIOLATED)
+gpio_loopback_zero[24]                  0.500000    1.269271   -0.769271 (VIOLATED)
+gpio_analog_sel[28]                     0.500000    1.269259   -0.769259 (VIOLATED)
+gpio_dm2[28]                            0.500000    1.269256   -0.769257 (VIOLATED)
+gpio_holdover[28]                       0.500000    1.269253   -0.769253 (VIOLATED)
+gpio_out[28]                            0.500000    1.269250   -0.769250 (VIOLATED)
+gpio_loopback_zero[36]                  0.500000    1.269223   -0.769223 (VIOLATED)
+gpio_vtrip_sel[28]                      0.500000    1.269179   -0.769179 (VIOLATED)
+gpio_ib_mode_sel[28]                    0.500000    1.269175   -0.769175 (VIOLATED)
+gpio_loopback_zero[28]                  0.500000    1.269003   -0.769003 (VIOLATED)
+gpio_slow_sel[37]                       0.500000    1.268871   -0.768871 (VIOLATED)
+gpio_dm1[37]                            0.500000    1.268864   -0.768864 (VIOLATED)
+gpio_analog_en[37]                      0.500000    1.268850   -0.768850 (VIOLATED)
+gpio_dm0[37]                            0.500000    1.268849   -0.768849 (VIOLATED)
+gpio_analog_pol[37]                     0.500000    1.268847   -0.768847 (VIOLATED)
+gpio_analog_sel[37]                     0.500000    1.268784   -0.768784 (VIOLATED)
+gpio_dm2[37]                            0.500000    1.268782   -0.768782 (VIOLATED)
+gpio_holdover[37]                       0.500000    1.268779   -0.768779 (VIOLATED)
+gpio_out[37]                            0.500000    1.268776   -0.768776 (VIOLATED)
+gpio_vtrip_sel[37]                      0.500000    1.268723   -0.768723 (VIOLATED)
+gpio_ib_mode_sel[37]                    0.500000    1.268719   -0.768719 (VIOLATED)
+gpio_loopback_zero[37]                  0.500000    1.268577   -0.768577 (VIOLATED)
+gpio_slow_sel[39]                       0.500000    1.268408   -0.768408 (VIOLATED)
+gpio_dm1[39]                            0.500000    1.268407   -0.768407 (VIOLATED)
+gpio_analog_en[39]                      0.500000    1.268404   -0.768404 (VIOLATED)
+gpio_dm0[39]                            0.500000    1.268400   -0.768400 (VIOLATED)
+gpio_analog_pol[39]                     0.500000    1.268394   -0.768394 (VIOLATED)
+gpio_analog_sel[39]                     0.500000    1.268384   -0.768384 (VIOLATED)
+gpio_dm2[39]                            0.500000    1.268376   -0.768376 (VIOLATED)
+gpio_holdover[39]                       0.500000    1.268368   -0.768368 (VIOLATED)
+gpio_out[39]                            0.500000    1.268360   -0.768360 (VIOLATED)
+gpio_vtrip_sel[39]                      0.500000    1.268350   -0.768350 (VIOLATED)
+gpio_ib_mode_sel[39]                    0.500000    1.268342   -0.768342 (VIOLATED)
+gpio_loopback_zero[39]                  0.500000    1.268324   -0.768324 (VIOLATED)
+gpio_slow_sel[42]                       0.500000    1.268214   -0.768214 (VIOLATED)
+gpio_dm1[42]                            0.500000    1.268213   -0.768213 (VIOLATED)
+gpio_analog_en[42]                      0.500000    1.268210   -0.768210 (VIOLATED)
+gpio_dm0[42]                            0.500000    1.268206   -0.768206 (VIOLATED)
+gpio_analog_pol[42]                     0.500000    1.268200   -0.768200 (VIOLATED)
+gpio_analog_sel[42]                     0.500000    1.268189   -0.768189 (VIOLATED)
+gpio_dm2[42]                            0.500000    1.268181   -0.768182 (VIOLATED)
+gpio_holdover[42]                       0.500000    1.268173   -0.768173 (VIOLATED)
+gpio_out[42]                            0.500000    1.268165   -0.768165 (VIOLATED)
+gpio_vtrip_sel[42]                      0.500000    1.268155   -0.768155 (VIOLATED)
+gpio_ib_mode_sel[42]                    0.500000    1.268146   -0.768146 (VIOLATED)
+gpio_loopback_zero[42]                  0.500000    1.268127   -0.768127 (VIOLATED)
+gpio_slow_sel[43]                       0.500000    1.267567   -0.767567 (VIOLATED)
+gpio_dm1[43]                            0.500000    1.267566   -0.767566 (VIOLATED)
+gpio_analog_en[43]                      0.500000    1.267563   -0.767563 (VIOLATED)
+gpio_dm0[43]                            0.500000    1.267559   -0.767559 (VIOLATED)
+gpio_analog_pol[43]                     0.500000    1.267553   -0.767553 (VIOLATED)
+gpio_analog_sel[43]                     0.500000    1.267543   -0.767543 (VIOLATED)
+gpio_dm2[43]                            0.500000    1.267536   -0.767536 (VIOLATED)
+gpio_holdover[43]                       0.500000    1.267527   -0.767527 (VIOLATED)
+gpio_out[43]                            0.500000    1.267520   -0.767520 (VIOLATED)
+gpio_vtrip_sel[43]                      0.500000    1.267511   -0.767511 (VIOLATED)
+gpio_ib_mode_sel[43]                    0.500000    1.267502   -0.767502 (VIOLATED)
+gpio_loopback_zero[43]                  0.500000    1.267485   -0.767485 (VIOLATED)
+gpio_dm1[38]                            0.500000    1.267386   -0.767386 (VIOLATED)
+gpio_slow_sel[38]                       0.500000    1.267386   -0.767386 (VIOLATED)
+gpio_analog_en[38]                      0.500000    1.267384   -0.767384 (VIOLATED)
+gpio_dm0[38]                            0.500000    1.267381   -0.767381 (VIOLATED)
+gpio_analog_pol[38]                     0.500000    1.267377   -0.767377 (VIOLATED)
+gpio_analog_sel[38]                     0.500000    1.267362   -0.767362 (VIOLATED)
+gpio_dm2[38]                            0.500000    1.267358   -0.767358 (VIOLATED)
+gpio_holdover[38]                       0.500000    1.267354   -0.767354 (VIOLATED)
+gpio_out[38]                            0.500000    1.267350   -0.767350 (VIOLATED)
+gpio_ib_mode_sel[38]                    0.500000    1.267347   -0.767348 (VIOLATED)
+gpio_vtrip_sel[38]                      0.500000    1.267347   -0.767347 (VIOLATED)
+gpio_loopback_zero[38]                  0.500000    1.267344   -0.767343 (VIOLATED)
+gpio_slow_sel[30]                       0.500000    1.267190   -0.767191 (VIOLATED)
+gpio_dm1[30]                            0.500000    1.267182   -0.767182 (VIOLATED)
+gpio_analog_en[30]                      0.500000    1.267174   -0.767174 (VIOLATED)
+gpio_dm0[30]                            0.500000    1.267173   -0.767173 (VIOLATED)
+gpio_analog_pol[30]                     0.500000    1.267171   -0.767171 (VIOLATED)
+gpio_analog_sel[30]                     0.500000    1.267108   -0.767108 (VIOLATED)
+gpio_dm2[30]                            0.500000    1.267106   -0.767106 (VIOLATED)
+gpio_holdover[30]                       0.500000    1.267103   -0.767103 (VIOLATED)
+gpio_out[30]                            0.500000    1.267100   -0.767100 (VIOLATED)
+gpio_vtrip_sel[30]                      0.500000    1.267044   -0.767044 (VIOLATED)
+gpio_ib_mode_sel[30]                    0.500000    1.267041   -0.767041 (VIOLATED)
+gpio_loopback_zero[30]                  0.500000    1.266904   -0.766904 (VIOLATED)
+gpio_slow_sel[13]                       0.500000    1.266445   -0.766445 (VIOLATED)
+gpio_analog_en[13]                      0.500000    1.266444   -0.766444 (VIOLATED)
+gpio_dm1[13]                            0.500000    1.266445   -0.766445 (VIOLATED)
+gpio_analog_pol[13]                     0.500000    1.266443   -0.766443 (VIOLATED)
+gpio_dm0[13]                            0.500000    1.266444   -0.766444 (VIOLATED)
+gpio_analog_sel[13]                     0.500000    1.266441   -0.766441 (VIOLATED)
+gpio_dm2[13]                            0.500000    1.266440   -0.766440 (VIOLATED)
+gpio_holdover[13]                       0.500000    1.266440   -0.766440 (VIOLATED)
+gpio_out[13]                            0.500000    1.266439   -0.766439 (VIOLATED)
+gpio_ib_mode_sel[13]                    0.500000    1.266438   -0.766438 (VIOLATED)
+gpio_vtrip_sel[13]                      0.500000    1.266438   -0.766438 (VIOLATED)
+gpio_loopback_zero[13]                  0.500000    1.266435   -0.766435 (VIOLATED)
+gpio_dm1[40]                            0.500000    1.264221   -0.764221 (VIOLATED)
+gpio_slow_sel[40]                       0.500000    1.264222   -0.764222 (VIOLATED)
+gpio_analog_en[40]                      0.500000    1.264219   -0.764219 (VIOLATED)
+gpio_dm0[40]                            0.500000    1.264216   -0.764216 (VIOLATED)
+gpio_analog_pol[40]                     0.500000    1.264211   -0.764211 (VIOLATED)
+gpio_analog_sel[40]                     0.500000    1.264204   -0.764204 (VIOLATED)
+gpio_dm1[41]                            0.500000    1.264201   -0.764201 (VIOLATED)
+gpio_slow_sel[41]                       0.500000    1.264202   -0.764202 (VIOLATED)
+gpio_analog_en[41]                      0.500000    1.264199   -0.764199 (VIOLATED)
+gpio_dm2[40]                            0.500000    1.264198   -0.764198 (VIOLATED)
+gpio_dm0[41]                            0.500000    1.264196   -0.764196 (VIOLATED)
+gpio_analog_pol[41]                     0.500000    1.264192   -0.764191 (VIOLATED)
+gpio_holdover[40]                       0.500000    1.264192   -0.764192 (VIOLATED)
+gpio_out[40]                            0.500000    1.264186   -0.764186 (VIOLATED)
+gpio_analog_sel[41]                     0.500000    1.264184   -0.764184 (VIOLATED)
+gpio_vtrip_sel[40]                      0.500000    1.264180   -0.764180 (VIOLATED)
+gpio_dm2[41]                            0.500000    1.264179   -0.764179 (VIOLATED)
+gpio_ib_mode_sel[40]                    0.500000    1.264175   -0.764175 (VIOLATED)
+gpio_holdover[41]                       0.500000    1.264174   -0.764173 (VIOLATED)
+gpio_loopback_zero[40]                  0.500000    1.264170   -0.764170 (VIOLATED)
+gpio_out[41]                            0.500000    1.264169   -0.764169 (VIOLATED)
+gpio_vtrip_sel[41]                      0.500000    1.264163   -0.764163 (VIOLATED)
+gpio_ib_mode_sel[41]                    0.500000    1.264159   -0.764159 (VIOLATED)
+gpio_loopback_zero[41]                  0.500000    1.264155   -0.764155 (VIOLATED)
+gpio_analog_en[1]                       0.500000    1.056477   -0.556477 (VIOLATED)
+gpio_slow_sel[1]                        0.500000    1.056477   -0.556477 (VIOLATED)
+gpio_analog_pol[1]                      0.500000    1.056476   -0.556476 (VIOLATED)
+gpio_inp_dis[1]                         0.500000    1.056476   -0.556476 (VIOLATED)
+gpio_analog_sel[1]                      0.500000    1.056475   -0.556475 (VIOLATED)
+gpio_holdover[1]                        0.500000    1.056474   -0.556474 (VIOLATED)
+gpio_ib_mode_sel[1]                     0.500000    1.056471   -0.556471 (VIOLATED)
+gpio_vtrip_sel[1]                       0.500000    1.056472   -0.556472 (VIOLATED)
+gpio_oeb[1]                             0.500000    1.056471   -0.556471 (VIOLATED)
+gpio_loopback_zero[1]                   0.500000    1.056469   -0.556469 (VIOLATED)
+gpio_slow_sel[4]                        0.500000    1.053781   -0.553781 (VIOLATED)
+gpio_analog_en[4]                       0.500000    1.053780   -0.553780 (VIOLATED)
+gpio_analog_pol[4]                      0.500000    1.053780   -0.553780 (VIOLATED)
+gpio_dm0[4]                             0.500000    1.053780   -0.553780 (VIOLATED)
+gpio_analog_sel[4]                      0.500000    1.053778   -0.553778 (VIOLATED)
+gpio_holdover[4]                        0.500000    1.053777   -0.553777 (VIOLATED)
+gpio_ib_mode_sel[4]                     0.500000    1.053775   -0.553775 (VIOLATED)
+gpio_vtrip_sel[4]                       0.500000    1.053775   -0.553775 (VIOLATED)
+gpio_oeb[4]                             0.500000    1.053774   -0.553774 (VIOLATED)
+gpio_loopback_zero[4]                   0.500000    1.053772   -0.553772 (VIOLATED)
+gpio_slow_sel[3]                        0.500000    1.053482   -0.553482 (VIOLATED)
+gpio_analog_en[3]                       0.500000    1.053481   -0.553481 (VIOLATED)
+gpio_analog_pol[3]                      0.500000    1.053481   -0.553481 (VIOLATED)
+gpio_dm0[3]                             0.500000    1.053481   -0.553481 (VIOLATED)
+gpio_analog_sel[3]                      0.500000    1.053479   -0.553479 (VIOLATED)
+gpio_holdover[3]                        0.500000    1.053478   -0.553478 (VIOLATED)
+gpio_ib_mode_sel[3]                     0.500000    1.053476   -0.553476 (VIOLATED)
+gpio_vtrip_sel[3]                       0.500000    1.053476   -0.553476 (VIOLATED)
+gpio_oeb[3]                             0.500000    1.053475   -0.553475 (VIOLATED)
+gpio_loopback_zero[3]                   0.500000    1.053474   -0.553474 (VIOLATED)
+gpio_slow_sel[9]                        0.500000    1.052599   -0.552599 (VIOLATED)
+gpio_analog_en[9]                       0.500000    1.052599   -0.552599 (VIOLATED)
+gpio_analog_pol[9]                      0.500000    1.052598   -0.552598 (VIOLATED)
+gpio_dm0[9]                             0.500000    1.052599   -0.552599 (VIOLATED)
+gpio_analog_sel[9]                      0.500000    1.052597   -0.552597 (VIOLATED)
+gpio_holdover[9]                        0.500000    1.052596   -0.552596 (VIOLATED)
+gpio_ib_mode_sel[9]                     0.500000    1.052594   -0.552594 (VIOLATED)
+gpio_vtrip_sel[9]                       0.500000    1.052594   -0.552594 (VIOLATED)
+gpio_oeb[9]                             0.500000    1.052593   -0.552593 (VIOLATED)
+gpio_loopback_zero[9]                   0.500000    1.052592   -0.552592 (VIOLATED)
+gpio_slow_sel[6]                        0.500000    1.052569   -0.552569 (VIOLATED)
+gpio_analog_en[6]                       0.500000    1.052568   -0.552568 (VIOLATED)
+gpio_analog_pol[6]                      0.500000    1.052568   -0.552568 (VIOLATED)
+gpio_dm0[6]                             0.500000    1.052568   -0.552568 (VIOLATED)
+gpio_analog_sel[6]                      0.500000    1.052566   -0.552566 (VIOLATED)
+gpio_holdover[6]                        0.500000    1.052565   -0.552565 (VIOLATED)
+gpio_ib_mode_sel[6]                     0.500000    1.052563   -0.552563 (VIOLATED)
+gpio_vtrip_sel[6]                       0.500000    1.052563   -0.552563 (VIOLATED)
+gpio_oeb[6]                             0.500000    1.052563   -0.552563 (VIOLATED)
+gpio_loopback_zero[6]                   0.500000    1.052561   -0.552561 (VIOLATED)
+gpio_slow_sel[12]                       0.500000    1.051564   -0.551564 (VIOLATED)
+gpio_analog_en[12]                      0.500000    1.051562   -0.551562 (VIOLATED)
+gpio_analog_pol[12]                     0.500000    1.051562   -0.551562 (VIOLATED)
+gpio_dm0[12]                            0.500000    1.051562   -0.551562 (VIOLATED)
+gpio_analog_sel[12]                     0.500000    1.051560   -0.551560 (VIOLATED)
+gpio_holdover[12]                       0.500000    1.051560   -0.551560 (VIOLATED)
+gpio_ib_mode_sel[12]                    0.500000    1.051557   -0.551557 (VIOLATED)
+gpio_vtrip_sel[12]                      0.500000    1.051558   -0.551558 (VIOLATED)
+gpio_oeb[12]                            0.500000    1.051557   -0.551557 (VIOLATED)
+gpio_loopback_zero[12]                  0.500000    1.051556   -0.551556 (VIOLATED)
+gpio_slow_sel[8]                        0.500000    1.051237   -0.551237 (VIOLATED)
+gpio_analog_en[8]                       0.500000    1.051236   -0.551236 (VIOLATED)
+gpio_analog_pol[8]                      0.500000    1.051236   -0.551236 (VIOLATED)
+gpio_dm0[8]                             0.500000    1.051236   -0.551236 (VIOLATED)
+gpio_analog_sel[8]                      0.500000    1.051234   -0.551234 (VIOLATED)
+gpio_holdover[8]                        0.500000    1.051233   -0.551233 (VIOLATED)
+gpio_ib_mode_sel[8]                     0.500000    1.051231   -0.551231 (VIOLATED)
+gpio_vtrip_sel[8]                       0.500000    1.051231   -0.551231 (VIOLATED)
+gpio_oeb[8]                             0.500000    1.051231   -0.551231 (VIOLATED)
+gpio_loopback_zero[8]                   0.500000    1.051229   -0.551229 (VIOLATED)
+gpio_slow_sel[11]                       0.500000    1.050573   -0.550573 (VIOLATED)
+gpio_analog_en[11]                      0.500000    1.050573   -0.550573 (VIOLATED)
+gpio_analog_pol[11]                     0.500000    1.050572   -0.550572 (VIOLATED)
+gpio_dm0[11]                            0.500000    1.050572   -0.550572 (VIOLATED)
+gpio_analog_sel[11]                     0.500000    1.050570   -0.550570 (VIOLATED)
+gpio_holdover[11]                       0.500000    1.050570   -0.550570 (VIOLATED)
+gpio_ib_mode_sel[11]                    0.500000    1.050568   -0.550568 (VIOLATED)
+gpio_vtrip_sel[11]                      0.500000    1.050568   -0.550568 (VIOLATED)
+gpio_oeb[11]                            0.500000    1.050567   -0.550567 (VIOLATED)
+gpio_loopback_zero[11]                  0.500000    1.050566   -0.550566 (VIOLATED)
+gpio_slow_sel[2]                        0.500000    1.049935   -0.549936 (VIOLATED)
+gpio_analog_en[2]                       0.500000    1.049935   -0.549935 (VIOLATED)
+gpio_analog_pol[2]                      0.500000    1.049934   -0.549934 (VIOLATED)
+gpio_dm0[2]                             0.500000    1.049935   -0.549935 (VIOLATED)
+gpio_analog_sel[2]                      0.500000    1.049932   -0.549932 (VIOLATED)
+gpio_holdover[2]                        0.500000    1.049932   -0.549932 (VIOLATED)
+gpio_ib_mode_sel[2]                     0.500000    1.049929   -0.549929 (VIOLATED)
+gpio_vtrip_sel[2]                       0.500000    1.049929   -0.549929 (VIOLATED)
+gpio_oeb[2]                             0.500000    1.049929   -0.549929 (VIOLATED)
+gpio_loopback_zero[2]                   0.500000    1.049927   -0.549927 (VIOLATED)
+gpio_slow_sel[5]                        0.500000    1.049043   -0.549043 (VIOLATED)
+gpio_analog_en[5]                       0.500000    1.049043   -0.549043 (VIOLATED)
+gpio_analog_pol[5]                      0.500000    1.049042   -0.549042 (VIOLATED)
+gpio_dm0[5]                             0.500000    1.049043   -0.549043 (VIOLATED)
+gpio_analog_sel[5]                      0.500000    1.049040   -0.549040 (VIOLATED)
+gpio_holdover[5]                        0.500000    1.049040   -0.549040 (VIOLATED)
+gpio_ib_mode_sel[5]                     0.500000    1.049037   -0.549037 (VIOLATED)
+gpio_vtrip_sel[5]                       0.500000    1.049038   -0.549038 (VIOLATED)
+gpio_oeb[5]                             0.500000    1.049037   -0.549037 (VIOLATED)
+gpio_loopback_zero[5]                   0.500000    1.049035   -0.549035 (VIOLATED)
+gpio_slow_sel[10]                       0.500000    1.048441   -0.548441 (VIOLATED)
+gpio_analog_en[10]                      0.500000    1.048440   -0.548440 (VIOLATED)
+gpio_analog_pol[10]                     0.500000    1.048440   -0.548440 (VIOLATED)
+gpio_dm0[10]                            0.500000    1.048440   -0.548440 (VIOLATED)
+gpio_analog_sel[10]                     0.500000    1.048438   -0.548438 (VIOLATED)
+gpio_holdover[10]                       0.500000    1.048437   -0.548437 (VIOLATED)
+gpio_ib_mode_sel[10]                    0.500000    1.048435   -0.548435 (VIOLATED)
+gpio_vtrip_sel[10]                      0.500000    1.048435   -0.548435 (VIOLATED)
+gpio_oeb[10]                            0.500000    1.048435   -0.548435 (VIOLATED)
+gpio_loopback_zero[10]                  0.500000    1.048433   -0.548433 (VIOLATED)
+gpio_slow_sel[7]                        0.500000    1.047925   -0.547925 (VIOLATED)
+gpio_analog_en[7]                       0.500000    1.047924   -0.547924 (VIOLATED)
+gpio_analog_pol[7]                      0.500000    1.047924   -0.547924 (VIOLATED)
+gpio_dm0[7]                             0.500000    1.047924   -0.547924 (VIOLATED)
+gpio_analog_sel[7]                      0.500000    1.047922   -0.547922 (VIOLATED)
+gpio_holdover[7]                        0.500000    1.047921   -0.547921 (VIOLATED)
+gpio_ib_mode_sel[7]                     0.500000    1.047919   -0.547919 (VIOLATED)
+gpio_vtrip_sel[7]                       0.500000    1.047919   -0.547919 (VIOLATED)
+gpio_oeb[7]                             0.500000    1.047918   -0.547918 (VIOLATED)
+gpio_loopback_zero[7]                   0.500000    1.047917   -0.547917 (VIOLATED)
+mprj/wb_clk_i                           0.500000    0.599280   -0.099280 (VIOLATED)
+gpio_in[0]                              0.500000    0.599237   -0.099237 (VIOLATED)
+
+max capacitance
+
+Pin                                        Limit         Cap       Slack
+------------------------------------------------------------------------
+gpio_loopback_zero[15]                  0.200000    0.382257   -0.182257 (VIOLATED)
+gpio_loopback_zero[20]                  0.200000    0.382023   -0.182023 (VIOLATED)
+gpio_loopback_zero[19]                  0.200000    0.381786   -0.181786 (VIOLATED)
+gpio_loopback_zero[21]                  0.200000    0.381674   -0.181674 (VIOLATED)
+gpio_loopback_zero[32]                  0.200000    0.381522   -0.181522 (VIOLATED)
+gpio_loopback_zero[22]                  0.200000    0.381408   -0.181408 (VIOLATED)
+gpio_loopback_zero[23]                  0.200000    0.381198   -0.181198 (VIOLATED)
+gpio_loopback_zero[14]                  0.200000    0.381018   -0.181018 (VIOLATED)
+gpio_loopback_zero[34]                  0.200000    0.380979   -0.180979 (VIOLATED)
+gpio_loopback_zero[18]                  0.200000    0.380169   -0.180169 (VIOLATED)
+gpio_loopback_zero[16]                  0.200000    0.380085   -0.180085 (VIOLATED)
+gpio_loopback_zero[17]                  0.200000    0.379950   -0.179950 (VIOLATED)
+gpio_loopback_zero[0]                   0.200000    0.379580   -0.179580 (VIOLATED)
+gpio_loopback_zero[31]                  0.200000    0.379456   -0.179456 (VIOLATED)
+gpio_loopback_zero[25]                  0.200000    0.378825   -0.178825 (VIOLATED)
+gpio_loopback_zero[29]                  0.200000    0.378775   -0.178775 (VIOLATED)
+gpio_loopback_zero[33]                  0.200000    0.378372   -0.178372 (VIOLATED)
+gpio_loopback_zero[39]                  0.200000    0.378353   -0.178353 (VIOLATED)
+gpio_loopback_zero[26]                  0.200000    0.378325   -0.178325 (VIOLATED)
+gpio_loopback_zero[42]                  0.200000    0.378285   -0.178285 (VIOLATED)
+gpio_loopback_zero[38]                  0.200000    0.378254   -0.178254 (VIOLATED)
+gpio_loopback_zero[35]                  0.200000    0.378179   -0.178179 (VIOLATED)
+gpio_loopback_zero[27]                  0.200000    0.378172   -0.178172 (VIOLATED)
+gpio_loopback_zero[36]                  0.200000    0.378160   -0.178160 (VIOLATED)
+gpio_loopback_zero[24]                  0.200000    0.378137   -0.178137 (VIOLATED)
+gpio_loopback_zero[13]                  0.200000    0.378130   -0.178130 (VIOLATED)
+gpio_loopback_zero[43]                  0.200000    0.378108   -0.178108 (VIOLATED)
+gpio_loopback_zero[28]                  0.200000    0.378077   -0.178077 (VIOLATED)
+gpio_loopback_zero[37]                  0.200000    0.378010   -0.178010 (VIOLATED)
+gpio_loopback_zero[30]                  0.200000    0.377517   -0.177517 (VIOLATED)
+gpio_loopback_zero[41]                  0.200000    0.377256   -0.177256 (VIOLATED)
+gpio_loopback_zero[40]                  0.200000    0.377234   -0.177234 (VIOLATED)
+gpio_loopback_zero[1]                   0.200000    0.315203   -0.115203 (VIOLATED)
+gpio_loopback_zero[4]                   0.200000    0.314394   -0.114394 (VIOLATED)
+gpio_loopback_zero[3]                   0.200000    0.314306   -0.114306 (VIOLATED)
+gpio_loopback_zero[9]                   0.200000    0.314051   -0.114051 (VIOLATED)
+gpio_loopback_zero[6]                   0.200000    0.314034   -0.114034 (VIOLATED)
+gpio_loopback_zero[12]                  0.200000    0.313743   -0.113743 (VIOLATED)
+gpio_loopback_zero[8]                   0.200000    0.313643   -0.113643 (VIOLATED)
+gpio_loopback_zero[11]                  0.200000    0.313447   -0.113447 (VIOLATED)
+gpio_loopback_zero[2]                   0.200000    0.313240   -0.113241 (VIOLATED)
+gpio_loopback_zero[5]                   0.200000    0.312976   -0.112976 (VIOLATED)
+gpio_loopback_zero[10]                  0.200000    0.312808   -0.112808 (VIOLATED)
+gpio_loopback_zero[7]                   0.200000    0.312647   -0.112647 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 211 unannotated drivers.
+ analog_io[0]
+ analog_io[10]
+ analog_io[11]
+ analog_io[12]
+ analog_io[13]
+ analog_io[14]
+ analog_io[15]
+ analog_io[16]
+ analog_io[17]
+ analog_io[18]
+ analog_io[19]
+ analog_io[1]
+ analog_io[20]
+ analog_io[21]
+ analog_io[22]
+ analog_io[23]
+ analog_io[24]
+ analog_io[25]
+ analog_io[26]
+ analog_io[27]
+ analog_io[28]
+ analog_io[29]
+ analog_io[2]
+ analog_io[30]
+ analog_io[31]
+ analog_io[32]
+ analog_io[33]
+ analog_io[34]
+ analog_io[35]
+ analog_io[36]
+ analog_io[37]
+ analog_io[38]
+ analog_io[39]
+ analog_io[3]
+ analog_io[40]
+ analog_io[41]
+ analog_io[42]
+ analog_io[43]
+ analog_io[4]
+ analog_io[5]
+ analog_io[6]
+ analog_io[7]
+ analog_io[8]
+ analog_io[9]
+ analog_noesd_io[0]
+ analog_noesd_io[10]
+ analog_noesd_io[11]
+ analog_noesd_io[12]
+ analog_noesd_io[13]
+ analog_noesd_io[14]
+ analog_noesd_io[15]
+ analog_noesd_io[16]
+ analog_noesd_io[17]
+ analog_noesd_io[18]
+ analog_noesd_io[19]
+ analog_noesd_io[1]
+ analog_noesd_io[20]
+ analog_noesd_io[21]
+ analog_noesd_io[22]
+ analog_noesd_io[23]
+ analog_noesd_io[24]
+ analog_noesd_io[25]
+ analog_noesd_io[26]
+ analog_noesd_io[27]
+ analog_noesd_io[28]
+ analog_noesd_io[29]
+ analog_noesd_io[2]
+ analog_noesd_io[30]
+ analog_noesd_io[31]
+ analog_noesd_io[32]
+ analog_noesd_io[33]
+ analog_noesd_io[34]
+ analog_noesd_io[35]
+ analog_noesd_io[36]
+ analog_noesd_io[37]
+ analog_noesd_io[38]
+ analog_noesd_io[39]
+ analog_noesd_io[3]
+ analog_noesd_io[40]
+ analog_noesd_io[41]
+ analog_noesd_io[42]
+ analog_noesd_io[43]
+ analog_noesd_io[4]
+ analog_noesd_io[5]
+ analog_noesd_io[6]
+ analog_noesd_io[7]
+ analog_noesd_io[8]
+ analog_noesd_io[9]
+ gpio_in[10]
+ gpio_in[11]
+ gpio_in[12]
+ gpio_in[13]
+ gpio_in[14]
+ gpio_in[15]
+ gpio_in[16]
+ gpio_in[17]
+ gpio_in[18]
+ gpio_in[19]
+ gpio_in[20]
+ gpio_in[21]
+ gpio_in[22]
+ gpio_in[23]
+ gpio_in[24]
+ gpio_in[25]
+ gpio_in[26]
+ gpio_in[27]
+ gpio_in[28]
+ gpio_in[29]
+ gpio_in[2]
+ gpio_in[30]
+ gpio_in[31]
+ gpio_in[32]
+ gpio_in[33]
+ gpio_in[34]
+ gpio_in[35]
+ gpio_in[36]
+ gpio_in[37]
+ gpio_in[38]
+ gpio_in[39]
+ gpio_in[3]
+ gpio_in[40]
+ gpio_in[41]
+ gpio_in[42]
+ gpio_in[43]
+ gpio_in[4]
+ gpio_in[5]
+ gpio_in[6]
+ gpio_in[7]
+ gpio_in[8]
+ gpio_in[9]
+ gpio_in_h[0]
+ gpio_in_h[10]
+ gpio_in_h[11]
+ gpio_in_h[12]
+ gpio_in_h[13]
+ gpio_in_h[14]
+ gpio_in_h[15]
+ gpio_in_h[16]
+ gpio_in_h[17]
+ gpio_in_h[18]
+ gpio_in_h[19]
+ gpio_in_h[1]
+ gpio_in_h[20]
+ gpio_in_h[21]
+ gpio_in_h[22]
+ gpio_in_h[23]
+ gpio_in_h[24]
+ gpio_in_h[25]
+ gpio_in_h[26]
+ gpio_in_h[27]
+ gpio_in_h[28]
+ gpio_in_h[29]
+ gpio_in_h[2]
+ gpio_in_h[30]
+ gpio_in_h[31]
+ gpio_in_h[32]
+ gpio_in_h[33]
+ gpio_in_h[34]
+ gpio_in_h[35]
+ gpio_in_h[36]
+ gpio_in_h[37]
+ gpio_in_h[38]
+ gpio_in_h[39]
+ gpio_in_h[3]
+ gpio_in_h[40]
+ gpio_in_h[41]
+ gpio_in_h[42]
+ gpio_in_h[43]
+ gpio_in_h[4]
+ gpio_in_h[5]
+ gpio_in_h[6]
+ gpio_in_h[7]
+ gpio_in_h[8]
+ gpio_in_h[9]
+ mask_rev[0]
+ mask_rev[10]
+ mask_rev[11]
+ mask_rev[12]
+ mask_rev[13]
+ mask_rev[14]
+ mask_rev[15]
+ mask_rev[16]
+ mask_rev[17]
+ mask_rev[18]
+ mask_rev[19]
+ mask_rev[1]
+ mask_rev[20]
+ mask_rev[21]
+ mask_rev[22]
+ mask_rev[23]
+ mask_rev[24]
+ mask_rev[25]
+ mask_rev[26]
+ mask_rev[27]
+ mask_rev[28]
+ mask_rev[29]
+ mask_rev[2]
+ mask_rev[30]
+ mask_rev[31]
+ mask_rev[3]
+ mask_rev[4]
+ mask_rev[5]
+ mask_rev[6]
+ mask_rev[7]
+ mask_rev[8]
+ mask_rev[9]
+ por_l
+ porb_h
+ porb_l
+ resetb_h
+ resetb_l
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 506
+max fanout violation count 0
+max cap violation count 44
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There is 1 unclocked register/latch pin.
+  mprj/wb_clk_i
+Warning: There are 100 unconstrained endpoints.
+  analog_io[0]
+  analog_io[10]
+  analog_io[11]
+  analog_io[12]
+  analog_io[13]
+  analog_io[14]
+  analog_io[15]
+  analog_io[16]
+  analog_io[17]
+  analog_io[18]
+  analog_io[19]
+  analog_io[1]
+  analog_io[20]
+  analog_io[21]
+  analog_io[22]
+  analog_io[23]
+  analog_io[24]
+  analog_io[25]
+  analog_io[26]
+  analog_io[27]
+  analog_io[28]
+  analog_io[29]
+  analog_io[2]
+  analog_io[30]
+  analog_io[31]
+  analog_io[32]
+  analog_io[33]
+  analog_io[34]
+  analog_io[35]
+  analog_io[36]
+  analog_io[37]
+  analog_io[38]
+  analog_io[39]
+  analog_io[3]
+  analog_io[40]
+  analog_io[41]
+  analog_io[42]
+  analog_io[43]
+  analog_io[4]
+  analog_io[5]
+  analog_io[6]
+  analog_io[7]
+  analog_io[8]
+  analog_io[9]
+  analog_noesd_io[0]
+  analog_noesd_io[10]
+  analog_noesd_io[11]
+  analog_noesd_io[12]
+  analog_noesd_io[13]
+  analog_noesd_io[14]
+  analog_noesd_io[15]
+  analog_noesd_io[16]
+  analog_noesd_io[17]
+  analog_noesd_io[18]
+  analog_noesd_io[19]
+  analog_noesd_io[1]
+  analog_noesd_io[20]
+  analog_noesd_io[21]
+  analog_noesd_io[22]
+  analog_noesd_io[23]
+  analog_noesd_io[24]
+  analog_noesd_io[25]
+  analog_noesd_io[26]
+  analog_noesd_io[27]
+  analog_noesd_io[28]
+  analog_noesd_io[29]
+  analog_noesd_io[2]
+  analog_noesd_io[30]
+  analog_noesd_io[31]
+  analog_noesd_io[32]
+  analog_noesd_io[33]
+  analog_noesd_io[34]
+  analog_noesd_io[35]
+  analog_noesd_io[36]
+  analog_noesd_io[37]
+  analog_noesd_io[38]
+  analog_noesd_io[39]
+  analog_noesd_io[3]
+  analog_noesd_io[40]
+  analog_noesd_io[41]
+  analog_noesd_io[42]
+  analog_noesd_io[43]
+  analog_noesd_io[4]
+  analog_noesd_io[5]
+  analog_noesd_io[6]
+  analog_noesd_io[7]
+  analog_noesd_io[8]
+  analog_noesd_io[9]
+  gpio_out[10]
+  gpio_out[11]
+  gpio_out[12]
+  gpio_out[2]
+  gpio_out[3]
+  gpio_out[4]
+  gpio_out[5]
+  gpio_out[6]
+  gpio_out[7]
+  gpio_out[8]
+  gpio_out[9]
+  mprj/wb_rst_i

@@ -1,0 +1,42 @@
+Clock: __VIRTUAL_CLK__
+Sources: 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+__VIRTUAL_CLK__      10.000000    0.000000  5.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock __VIRTUAL_CLK__
+rise -> rise
+    min     max
+0.000000 0.000000 source latency
+2.551030         network latency mprj/wb_clk_i
+        2.551030 network latency mprj/wb_clk_i
+---------------
+2.551030 2.551030 latency
+        0.000000 skew
+
+rise -> fall
+    min     max
+0.000000 0.000000 source latency
+2.288489         network latency mprj/wb_clk_i
+        2.288489 network latency mprj/wb_clk_i
+---------------
+2.288489 2.288489 latency
+        0.000000 skew
+
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+__VIRTUAL_CLK__ period_min = 0.00 fmax = inf
