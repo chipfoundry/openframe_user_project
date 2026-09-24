@@ -136,8 +136,6 @@ jobs:
     needs: [download_deps]
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -155,6 +153,12 @@ jobs:
           echo "TIMING_ROOT=$GITHUB_WORKSPACE/timing-scripts" >> $GITHUB_ENV
           #echo "PRECHECK_ROOT=$GITHUB_WORKSPACE/mpw_precheck" >> $GITHUB_ENV
           echo "MPW_TAG=main" >> $GITHUB_ENV
+
+      - name: Install IPM dependencies
+        run: |
+          python3 -m pip install --upgrade --no-cache-dir cf-ipm
+          curl -fsSL -o /tmp/verified_IPs.json https://raw.githubusercontent.com/chipfoundry/ipm/main/verified_IPs.json
+          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip --local-file /tmp/verified_IPs.json
 
       - name: Download PDK Tarball
         uses: actions/download-artifact@v4
@@ -326,8 +330,6 @@ jobs:
     needs: [hardening]
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: true
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1

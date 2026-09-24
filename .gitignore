@@ -15,3 +15,7 @@ runs/
 /logs
 lvs_results/
 __pycache__/
+# IPM installs IPs under ip/; keep dependencies.json tracked
+/ip/*
+!/ip/dependencies.json
+!/ip/.gitignore

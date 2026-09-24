@@ -49,6 +49,7 @@ A successful OpenFrame project requires a specific directory layout for the auto
 | `verilog/rtl/` | Source Verilog code for the project. |
 | `verilog/gl/` | Gate-level netlists (generated after hardening). |
 | `verilog/dv/` | Design Verification (cocotb and Verilog testbenches). |
+| `ip/` | IPM-installed IPs (for example `CF_gpio_config`). Track `ip/dependencies.json` only. |
 | `gds/` | Final GDSII binary files for fabrication. |
 | `lef/` | Library Exchange Format files for the macros. |
 
@@ -89,6 +90,17 @@ The `cf setup` command installs:
 - OpenLane: The RTL-to-GDS hardening flow.
 - PDK: Skywater 130nm process design kit.
 - Timing Scripts: For Static Timing Analysis (STA).
+- IPM: The ChipFoundry IP Manager (`cf-ipm`) used to install listed IPs.
+
+### 4. Install IPM dependencies
+
+IPs listed in `ip/dependencies.json` (for example `CF_gpio_config`) are not stored in git. After cloning, install them with:
+
+```bash
+ipm install-dep --ip-root ip
+```
+
+This is required for GPIO pad configuration and any other IPM-managed blocks in `ip/`.
 
 ---
 
