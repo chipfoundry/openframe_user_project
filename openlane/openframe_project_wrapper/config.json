@@ -53,6 +53,8 @@
     "DESIGN_REPAIR_BUFFER_INPUT_PORTS": false,
     "RUN_CTS": false,
     "RUN_ANTENNA_REPAIR": false,
+    "// DRT_ANTENNA_REPAIR_ITERS": "The wrapper has no stdcell rails or taps, so router-inserted diodes would be unpowered; at chip level these nets end on pad diffusion.",
+    "DRT_ANTENNA_REPAIR_ITERS": 0,
     "RUN_HEURISTIC_DIODE_INSERTION": false,
     "RUN_FILL_INSERTION": false,
     "RUN_TAP_ENDCAP_INSERTION": false,
