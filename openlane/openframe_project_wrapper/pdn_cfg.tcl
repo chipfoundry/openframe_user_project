@@ -381,6 +381,74 @@ namespace eval openframe_pdn {
         }
     }
 
+    # User macros are integrated with the core-ring method: the wrapper
+    # straps must stop on the macro's ring and never enter the area inside
+    # it. The macro LEF abstract leaves holes on met4/met5 that pdngen would
+    # otherwise thread wrapper straps through, shorting against macro metal
+    # that is not in the abstract. Returns the temporary obstructions.
+    proc block_macro_interiors {} {
+        set block [ord::get_db_block]
+        set tech [ord::get_db_tech]
+        set pdn_layers [list \
+            [$tech findLayer $::env(PDN_VERTICAL_LAYER)] \
+            [$tech findLayer $::env(PDN_HORIZONTAL_LAYER)]]
+        set pdn_net_names [concat $::env(VDD_NETS) $::env(GND_NETS)]
+        set obstructions {}
+        foreach inst [$block getInsts] {
+            if { ![[$inst getMaster] isBlock] } { continue }
+            set bbox [$inst getBBox]
+            lassign [list [$bbox xMin] [$bbox yMin] [$bbox xMax] [$bbox yMax]] ix0 iy0 ix1 iy1
+            set w [expr {$ix1 - $ix0}]
+            set h [expr {$iy1 - $iy0}]
+            # The ring has one leg per connected PDN net on every side: the N
+            # power pin shapes nearest to each edge that run along at least
+            # 90% of it. Internal straps also span the macro, so only the
+            # nearest N count.
+            set nets {}
+            set candidates [dict create left {} right {} bottom {} top {}]
+            foreach iterm [$inst getITerms] {
+                set net [$iterm getNet]
+                if { $net == "NULL" || [lsearch -exact $pdn_net_names [$net getName]] < 0 } { continue }
+                if { [lsearch -exact $nets [$net getName]] < 0 } { lappend nets [$net getName] }
+                foreach geom [$iterm getGeometries] {
+                    lassign $geom layer rect
+                    lassign [list [$rect xMin] [$rect yMin] [$rect xMax] [$rect yMax]] x0 y0 x1 y1
+                    if { $y1 - $y0 >= 0.9 * $h } {
+                        dict lappend candidates left [list [expr {$x0 - $ix0}] $x1]
+                        dict lappend candidates right [list [expr {$ix1 - $x1}] $x0]
+                    }
+                    if { $x1 - $x0 >= 0.9 * $w } {
+                        dict lappend candidates bottom [list [expr {$y0 - $iy0}] $y1]
+                        dict lappend candidates top [list [expr {$iy1 - $y1}] $y0]
+                    }
+                }
+            }
+            set legs [llength $nets]
+            if { $legs == 0 } {
+                fail "macro [$inst getName] ([[$inst getMaster] getName]) is not connected to any net in VDD_NETS/GND_NETS; check PDN_MACRO_CONNECTIONS"
+            }
+            set inner [dict create]
+            foreach side {left right bottom top} {
+                set sorted [lsort -real -index 0 [lsort -unique [dict get $candidates $side]]]
+                if { [llength $sorted] < $legs } {
+                    fail "macro [$inst getName] ([[$inst getMaster] getName]) has no core ring on its $side side ($legs legs expected); harden it with PDN_CORE_RING enabled"
+                }
+                set edges [lmap leg [lrange $sorted 0 [expr {$legs - 1}]] {lindex $leg 1}]
+                if { $side == "left" || $side == "bottom" } {
+                    dict set inner $side [tcl::mathfunc::max {*}$edges]
+                } else {
+                    dict set inner $side [tcl::mathfunc::min {*}$edges]
+                }
+            }
+            foreach layer $pdn_layers {
+                lappend obstructions [odb::dbObstruction_create $block $layer \
+                    [dict get $inner left] [dict get $inner bottom] \
+                    [dict get $inner right] [dict get $inner top]]
+            }
+        }
+        return $obstructions
+    }
+
     proc connect_pad_power {} {
         foreach net [pdn_nets] {
             foreach bterm [$net getBTerms] {
@@ -402,6 +470,10 @@ rename pdngen openframe_pdn::pdngen_builtin
 proc pdngen {args} {
     openframe_pdn::fix_pad_pins
     openframe_pdn::extend_signal_pins
+    set obstructions [openframe_pdn::block_macro_interiors]
     openframe_pdn::pdngen_builtin {*}$args
+    foreach obstruction $obstructions {
+        odb::dbObstruction_destroy $obstruction
+    }
     openframe_pdn::connect_pad_power
 }

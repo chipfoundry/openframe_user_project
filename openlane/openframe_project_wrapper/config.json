@@ -61,7 +61,11 @@
     "RUN_IRDROP_REPORT": false,
     "RUN_LINTER": false,
     "RUN_LVS": true,
-    "LVS_INCLUDE_MARCO_NETLISTS": true,
+    "// MAGIC_EXT_ABSTRACT_CELLS": "User macros are extracted as black boxes: separate ground domains share the p-substrate, so a flat extraction merges them. Each macro gets its own LVS when it is hardened; cf precheck runs full LVS with EXTRACT_CREATE_SUBCUT (lvs/openframe_project_wrapper/lvs_config.json). List every user macro here and in that file.",
+    "MAGIC_EXT_ABSTRACT_CELLS": [
+        "^user_proj_timer$"
+    ],
+    "LVS_INCLUDE_MARCO_NETLISTS": false,
     "MAGIC_ZEROIZE_ORIGIN": false,
     "MAGIC_DEF_LABELS": false,
     "MAGIC_EXT_USE_GDS": true,
