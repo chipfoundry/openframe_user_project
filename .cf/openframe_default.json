@@ -78,17 +78,90 @@
         "mode": "output",
         "signal": "out",
         "bit": 10
+      },
+      {
+        "pad": 24,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 0
+      },
+      {
+        "pad": 25,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 1
+      },
+      {
+        "pad": 26,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 2
+      },
+      {
+        "pad": 27,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 3
+      },
+      {
+        "pad": 28,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 4
+      },
+      {
+        "pad": 29,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 5
+      },
+      {
+        "pad": 30,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 6
+      },
+      {
+        "pad": 31,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 7
+      },
+      {
+        "pad": 32,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 8
+      },
+      {
+        "pad": 33,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 9
+      },
+      {
+        "pad": 34,
+        "mode": "output",
+        "signal": "out2",
+        "bit": 10
       }
     ]
   },
   "power": {
     "domains": [
-      "vccd1"
+      "vccd1",
+      "vccd2"
     ],
     "macros": [
       {
         "instance": "mprj",
         "domain": "vccd1",
+        "vdd_pin": "vccd1",
+        "gnd_pin": "vssd1"
+      },
+      {
+        "instance": "mprj2",
+        "domain": "vccd2",
         "vdd_pin": "vccd1",
         "gnd_pin": "vssd1"
       }
