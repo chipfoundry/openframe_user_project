@@ -46,7 +46,7 @@ module user_proj_timer (
     input wb_rst_i,
 
     // IOs
-    output [10:0] io_out,
+    output [10:0] io_out
 );
 
     wire [6:0] seven_seg;

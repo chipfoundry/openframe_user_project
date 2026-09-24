@@ -4,6 +4,7 @@
     "VERILOG_FILES": [
         "dir::/../../verilog/rtl/openframe_project_netlists.v",
         "dir::/../../verilog/rtl/openframe_project_wrapper.v",
+        "dir::/../../verilog/rtl/openframe_gpio.v",
         "dir::../../ip/CF_gpio_config/rtl/CF_gpio_config.v"
     ],
     "VERILOG_FILES_BLACKBOX": [

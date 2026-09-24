@@ -126,102 +126,32 @@ module openframe_project_wrapper (
 	(* keep *) vccd1_connection vccd1_connection ();
 	(* keep *) vssd1_connection vssd1_connection ();
 
-	// CF_gpio_config modes
-	// 0: analog
-	// 1: input
-	// 2: input pull down
-	// 3: input pull up
-	// 4: output
-	// 5: bidirectional
+	// Pad configuration is generated from the project.openframe spec in
+	// .cf/project.json by `cf openframe generate` (see verilog/rtl/openframe_gpio.v).
+	// Do not instantiate CF_gpio_config here; change the spec and regenerate.
+	openframe_gpio gpio (
+	    // User design ports (named by the spec)
+	    .clk(clk),
+	    .rst(rst),
+	    .out(out),
 
-        CF_gpio_config #(.MODE(3'd1)) gpio_clk_config ( // clk input at gpio 0
-          .io_out(),
-          .io_in(clk),
-          .io_oeb(),
-          .gpio_zero(gpio_loopback_zero[0]),
-          .gpio_one(gpio_loopback_one[0]),
-          .gpio_in(gpio_in[0]),
-          .gpio_dm({gpio_dm2[0], gpio_dm1[0], gpio_dm0[0]}),
-          .gpio_inp_dis(gpio_inp_dis[0]),
-          .gpio_oeb_out(gpio_oeb[0]),
-          .gpio_out_val(gpio_out[0]),
-          .gpio_analog_en(gpio_analog_en[0]),
-          .gpio_analog_sel(gpio_analog_sel[0]),
-          .gpio_analog_pol(gpio_analog_pol[0]),
-          .gpio_ib_mode_sel(gpio_ib_mode_sel[0]),
-          .gpio_vtrip_sel(gpio_vtrip_sel[0]),
-          .gpio_slow_sel(gpio_slow_sel[0]),
-          .gpio_holdover(gpio_holdover[0])
-        );
-        
-	CF_gpio_config #(.MODE(3'd3)) gpio_rst_config ( // rst pull up input at gpio 1
-          .io_out(),
-          .io_in(rst),
-          .io_oeb(),
-          .gpio_zero(gpio_loopback_zero[1]),
-          .gpio_one(gpio_loopback_one[1]),
-          .gpio_in(gpio_in[1]),
-          .gpio_dm({gpio_dm2[1], gpio_dm1[1], gpio_dm0[1]}),
-          .gpio_inp_dis(gpio_inp_dis[1]),
-          .gpio_oeb_out(gpio_oeb[1]),
-          .gpio_out_val(gpio_out[1]),
-          .gpio_analog_en(gpio_analog_en[1]),
-          .gpio_analog_sel(gpio_analog_sel[1]),
-          .gpio_analog_pol(gpio_analog_pol[1]),
-          .gpio_ib_mode_sel(gpio_ib_mode_sel[1]),
-          .gpio_vtrip_sel(gpio_vtrip_sel[1]),
-          .gpio_slow_sel(gpio_slow_sel[1]),
-          .gpio_holdover(gpio_holdover[1])
-        );
-
-	genvar i;
-        generate
-          for (i = 0; i <= 10; i = i + 1) begin : gpio_out_config
-            CF_gpio_config #(.MODE(3'd4)) u_cfg (
-              .io_out(out[i]),
-              .io_in(),
-              .io_oeb(),
-              .gpio_zero(gpio_loopback_zero[i + 2]),
-              .gpio_one(gpio_loopback_one[i + 2]),
-              .gpio_in(gpio_in[i + 2]),
-              .gpio_dm({gpio_dm2[i + 2], gpio_dm1[i + 2], gpio_dm0[i + 2]}),
-              .gpio_inp_dis(gpio_inp_dis[i + 2]),
-              .gpio_oeb_out(gpio_oeb[i + 2]),
-              .gpio_out_val(gpio_out[i + 2]),
-              .gpio_analog_en(gpio_analog_en[i + 2]),
-              .gpio_analog_sel(gpio_analog_sel[i + 2]),
-              .gpio_analog_pol(gpio_analog_pol[i + 2]),
-              .gpio_ib_mode_sel(gpio_ib_mode_sel[i + 2]),
-              .gpio_vtrip_sel(gpio_vtrip_sel[i + 2]),
-              .gpio_slow_sel(gpio_slow_sel[i + 2]),
-              .gpio_holdover(gpio_holdover[i + 2])
-            );
-          end
-        endgenerate
-
-        genvar j;
-        generate
-          for (j = 13; j < `OPENFRAME_IO_PADS; j = j + 1) begin : gpio_unused
-            CF_gpio_config #(.MODE(3'd0)) u_cfg (
-              .io_out(),
-              .io_in(),
-              .io_oeb(),
-              .gpio_zero(gpio_loopback_zero[j]),
-              .gpio_one(gpio_loopback_one[j]),
-              .gpio_in(gpio_in[j]),
-              .gpio_dm({gpio_dm2[j], gpio_dm1[j], gpio_dm0[j]}),
-              .gpio_inp_dis(gpio_inp_dis[j]),
-              .gpio_oeb_out(gpio_oeb[j]),
-              .gpio_out_val(gpio_out[j]),
-              .gpio_analog_en(gpio_analog_en[j]),
-              .gpio_analog_sel(gpio_analog_sel[j]),
-              .gpio_analog_pol(gpio_analog_pol[j]),
-              .gpio_ib_mode_sel(gpio_ib_mode_sel[j]),
-              .gpio_vtrip_sel(gpio_vtrip_sel[j]),
-              .gpio_slow_sel(gpio_slow_sel[j]),
-              .gpio_holdover(gpio_holdover[j])
-            );
-          end
-        endgenerate
+	    // Openframe pad interface
+	    .gpio_in(gpio_in),
+	    .gpio_out(gpio_out),
+	    .gpio_oeb(gpio_oeb),
+	    .gpio_inp_dis(gpio_inp_dis),
+	    .gpio_ib_mode_sel(gpio_ib_mode_sel),
+	    .gpio_vtrip_sel(gpio_vtrip_sel),
+	    .gpio_slow_sel(gpio_slow_sel),
+	    .gpio_holdover(gpio_holdover),
+	    .gpio_analog_en(gpio_analog_en),
+	    .gpio_analog_sel(gpio_analog_sel),
+	    .gpio_analog_pol(gpio_analog_pol),
+	    .gpio_dm2(gpio_dm2),
+	    .gpio_dm1(gpio_dm1),
+	    .gpio_dm0(gpio_dm0),
+	    .gpio_loopback_one(gpio_loopback_one),
+	    .gpio_loopback_zero(gpio_loopback_zero)
+	);
 
 endmodule	// openframe_project_wrapper

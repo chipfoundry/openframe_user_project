@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "gpio": {
+    "unused_mode": "analog",
+    "pads": [
+      {
+        "pad": 0,
+        "mode": "input",
+        "signal": "clk"
+      },
+      {
+        "pad": 1,
+        "mode": "input_pu",
+        "signal": "rst"
+      },
+      {
+        "pad": 2,
+        "mode": "output",
+        "signal": "out",
+        "bit": 0
+      },
+      {
+        "pad": 3,
+        "mode": "output",
+        "signal": "out",
+        "bit": 1
+      },
+      {
+        "pad": 4,
+        "mode": "output",
+        "signal": "out",
+        "bit": 2
+      },
+      {
+        "pad": 5,
+        "mode": "output",
+        "signal": "out",
+        "bit": 3
+      },
+      {
+        "pad": 6,
+        "mode": "output",
+        "signal": "out",
+        "bit": 4
+      },
+      {
+        "pad": 7,
+        "mode": "output",
+        "signal": "out",
+        "bit": 5
+      },
+      {
+        "pad": 8,
+        "mode": "output",
+        "signal": "out",
+        "bit": 6
+      },
+      {
+        "pad": 9,
+        "mode": "output",
+        "signal": "out",
+        "bit": 7
+      },
+      {
+        "pad": 10,
+        "mode": "output",
+        "signal": "out",
+        "bit": 8
+      },
+      {
+        "pad": 11,
+        "mode": "output",
+        "signal": "out",
+        "bit": 9
+      },
+      {
+        "pad": 12,
+        "mode": "output",
+        "signal": "out",
+        "bit": 10
+      }
+    ]
+  },
+  "power": {
+    "domains": [
+      "vccd1"
+    ],
+    "macros": [
+      {
+        "instance": "mprj",
+        "domain": "vccd1",
+        "vdd_pin": "vccd1",
+        "gnd_pin": "vssd1"
+      }
+    ]
+  }
+}
