@@ -90,11 +90,18 @@ The `cf setup` command installs:
 - OpenLane: The RTL-to-GDS hardening flow.
 - PDK: Skywater 130nm process design kit.
 - Timing Scripts: For Static Timing Analysis (STA).
-- IPM dependencies: Installs `CF_gpio_config` from IPM into `ip/` (required for GPIO pad configuration).
+- IPM: The ChipFoundry IP Manager (`cf-ipm`) used to install listed IPs.
 
-> [!NOTE]
-> `CF_gpio_config` is managed by IPM via `ip/dependencies.json`. Do not add it as a git submodule.
-> Re-run `cf setup` (or `cf setup --only-ipm`) after cloning to install it.
+### 4. Install IPM dependencies
+
+IPs listed in `ip/dependencies.json` (for example `CF_gpio_config`) are not stored in git. After cloning, install them with:
+
+```bash
+ipm install-dep --ip-root ip
+```
+
+This is required for GPIO pad configuration and any other IPM-managed blocks in `ip/`.
+
 ---
 
 ## Development Flow
