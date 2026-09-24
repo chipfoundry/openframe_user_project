@@ -1,7 +1,7 @@
 {
     "IP": [
         {
-            "CF_gpio_config": "v1.1.4"
+            "CF_gpio_config": "v1.2.0"
         }
     ]
 }

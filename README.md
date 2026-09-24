@@ -106,6 +106,48 @@ This is required for GPIO pad configuration and any other IPM-managed blocks in 
 
 ## Development Flow
 
+### Configuring the GPIO pads and power domains
+
+The pad configuration and power domains live in one spec, the `project.openframe` block of
+`.cf/project.json`. `cf init` seeds it from `.cf/openframe_default.json`, which reproduces the example
+timer pinout:
+
+| Pads | Mode | Signal |
+| :--- | :--- | :--- |
+| 0 | input | `clk` |
+| 1 | input with pull-up | `rst` |
+| 2-12 | output | `out[10:0]` |
+| 13-43 | analog (unused) | - |
+
+Power: domain `vccd1`/`vssd1`, feeding macro instance `mprj`.
+
+Edit the spec, then regenerate the derived files:
+
+```bash
+cf gpio-config                  # 44-pad grid: mode, signal/bus bit, pad overrides, power (p)
+cf gpio-config --view           # print the current pinout
+cf openframe generate           # regenerate after editing or importing the spec
+cf openframe generate --check   # fail if the generated files are stale (useful in CI)
+cf openframe export pinout.yaml # standalone YAML/JSON copy, e.g. for review or the web configurator
+cf openframe import pinout.yaml # validate and store a YAML/JSON spec, then regenerate
+```
+
+Generated files (do not edit by hand; they carry a `spec-sha256` of the spec they came from):
+
+- `verilog/rtl/openframe_gpio.v`: one `CF_gpio_config` instance per pad. Its user ports are named after
+  the spec signals (a `bidir` signal `x` becomes `x_in`, `x_out`, `x_oeb`).
+- `openlane/openframe_project_wrapper/power.json`: `VDD_NETS`, `GND_NETS` and `PDN_MACRO_CONNECTIONS`
+  for the wrapper PDN.
+
+> [!NOTE]
+> The current wrapper flow (LibreLane 2.4.x, `config.json`) does not read `power.json` yet; the wrapper
+> still uses the single `vccd1`/`vssd1` domain set in `config.json`. Multi-domain power from the spec
+> arrives with the LibreLane 3.x wrapper PDN.
+
+`verilog/rtl/openframe_project_wrapper.v` instantiates `openframe_gpio` and wires its named ports to your
+macro. When you rename or add signals in the spec, update those connections in the wrapper. Pads in
+`analog` mode have no digital signal; use `analog_io[n]` / `analog_noesd_io[n]` on the wrapper directly.
+
 ### Hardening the Design
 Hardening is the process of synthesizing your RTL and performing Place & Route (P&R) to create a GDSII layout.
 
@@ -118,7 +160,8 @@ cf harden <macro_name>   # Harden a specific macro
 ```
 
 #### Integration
-Instantiate your module(s) in `verilog/rtl/openframe_project_wrapper.v`.
+Instantiate your module(s) in `verilog/rtl/openframe_project_wrapper.v` and connect them to the named
+ports of the generated `openframe_gpio` instance (see above).
 
 Update `openlane/openframe_project_wrapper/config.json` environment variables (`VERILOG_FILES_BLACKBOX`, `EXTRA_LEFS`, `EXTRA_GDS_FILES`) to point to your new macros.
 
