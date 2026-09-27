@@ -1,0 +1,6 @@
+---
+# Test list for `cf verify --all --sim gl`.
+# Add one entry per cocotb test under verilog/dv/cocotb/<name>/.
+Tests:
+    - {name: hello_world, sim: GL}
+    - {name: timer, sim: GL}

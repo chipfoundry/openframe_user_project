@@ -1,0 +1,5 @@
+# OpenFrame user project GL includes
+-v $(USER_PROJECT_VERILOG)/gl/vccd1_connection.v
+-v $(USER_PROJECT_VERILOG)/gl/vssd1_connection.v
+-v $(USER_PROJECT_VERILOG)/gl/user_proj_timer.v
+-v $(USER_PROJECT_VERILOG)/gl/openframe_project_wrapper.v

@@ -1,0 +1,6 @@
+---
+# Test list for `cf verify --all` (RTL).
+# Add one entry per cocotb test under verilog/dv/cocotb/<name>/.
+Tests:
+    - {name: hello_world, sim: RTL}
+    - {name: timer, sim: RTL}

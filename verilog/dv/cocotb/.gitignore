@@ -1,2 +1,4 @@
 *.pyc
 **/.vscode/
+sim/
+design_info.yaml

@@ -1,0 +1,3 @@
+---
+Tests:
+    - {name: timer, sim: RTL}
