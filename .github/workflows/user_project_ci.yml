@@ -307,6 +307,13 @@ jobs:
           sudo chown -R $USER:$USER ${{ env.MCW_ROOT }}
           tar -xf /tmp/mgmt_core_wrapper.tar -C $MCW_ROOT .
 
+      - name: Install IPM dependencies
+        if: env.RUN_RTL == 'true'
+        run: |
+          python3 -m pip install --upgrade --no-cache-dir cf-ipm
+          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip
+          test -f $GITHUB_WORKSPACE/ip/CF_gpio_config/rtl/CF_gpio_config.v
+
       - name: install cocotb
         if: env.RUN_RTL == 'true'
         run: |
