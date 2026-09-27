@@ -157,8 +157,7 @@ jobs:
       - name: Install IPM dependencies
         run: |
           python3 -m pip install --upgrade --no-cache-dir cf-ipm
-          curl -fsSL -o /tmp/verified_IPs.json https://raw.githubusercontent.com/chipfoundry/ipm/main/verified_IPs.json
-          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip --local-file /tmp/verified_IPs.json
+          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip
           test -f $GITHUB_WORKSPACE/ip/CF_gpio_config/rtl/CF_gpio_config.v
 
       - name: Download PDK Tarball
