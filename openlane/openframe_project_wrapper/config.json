@@ -1,105 +1,95 @@
 {
+    "meta": {
+        "version": 2,
+        "flow": "Classic",
+        "substituting_steps": {
+            "Odb.ApplyDEFTemplate": null,
+            "-OpenROAD.GeneratePDN": "Odb.ApplyDEFTemplate"
+        }
+    },
+    "// power.json": "VDD_NETS, GND_NETS and PDN_MACRO_CONNECTIONS come from power.json, which must be passed to LibreLane before this file.",
     "DESIGN_NAME": "openframe_project_wrapper",
-    "VERILOG_DEFINES": "PnR",
+    "VERILOG_DEFINES": [
+        "PnR"
+    ],
     "VERILOG_FILES": [
-        "dir::/../../verilog/rtl/openframe_project_netlists.v",
-        "dir::/../../verilog/rtl/openframe_project_wrapper.v",
-        "dir::/../../verilog/rtl/openframe_gpio.v",
+        "dir::../../verilog/rtl/openframe_project_netlists.v",
+        "dir::../../verilog/rtl/openframe_project_wrapper.v",
+        "dir::../../verilog/rtl/openframe_gpio.v",
         "dir::../../ip/CF_gpio_config/rtl/CF_gpio_config.v"
     ],
-    "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/gl/user_proj_timer.v",
-        "dir::../../verilog/gl/vccd1_connection.v",
-        "dir::../../verilog/gl/vssd1_connection.v"
-    ],
-    "EXTRA_LEFS": [
-        "dir::../../lef/user_proj_timer.lef",
-        "dir::../../lef/vccd1_connection.lef",
-        "dir::../../lef/vssd1_connection.lef"
-    ],
-    "EXTRA_GDS_FILES": [
-        "dir::../../gds/user_proj_timer.gds",
-        "dir::../../gds/vccd1_connection.gds",
-        "dir::../../gds/vssd1_connection.gds"
-    ],
-    "EXTRA_LIBS": "dir::../../lib/user_proj_timer.lib",
-    "EXTRA_SPEFS": [
-        "user_proj_timer",
-        "dir::../../spef/multicorner/user_proj_timer.min.spef",
-        "dir::../../spef/multicorner/user_proj_timer.nom.spef",
-        "dir::../../spef/multicorner/user_proj_timer.max.spef"
-    ],
+    "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
+    "MACROS": {
+        "user_proj_timer": {
+            "instances": {
+                "mprj": {
+                    "location": [2850, 235],
+                    "orientation": "FN"
+                }
+            },
+            "gds": ["dir::../../gds/user_proj_timer.gds"],
+            "lef": ["dir::../../lef/user_proj_timer.lef"],
+            "nl": ["dir::../../verilog/gl/user_proj_timer.v"],
+            "pnl": ["dir::../../verilog/gl/user_proj_timer.v"],
+            "lib": {
+                "*": ["dir::../../lib/user_proj_timer.lib"]
+            },
+            "spef": {
+                "min_*": ["dir::../../spef/multicorner/user_proj_timer.min.spef"],
+                "nom_*": ["dir::../../spef/multicorner/user_proj_timer.nom.spef"],
+                "max_*": ["dir::../../spef/multicorner/user_proj_timer.max.spef"]
+            }
+        }
+    },
+    "SYNTH_ELABORATE_ONLY": true,
+    "ERROR_ON_NL_ASSIGN_STATEMENTS": false,
+    "ERROR_ON_SYNTH_CHECKS": false,
     "MAX_TRANSITION_CONSTRAINT": 0.5,
-    "ERROR_ON_NL_ASSIGN_STATEMENTS": 0,
-    "QUIT_ON_SYNTH_CHECKS": 0,
-    "FP_PDN_CHECK_NODES": 0,
-    "SYNTH_ELABORATE_ONLY": 1,
-    "PL_RANDOM_GLB_PLACEMENT": 1,
-    "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
-    "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
-    "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
-    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
-    "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
-    "RUN_CTS": 0,
-    "FP_PDN_ENABLE_RAILS": 0,
-    "GRT_REPAIR_ANTENNAS": 0,
-    "RUN_HEURISTIC_DIODE_INSERTION": 0,
-    "RUN_FILL_INSERTION": 0,
-    "RUN_TAP_DECAP_INSERTION": 0,
-    "FP_PDN_VPITCH": 40,
-    "FP_PDN_HPITCH": 40,
-    "FP_PDN_VOFFSET": 18.43,
-    "FP_PDN_HOFFSET": 22.83,
-    "MAGIC_ZEROIZE_ORIGIN": 0,
-    "FP_SIZING": "absolute",
-    "RUN_CVC": 0,
-    "FP_PDN_CORE_RING": 1,
-    "FP_PDN_CORE_RING_VWIDTH": 20,
-    "FP_PDN_CORE_RING_HWIDTH": 20,
-    "FP_PDN_CORE_RING_VOFFSET": -4,
-    "FP_PDN_CORE_RING_HOFFSET": -4,
-    "FP_PDN_CORE_RING_VSPACING": 2.4,
-    "FP_PDN_CORE_RING_HSPACING": 2.4,
-    "FP_PDN_VWIDTH": 6.4,
-    "FP_PDN_HWIDTH": 6.4,
-    "FP_PDN_HSPACING": 3.2,
-    "FP_PDN_VSPACING": 3.2,
-    "VDD_NETS": [
-        "vccd1"
+    "RUN_POST_GPL_DESIGN_REPAIR": false,
+    "RUN_POST_CTS_RESIZER_TIMING": false,
+    "GRT_RESIZER_TIMING_OPTIMIZATIONS": false,
+    "GRT_RESIZER_DESIGN_OPTIMIZATIONS": false,
+    "DESIGN_REPAIR_BUFFER_INPUT_PORTS": false,
+    "RUN_CTS": false,
+    "RUN_ANTENNA_REPAIR": false,
+    "// DRT_ANTENNA_REPAIR_ITERS": "The wrapper has no stdcell rails or taps, so router-inserted diodes would be unpowered; at chip level these nets end on pad diffusion.",
+    "DRT_ANTENNA_REPAIR_ITERS": 0,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
+    "RUN_FILL_INSERTION": false,
+    "RUN_TAP_ENDCAP_INSERTION": false,
+    "RUN_IRDROP_REPORT": false,
+    "RUN_LINTER": false,
+    "RUN_LVS": true,
+    "// MAGIC_EXT_ABSTRACT_CELLS": "User macros are extracted as black boxes: separate ground domains share the p-substrate, so a flat extraction merges them. Each macro gets its own LVS when it is hardened; cf precheck runs full LVS with EXTRACT_CREATE_SUBCUT (lvs/openframe_project_wrapper/lvs_config.json). List every user macro here and in that file.",
+    "MAGIC_EXT_ABSTRACT_CELLS": [
+        "^user_proj_timer$"
     ],
-    "GND_NETS": [
-        "vssd1"
-    ],
-    "DIE_AREA": "0 0 3166.63 4766.630",
-    "CORE_AREA": "40 40 3126.63 4726.630",
-    "RUN_IRDROP_REPORT": 0,
-    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 vccd1 vssd1",
-    "FP_PDN_CFG": "dir::pdn_cfg.tcl",
-    "FP_DEF_TEMPLATE": "dir::fixed_dont_change/openframe_project_wrapper.def",
-    "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
-    "RUN_LINTER": 0,
-    "RUN_LVS": 0,
-    "MAGIC_DEF_LABELS": 0,
+    "LVS_INCLUDE_MARCO_NETLISTS": false,
+    "MAGIC_ZEROIZE_ORIGIN": false,
+    "MAGIC_DEF_LABELS": false,
     "MAGIC_EXT_USE_GDS": true,
-    "// ApplyDEFTemplate": "permissive because of a bug in LibreLane where the power pins have to be at least declared in strict mode.",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": [0, 0, 3166.63, 4766.63],
+    "CORE_AREA": [60, 60, 3106.63, 4706.63],
+    "FP_DEF_TEMPLATE": "dir::fixed_dont_change/openframe_project_wrapper.def",
     "FP_TEMPLATE_COPY_POWER_PINS": true,
-    "FP_TEMPLATE_MATCH_MODE": "permissive",
-    "// CustomApplyDEFTemplate": "deprecated, for use with the plugin",
-    "FP_TEMPLATE_PINS": [
-        "vccd1",
-        "vssd1",
-        "vccd",
-        "vssd",
-        "vccd2",
-        "vssd2",
-        "vssa",
-        "vdda",
-        "vssa1",
-        "vdda1",
-        "vssa2",
-        "vdda2",
-        "vddio",
-        "vssio"
-    ]
+    "PDN_CFG": "dir::pdn_cfg.tcl",
+    "PDN_MULTILAYER": true,
+    "PDN_ENABLE_RAILS": false,
+    "PDN_ENABLE_PINS": false,
+    "PDN_VWIDTH": 3.1,
+    "PDN_HWIDTH": 3.1,
+    "PDN_VSPACING": 15.5,
+    "PDN_HSPACING": 15.5,
+    "PDN_VPITCH": 180,
+    "PDN_HPITCH": 180,
+    "PDN_VOFFSET": 5,
+    "PDN_HOFFSET": 5,
+    "PDN_CORE_RING": true,
+    "PDN_CORE_RING_VWIDTH": 5,
+    "PDN_CORE_RING_HWIDTH": 5,
+    "PDN_CORE_RING_VSPACING": 1.7,
+    "PDN_CORE_RING_HSPACING": 1.7,
+    "PDN_CORE_RING_VOFFSET": 2,
+    "PDN_CORE_RING_HOFFSET": 2
 }

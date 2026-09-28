@@ -123,9 +123,6 @@ module openframe_project_wrapper (
 	    /* analog_noesd_io: analog signals			*/
 	);
 
-	(* keep *) vccd1_connection vccd1_connection ();
-	(* keep *) vssd1_connection vssd1_connection ();
-
 	// Pad configuration is generated from the project.openframe spec in
 	// .cf/project.json by `cf openframe generate` (see verilog/rtl/openframe_gpio.v).
 	// Do not instantiate CF_gpio_config here; change the spec and regenerate.

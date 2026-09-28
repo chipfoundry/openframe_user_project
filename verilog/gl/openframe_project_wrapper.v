@@ -3,7 +3,6 @@ module openframe_project_wrapper (por_l,
     porb_l,
     resetb_h,
     resetb_l,
-    vssd1,
     vccd1,
     vdda1,
     vssa1,
@@ -13,6 +12,7 @@ module openframe_project_wrapper (por_l,
     vssa2,
     vdda2,
     vdda,
+    vssd1,
     vssd2,
     vccd,
     vssa,
@@ -42,7 +42,6 @@ module openframe_project_wrapper (por_l,
  input porb_l;
  input resetb_h;
  input resetb_l;
- inout vssd1;
  inout vccd1;
  inout vdda1;
  inout vssa1;
@@ -52,6 +51,7 @@ module openframe_project_wrapper (por_l,
  inout vssa2;
  inout vdda2;
  inout vdda;
+ inout vssd1;
  inout vssd2;
  inout vccd;
  inout vssa;
@@ -93,8 +93,6 @@ module openframe_project_wrapper (por_l,
     gpio_out[4],
     gpio_out[3],
     gpio_out[2]}));
- vccd1_connection vccd1_connection ();
- vssd1_connection vssd1_connection ();
  assign gpio_dm0[0] = gpio_loopback_one[0];
  assign gpio_oeb[0] = gpio_loopback_one[0];
  assign gpio_dm1[10] = gpio_loopback_one[10];

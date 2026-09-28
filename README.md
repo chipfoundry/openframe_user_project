@@ -139,10 +139,8 @@ Generated files (do not edit by hand; they carry a `spec-sha256` of the spec the
 - `openlane/openframe_project_wrapper/power.json`: `VDD_NETS`, `GND_NETS` and `PDN_MACRO_CONNECTIONS`
   for the wrapper PDN.
 
-> [!NOTE]
-> The current wrapper flow (LibreLane 2.4.x, `config.json`) does not read `power.json` yet; the wrapper
-> still uses the single `vccd1`/`vssd1` domain set in `config.json`. Multi-domain power from the spec
-> arrives with the LibreLane 3.x wrapper PDN.
+The wrapper flow reads `power.json` (`openlane/Makefile` passes it to LibreLane before `config.json`),
+so the domains in the spec drive the wrapper PDN. Keys starting with `//` are comments and are ignored.
 
 `verilog/rtl/openframe_project_wrapper.v` instantiates `openframe_gpio` and wires its named ports to your
 macro. When you rename or add signals in the spec, update those connections in the wrapper. Pads in
@@ -163,7 +161,9 @@ cf harden <macro_name>   # Harden a specific macro
 Instantiate your module(s) in `verilog/rtl/openframe_project_wrapper.v` and connect them to the named
 ports of the generated `openframe_gpio` instance (see above).
 
-Update `openlane/openframe_project_wrapper/config.json` environment variables (`VERILOG_FILES_BLACKBOX`, `EXTRA_LEFS`, `EXTRA_GDS_FILES`) to point to your new macros.
+Add each macro to `MACROS` in `openlane/openframe_project_wrapper/config.json` (views and instance
+placement), and give every instance a domain in the spec's `power.macros` so it appears in
+`PDN_MACRO_CONNECTIONS`.
 
 #### Wrapper Hardening
 Finalize the top-level user project:
@@ -175,8 +175,16 @@ cf harden openframe_project_wrapper
 ### Important Notes
 
 **Connecting to Power:**
-   - Ensure your design is connected to power using the power pins on the wrapper.
-   - Use the `vccd1_connection` and `vssd1_connection` macros, which contain the necessary vias and nets for power connections.
+   - The wrapper PDN (`openlane/openframe_project_wrapper/pdn_cfg.tcl`) builds one core ring per net in
+     `VDD_NETS`/`GND_NETS` plus a met4/met5 strap mesh, and ties every padframe pin of those nets to its
+     ring. Padframe supplies that are not enabled in the spec stay unconnected.
+   - Harden each user macro with a core ring (`PDN_MULTILAYER: true`, `PDN_CORE_RING: true`; see
+     `openlane/user_proj_timer/config.json`). The wrapper straps stop on that ring and never enter the
+     macro, so the macro's internal strap pitch is independent of the wrapper. The flow stops with an
+     error if a macro has no ring.
+   - Alternative (hierarchical method): a macro with `PDN_MULTILAYER: false` exposes met4 straps only.
+     This needs a custom `pdn_cfg.tcl` that lets the wrapper's met5 straps cross the macro, and those
+     straps must intersect the macro's met4 straps.
 
 ### Verification
 
@@ -223,6 +231,6 @@ cf precheck --checks license --checks makefile  # Run specific checks only
 - [ ] Full Chip Simulation passes for both RTL and GL.
 - [ ] Hardened Macros are LVS and DRC clean.
 - [ ] openframe_project_wrapper matches the required pin order/template.
-- [ ] Design is properly connected to power (vccd1/vssd1).
+- [ ] Every macro is assigned a power domain in the spec, and the wrapper is LVS clean.
 - [ ] Design passes the local cf precheck.
 - [ ] Documentation (this README) is updated with project-specific details.

@@ -1,0 +1,1438 @@
+Netgen 1.5.316 compiled on Tue Feb 10 11:09:08 UTC 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
+Creating placeholder cell definition.
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'...
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_2.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'...
+Reading SPICE netlist file '/home/ubuntu/repos/openframe_user_project/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'...
+Call to undefined subcircuit sky130_fd_pr__res_generic_po
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nand2_2
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_sc_hd__nor2_2
+Creating placeholder cell definition.
+Reading Verilog netlist file '/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/runs/final/35-openroad-detailedrouting/openframe_project_wrapper.pnl.v'...
+Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
+Creating placeholder cell definition for module user_proj_timer.
+Treating empty subcircuits as black-box cells
+Generating JSON file result
+
+Reading setup file /nix/store/8y4m6wgn5kqlbig1qwnwbxijqqp0jwib-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/netgen/setup.tcl
+
+Model sky130_fd_pr__res_generic_po pin 1 == 2
+No property value found for device sky130_fd_pr__res_generic_po
+No property mult found for device sky130_fd_pr__res_generic_po
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+Model sky130_fd_pr__special_nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__special_nfet_01v8
+No property sa found for device sky130_fd_pr__special_nfet_01v8
+No property sb found for device sky130_fd_pr__special_nfet_01v8
+No property sd found for device sky130_fd_pr__special_nfet_01v8
+No property nf found for device sky130_fd_pr__special_nfet_01v8
+No property nrd found for device sky130_fd_pr__special_nfet_01v8
+No property nrs found for device sky130_fd_pr__special_nfet_01v8
+No property area found for device sky130_fd_pr__special_nfet_01v8
+No property perim found for device sky130_fd_pr__special_nfet_01v8
+No property topography found for device sky130_fd_pr__special_nfet_01v8
+Model sky130_fd_pr__special_nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__special_nfet_01v8
+No property ad found for device sky130_fd_pr__special_nfet_01v8
+No property ps found for device sky130_fd_pr__special_nfet_01v8
+No property pd found for device sky130_fd_pr__special_nfet_01v8
+No property mult found for device sky130_fd_pr__special_nfet_01v8
+No property sa found for device sky130_fd_pr__special_nfet_01v8
+No property sb found for device sky130_fd_pr__special_nfet_01v8
+No property sd found for device sky130_fd_pr__special_nfet_01v8
+No property nf found for device sky130_fd_pr__special_nfet_01v8
+No property nrd found for device sky130_fd_pr__special_nfet_01v8
+No property nrs found for device sky130_fd_pr__special_nfet_01v8
+No property area found for device sky130_fd_pr__special_nfet_01v8
+No property perim found for device sky130_fd_pr__special_nfet_01v8
+No property topography found for device sky130_fd_pr__special_nfet_01v8
+Model sky130_fd_pr__special_pfet_01v8_hvt pin 1 == 3
+No property as found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property ad found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property ps found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property pd found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property mult found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property area found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__special_pfet_01v8_hvt
+No property value found for device sky130_fd_pr__diode_pw2nd_05v5
+No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
+No property value found for device sky130_fd_pr__diode_pw2nd_05v5
+No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
+Matching pins of sky130_fd_pr__nfet_01v8 in circuits 1 and 2
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Matching pins of sky130_fd_pr__pfet_01v8_hvt in circuits 1 and 2
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Matching pins of sky130_fd_pr__diode_pw2nd_05v5 in circuits 1 and 2
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pw2nd_05v5  |Circuit 2: sky130_fd_pr__diode_pw2nd_05v5  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Matching pins of sky130_fd_pr__special_nfet_01v8 in circuits 1 and 2
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__special_nfet_01v8 |Circuit 2: sky130_fd_pr__special_nfet_01v8 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hd__a211o_2 and CO_sky130_fd_sc_hd__a211o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a211o_2 in circuit 1 and sky130_fd_sc_hd__a211o_2 in circuit 2
+Device classes sky130_fd_sc_hd__or4bb_2 and CO_sky130_fd_sc_hd__or4bb_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__or4bb_2 in circuit 1 and sky130_fd_sc_hd__or4bb_2 in circuit 2
+Device classes sky130_fd_sc_hd__a2bb2o_2 and CO_sky130_fd_sc_hd__a2bb2o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a2bb2o_2 in circuit 1 and sky130_fd_sc_hd__a2bb2o_2 in circuit 2
+Device classes sky130_fd_sc_hd__nor2_2 and CO_sky130_fd_sc_hd__nor2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nor2_2 in circuit 1 and sky130_fd_sc_hd__nor2_2 in circuit 2
+Device classes sky130_fd_sc_hd__a41o_2 and CO_sky130_fd_sc_hd__a41o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a41o_2 in circuit 1 and sky130_fd_sc_hd__a41o_2 in circuit 2
+Device classes sky130_fd_sc_hd__a31o_2 and CO_sky130_fd_sc_hd__a31o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a31o_2 in circuit 1 and sky130_fd_sc_hd__a31o_2 in circuit 2
+Device classes sky130_fd_sc_hd__a21o_2 and CO_sky130_fd_sc_hd__a21o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a21o_2 in circuit 1 and sky130_fd_sc_hd__a21o_2 in circuit 2
+Device classes sky130_fd_sc_hd__and4b_2 and CO_sky130_fd_sc_hd__and4b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and4b_2 in circuit 1 and sky130_fd_sc_hd__and4b_2 in circuit 2
+Device classes sky130_fd_sc_hd__o21ai_2 and CO_sky130_fd_sc_hd__o21ai_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o21ai_2 in circuit 1 and sky130_fd_sc_hd__o21ai_2 in circuit 2
+Device classes sky130_fd_sc_hd__a21oi_2 and CO_sky130_fd_sc_hd__a21oi_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a21oi_2 in circuit 1 and sky130_fd_sc_hd__a21oi_2 in circuit 2
+Device classes sky130_ef_sc_hd__decap_40_12 and CO_sky130_ef_sc_hd__decap_40_12 are equivalent.
+Custom: Equating CO_sky130_ef_sc_hd__decap_40_12 in circuit 1 and sky130_ef_sc_hd__decap_40_12 in circuit 2
+Device classes sky130_fd_sc_hd__dlygate4sd3_1 and CO_sky130_fd_sc_hd__dlygate4sd3_1 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__dlygate4sd3_1 in circuit 1 and sky130_fd_sc_hd__dlygate4sd3_1 in circuit 2
+Device classes sky130_fd_sc_hd__clkbuf_8 and CO_sky130_fd_sc_hd__clkbuf_8 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__clkbuf_8 in circuit 1 and sky130_fd_sc_hd__clkbuf_8 in circuit 2
+Device classes sky130_fd_sc_hd__xor2_2 and CO_sky130_fd_sc_hd__xor2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__xor2_2 in circuit 1 and sky130_fd_sc_hd__xor2_2 in circuit 2
+Device classes sky130_fd_sc_hd__mux4_2 and CO_sky130_fd_sc_hd__mux4_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__mux4_2 in circuit 1 and sky130_fd_sc_hd__mux4_2 in circuit 2
+Device classes sky130_fd_sc_hd__and4_2 and CO_sky130_fd_sc_hd__and4_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and4_2 in circuit 1 and sky130_fd_sc_hd__and4_2 in circuit 2
+Device classes sky130_fd_sc_hd__or4_2 and CO_sky130_fd_sc_hd__or4_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__or4_2 in circuit 1 and sky130_fd_sc_hd__or4_2 in circuit 2
+Device classes sky130_fd_sc_hd__buf_2 and CO_sky130_fd_sc_hd__buf_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__buf_2 in circuit 1 and sky130_fd_sc_hd__buf_2 in circuit 2
+Device classes sky130_fd_sc_hd__buf_4 and CO_sky130_fd_sc_hd__buf_4 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__buf_4 in circuit 1 and sky130_fd_sc_hd__buf_4 in circuit 2
+Device classes sky130_fd_sc_hd__clkdlybuf4s25_1 and CO_sky130_fd_sc_hd__clkdlybuf4s25_1 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__clkdlybuf4s25_1 in circuit 1 and sky130_fd_sc_hd__clkdlybuf4s25_1 in circuit 2
+Device classes sky130_fd_sc_hd__buf_6 and CO_sky130_fd_sc_hd__buf_6 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__buf_6 in circuit 1 and sky130_fd_sc_hd__buf_6 in circuit 2
+Device classes sky130_fd_sc_hd__buf_8 and CO_sky130_fd_sc_hd__buf_8 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__buf_8 in circuit 1 and sky130_fd_sc_hd__buf_8 in circuit 2
+Device classes sky130_fd_sc_hd__nand4_2 and CO_sky130_fd_sc_hd__nand4_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nand4_2 in circuit 1 and sky130_fd_sc_hd__nand4_2 in circuit 2
+Device classes sky130_fd_sc_hd__and3b_2 and CO_sky130_fd_sc_hd__and3b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and3b_2 in circuit 1 and sky130_fd_sc_hd__and3b_2 in circuit 2
+Device classes sky130_fd_sc_hd__dfrtp_2 and CO_sky130_fd_sc_hd__dfrtp_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__dfrtp_2 in circuit 1 and sky130_fd_sc_hd__dfrtp_2 in circuit 2
+Device classes sky130_fd_sc_hd__inv_2 and CO_sky130_fd_sc_hd__inv_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__inv_2 in circuit 1 and sky130_fd_sc_hd__inv_2 in circuit 2
+Device classes sky130_fd_sc_hd__clkbuf_16 and CO_sky130_fd_sc_hd__clkbuf_16 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__clkbuf_16 in circuit 1 and sky130_fd_sc_hd__clkbuf_16 in circuit 2
+Device classes sky130_fd_sc_hd__buf_12 and CO_sky130_fd_sc_hd__buf_12 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__buf_12 in circuit 1 and sky130_fd_sc_hd__buf_12 in circuit 2
+Device classes sky130_fd_sc_hd__and3_2 and CO_sky130_fd_sc_hd__and3_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and3_2 in circuit 1 and sky130_fd_sc_hd__and3_2 in circuit 2
+Device classes sky130_fd_sc_hd__nand3b_2 and CO_sky130_fd_sc_hd__nand3b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nand3b_2 in circuit 1 and sky130_fd_sc_hd__nand3b_2 in circuit 2
+Device classes sky130_fd_sc_hd__nand3_2 and CO_sky130_fd_sc_hd__nand3_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nand3_2 in circuit 1 and sky130_fd_sc_hd__nand3_2 in circuit 2
+Device classes sky130_fd_sc_hd__a211oi_2 and CO_sky130_fd_sc_hd__a211oi_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a211oi_2 in circuit 1 and sky130_fd_sc_hd__a211oi_2 in circuit 2
+Device classes sky130_fd_sc_hd__o21ba_2 and CO_sky130_fd_sc_hd__o21ba_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o21ba_2 in circuit 1 and sky130_fd_sc_hd__o21ba_2 in circuit 2
+Device classes sky130_fd_sc_hd__and2b_2 and CO_sky130_fd_sc_hd__and2b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and2b_2 in circuit 1 and sky130_fd_sc_hd__and2b_2 in circuit 2
+Device classes sky130_fd_sc_hd__mux2_1 and CO_sky130_fd_sc_hd__mux2_1 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__mux2_1 in circuit 1 and sky130_fd_sc_hd__mux2_1 in circuit 2
+Device classes sky130_fd_sc_hd__decap_3 and CO_sky130_fd_sc_hd__decap_3 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__decap_3 in circuit 1 and sky130_fd_sc_hd__decap_3 in circuit 2
+Device classes sky130_fd_sc_hd__and2_2 and CO_sky130_fd_sc_hd__and2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__and2_2 in circuit 1 and sky130_fd_sc_hd__and2_2 in circuit 2
+Device classes sky130_fd_sc_hd__or2_2 and CO_sky130_fd_sc_hd__or2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__or2_2 in circuit 1 and sky130_fd_sc_hd__or2_2 in circuit 2
+Device classes sky130_fd_sc_hd__or4b_2 and CO_sky130_fd_sc_hd__or4b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__or4b_2 in circuit 1 and sky130_fd_sc_hd__or4b_2 in circuit 2
+Device classes sky130_fd_sc_hd__nand2b_2 and CO_sky130_fd_sc_hd__nand2b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nand2b_2 in circuit 1 and sky130_fd_sc_hd__nand2b_2 in circuit 2
+Device classes sky130_fd_sc_hd__a311oi_2 and CO_sky130_fd_sc_hd__a311oi_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a311oi_2 in circuit 1 and sky130_fd_sc_hd__a311oi_2 in circuit 2
+Device classes sky130_fd_sc_hd__nand2_2 and CO_sky130_fd_sc_hd__nand2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nand2_2 in circuit 1 and sky130_fd_sc_hd__nand2_2 in circuit 2
+Device classes sky130_fd_sc_hd__o32a_2 and CO_sky130_fd_sc_hd__o32a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o32a_2 in circuit 1 and sky130_fd_sc_hd__o32a_2 in circuit 2
+Device classes sky130_fd_sc_hd__o22a_2 and CO_sky130_fd_sc_hd__o22a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o22a_2 in circuit 1 and sky130_fd_sc_hd__o22a_2 in circuit 2
+Device classes sky130_fd_sc_hd__o2bb2a_2 and CO_sky130_fd_sc_hd__o2bb2a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o2bb2a_2 in circuit 1 and sky130_fd_sc_hd__o2bb2a_2 in circuit 2
+Device classes sky130_fd_sc_hd__or3b_2 and CO_sky130_fd_sc_hd__or3b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__or3b_2 in circuit 1 and sky130_fd_sc_hd__or3b_2 in circuit 2
+Device classes sky130_fd_sc_hd__xnor2_2 and CO_sky130_fd_sc_hd__xnor2_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__xnor2_2 in circuit 1 and sky130_fd_sc_hd__xnor2_2 in circuit 2
+Device classes sky130_fd_sc_hd__nor3b_2 and CO_sky130_fd_sc_hd__nor3b_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__nor3b_2 in circuit 1 and sky130_fd_sc_hd__nor3b_2 in circuit 2
+Device classes sky130_fd_sc_hd__o221a_2 and CO_sky130_fd_sc_hd__o221a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o221a_2 in circuit 1 and sky130_fd_sc_hd__o221a_2 in circuit 2
+Device classes sky130_fd_sc_hd__a22o_2 and CO_sky130_fd_sc_hd__a22o_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__a22o_2 in circuit 1 and sky130_fd_sc_hd__a22o_2 in circuit 2
+Device classes sky130_fd_sc_hd__o211a_2 and CO_sky130_fd_sc_hd__o211a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o211a_2 in circuit 1 and sky130_fd_sc_hd__o211a_2 in circuit 2
+Device classes sky130_fd_sc_hd__o21a_2 and CO_sky130_fd_sc_hd__o21a_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__o21a_2 in circuit 1 and sky130_fd_sc_hd__o21a_2 in circuit 2
+Device classes sky130_fd_sc_hd__diode_2 and CO_sky130_fd_sc_hd__diode_2 are equivalent.
+Custom: Equating CO_sky130_fd_sc_hd__diode_2 in circuit 1 and sky130_fd_sc_hd__diode_2 in circuit 2
+Comparison output logged to file /home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/runs/final/59-netgen-lvs/reports/lvs.netgen.rpt
+Logging to file "/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/runs/final/59-netgen-lvs/reports/lvs.netgen.rpt" enabled
+
+Contents of circuit 1:  Circuit: 'user_proj_timer'
+Circuit user_proj_timer contains 0 device instances.
+Circuit contains 0 nets, and 15 disconnected pins.
+Contents of circuit 2:  Circuit: 'user_proj_timer'
+Circuit user_proj_timer contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit user_proj_timer contains no devices.
+Pins gpio_analog_pol[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[43] and gpio_inp_dis[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[42] and gpio_inp_dis[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[41] and gpio_inp_dis[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[40] and gpio_inp_dis[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[39] and gpio_inp_dis[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[38] and gpio_inp_dis[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[37] and gpio_inp_dis[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[36] and gpio_inp_dis[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[35] and gpio_inp_dis[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[34] and gpio_inp_dis[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[33] and gpio_inp_dis[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[32] and gpio_inp_dis[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[31] and gpio_inp_dis[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[30] and gpio_inp_dis[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[29] and gpio_inp_dis[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[28] and gpio_inp_dis[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[27] and gpio_inp_dis[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[26] and gpio_inp_dis[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[25] and gpio_inp_dis[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[24] and gpio_inp_dis[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[23] and gpio_inp_dis[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[22] and gpio_inp_dis[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[21] and gpio_inp_dis[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[20] and gpio_inp_dis[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[19] and gpio_inp_dis[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[18] and gpio_inp_dis[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[17] and gpio_inp_dis[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[16] and gpio_inp_dis[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[15] and gpio_inp_dis[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[14] and gpio_inp_dis[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[13] and gpio_inp_dis[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[0] and gpio_dm0[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[43] and gpio_inp_dis[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[42] and gpio_inp_dis[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[41] and gpio_inp_dis[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[40] and gpio_inp_dis[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[39] and gpio_inp_dis[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[38] and gpio_inp_dis[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[37] and gpio_inp_dis[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[36] and gpio_inp_dis[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[35] and gpio_inp_dis[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[34] and gpio_inp_dis[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[33] and gpio_inp_dis[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[32] and gpio_inp_dis[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[31] and gpio_inp_dis[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[30] and gpio_inp_dis[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[29] and gpio_inp_dis[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[28] and gpio_inp_dis[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[27] and gpio_inp_dis[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[26] and gpio_inp_dis[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[25] and gpio_inp_dis[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[24] and gpio_inp_dis[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[23] and gpio_inp_dis[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[22] and gpio_inp_dis[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[21] and gpio_inp_dis[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[20] and gpio_inp_dis[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[19] and gpio_inp_dis[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[18] and gpio_inp_dis[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[17] and gpio_inp_dis[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[16] and gpio_inp_dis[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[15] and gpio_inp_dis[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[14] and gpio_inp_dis[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[13] and gpio_inp_dis[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[0] and gpio_dm0[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+
+Contents of circuit 1:  Circuit: 'openframe_project_wrapper'
+Circuit openframe_project_wrapper contains 1 device instances.
+  Class: user_proj_timer       instances:   1
+Circuit contains 15 nets, and 333 disconnected pins.
+Contents of circuit 2:  Circuit: 'openframe_project_wrapper'
+Circuit openframe_project_wrapper contains 1 device instances.
+  Class: user_proj_timer       instances:   1
+Circuit contains 103 nets, and 223 disconnected pins.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 15 nets,    Circuit 2 contains 15 nets.
+
+Pins gpio_analog_pol[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_pol[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_analog_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm0[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm1[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_dm2[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_holdover[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_ib_mode_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_inp_dis[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[43] and gpio_inp_dis[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[42] and gpio_inp_dis[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[41] and gpio_inp_dis[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[40] and gpio_inp_dis[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[39] and gpio_inp_dis[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[38] and gpio_inp_dis[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[37] and gpio_inp_dis[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[36] and gpio_inp_dis[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[35] and gpio_inp_dis[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[34] and gpio_inp_dis[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[33] and gpio_inp_dis[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[32] and gpio_inp_dis[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[31] and gpio_inp_dis[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[30] and gpio_inp_dis[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[29] and gpio_inp_dis[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[28] and gpio_inp_dis[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[27] and gpio_inp_dis[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[26] and gpio_inp_dis[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[25] and gpio_inp_dis[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[24] and gpio_inp_dis[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[23] and gpio_inp_dis[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[22] and gpio_inp_dis[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[21] and gpio_inp_dis[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[20] and gpio_inp_dis[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[19] and gpio_inp_dis[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[18] and gpio_inp_dis[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[17] and gpio_inp_dis[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[16] and gpio_inp_dis[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[15] and gpio_inp_dis[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[14] and gpio_inp_dis[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[13] and gpio_inp_dis[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[12] and gpio_dm1[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[11] and gpio_dm1[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[10] and gpio_dm1[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[9] and gpio_dm1[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[8] and gpio_dm1[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[7] and gpio_dm1[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[6] and gpio_dm1[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[5] and gpio_dm1[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[4] and gpio_dm1[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[3] and gpio_dm1[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[2] and gpio_dm1[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_one[0] and gpio_dm0[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_loopback_zero[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[43] and gpio_inp_dis[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[42] and gpio_inp_dis[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[41] and gpio_inp_dis[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[40] and gpio_inp_dis[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[39] and gpio_inp_dis[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[38] and gpio_inp_dis[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[37] and gpio_inp_dis[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[36] and gpio_inp_dis[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[35] and gpio_inp_dis[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[34] and gpio_inp_dis[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[33] and gpio_inp_dis[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[32] and gpio_inp_dis[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[31] and gpio_inp_dis[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[30] and gpio_inp_dis[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[29] and gpio_inp_dis[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[28] and gpio_inp_dis[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[27] and gpio_inp_dis[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[26] and gpio_inp_dis[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[25] and gpio_inp_dis[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[24] and gpio_inp_dis[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[23] and gpio_inp_dis[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[22] and gpio_inp_dis[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[21] and gpio_inp_dis[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[20] and gpio_inp_dis[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[19] and gpio_inp_dis[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[18] and gpio_inp_dis[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[17] and gpio_inp_dis[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[16] and gpio_inp_dis[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[15] and gpio_inp_dis[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[14] and gpio_inp_dis[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[13] and gpio_inp_dis[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_oeb[0] and gpio_dm0[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[1] and gpio_dm0[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_out[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_slow_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[43] and gpio_analog_en[43] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[42] and gpio_analog_en[42] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[41] and gpio_analog_en[41] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[40] and gpio_analog_en[40] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[39] and gpio_analog_en[39] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[38] and gpio_analog_en[38] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[37] and gpio_analog_en[37] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[36] and gpio_analog_en[36] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[35] and gpio_analog_en[35] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[34] and gpio_analog_en[34] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[33] and gpio_analog_en[33] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[32] and gpio_analog_en[32] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[31] and gpio_analog_en[31] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[30] and gpio_analog_en[30] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[29] and gpio_analog_en[29] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[28] and gpio_analog_en[28] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[27] and gpio_analog_en[27] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[26] and gpio_analog_en[26] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[25] and gpio_analog_en[25] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[24] and gpio_analog_en[24] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[23] and gpio_analog_en[23] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[22] and gpio_analog_en[22] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[21] and gpio_analog_en[21] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[20] and gpio_analog_en[20] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[19] and gpio_analog_en[19] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[18] and gpio_analog_en[18] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[17] and gpio_analog_en[17] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[16] and gpio_analog_en[16] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[15] and gpio_analog_en[15] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[14] and gpio_analog_en[14] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[13] and gpio_analog_en[13] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[12] and gpio_analog_en[12] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[11] and gpio_analog_en[11] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[10] and gpio_analog_en[10] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[9] and gpio_analog_en[9] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[8] and gpio_analog_en[8] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[7] and gpio_analog_en[7] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[6] and gpio_analog_en[6] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[5] and gpio_analog_en[5] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[4] and gpio_analog_en[4] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[3] and gpio_analog_en[3] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[2] and gpio_analog_en[2] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[1] and gpio_analog_en[1] are shorted in cell openframe_project_wrapper (1)
+Pins gpio_vtrip_sel[0] and gpio_analog_en[0] are shorted in cell openframe_project_wrapper (1)
+
+Final result: 
+Top level cell failed pin matching.
+
+Logging to file "/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/runs/final/59-netgen-lvs/reports/lvs.netgen.rpt" disabled
+LVS Done.

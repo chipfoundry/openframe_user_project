@@ -13,11 +13,10 @@
 		""
 	],
 	"EXTRACT_CREATE_SUBCUT": [
-		""
+		"user_proj_timer"
 	],
 	"LVS_FLATTEN": [
-		"*vccd1_connection*",
-		"*vssd1_connection*"
+		""
 	],
 	"LVS_NOFLATTEN": [
 		""
@@ -29,8 +28,6 @@
 		""
 	],
 	"LVS_VERILOG_FILES": [
-		"$UPRJ_ROOT/verilog/gl/vccd1_connection.v",
-		"$UPRJ_ROOT/verilog/gl/vssd1_connection.v",
 		"$UPRJ_ROOT/verilog/gl/user_proj_timer.v",
 		"$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
 	],

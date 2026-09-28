@@ -27,7 +27,7 @@ ifeq ($(origin LIBRELANE_RUN_TAG), undefined)
 export LIBRELANE_RUN_TAG := $(shell date '+%y_%m_%d_%H_%M')
 endif
 ifeq ($(origin CF_LIBRELANE_TAG), undefined)
-export CF_LIBRELANE_TAG := CI2511
+export CF_LIBRELANE_TAG := CI2609
 endif
 
 export CARAVEL_ROOT := $(CARAVEL_ROOT)
@@ -80,8 +80,11 @@ $(designs):
 			config="$$config_dir/config.$$ext"; break; \
 		fi; \
 	done; \
+	if [ -n "$$config" ] && [ -f "$$config_dir/power.json" ]; then \
+		config="$$config_dir/power.json $$config"; \
+	fi; \
 	if [ -n "$$config" ]; then \
-		cmd='$(librelane_run) $(librelane_args) --ef-save-views-to $(PROJECT_ROOT) --overwrite "$$config"'; \
+		cmd='$(librelane_run) $(librelane_args) --ef-save-views-to $(PROJECT_ROOT) --overwrite $$config'; \
 		echo "* Running LibreLane on $@ with $$config"; \
 		echo $$cmd; \
 		eval $$cmd; \

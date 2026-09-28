@@ -19,20 +19,20 @@ Clock __VIRTUAL_CLK__
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-2.904738         network latency mprj/wb_clk_i
-        2.904738 network latency mprj/wb_clk_i
+3.880650         network latency mprj/_713_/CLK
+        4.084083 network latency mprj/_683_/CLK
 ---------------
-2.904738 2.904738 latency
-        0.000000 skew
+3.880650 4.084083 latency
+        0.203433 skew
 
 rise -> fall
     min     max
 0.000000 0.000000 source latency
-2.548752         network latency mprj/wb_clk_i
-        2.548752 network latency mprj/wb_clk_i
+3.455468         network latency mprj/_713_/CLK
+        3.612646 network latency mprj/_683_/CLK
 ---------------
-2.548752 2.548752 latency
-        0.000000 skew
+3.455468 3.612646 latency
+        0.157178 skew
 
 
 
