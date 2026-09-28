@@ -157,8 +157,8 @@ jobs:
       - name: Install IPM dependencies
         run: |
           python3 -m pip install --upgrade --no-cache-dir cf-ipm
-          curl -fsSL -o /tmp/verified_IPs.json https://raw.githubusercontent.com/chipfoundry/ipm/main/verified_IPs.json
-          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip --local-file /tmp/verified_IPs.json
+          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip
+          test -f $GITHUB_WORKSPACE/ip/CF_gpio_config/rtl/CF_gpio_config.v
 
       - name: Download PDK Tarball
         uses: actions/download-artifact@v4
@@ -307,6 +307,13 @@ jobs:
           sudo chown -R $USER:$USER ${{ env.MCW_ROOT }}
           tar -xf /tmp/mgmt_core_wrapper.tar -C $MCW_ROOT .
 
+      - name: Install IPM dependencies
+        if: env.RUN_RTL == 'true'
+        run: |
+          python3 -m pip install --upgrade --no-cache-dir cf-ipm
+          ipm install-dep --ip-root $GITHUB_WORKSPACE/ip
+          test -f $GITHUB_WORKSPACE/ip/CF_gpio_config/rtl/CF_gpio_config.v
+
       - name: install cocotb
         if: env.RUN_RTL == 'true'
         run: |
@@ -315,7 +322,7 @@ jobs:
       - name: run RTL verification
         if: env.RUN_RTL == 'true'
         run: |
-          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag rtl_verification
+          cd $GITHUB_WORKSPACE/verilog/dv/cocotb && $GITHUB_WORKSPACE/venv-cocotb/bin/caravel_cocotb --openframe -tl user_proj_tests/user_proj_tests.yaml -verbosity debug --CI -tag rtl_verification
           cnt=$(grep -c "failed" "$GITHUB_WORKSPACE/verilog/dv/cocotb/sim/rtl_verification/runs.log")
           if ! [[ $cnt ]]; then cnt=0; fi
           if [[ $cnt -eq 1 ]]; then exit 0; fi

@@ -75,7 +75,14 @@ cd <project_name>
 cf init
 ```
 
-This creates `.cf/project.json` with project metadata. **This must be run before any other commands**
+This creates `.cf/project.json` with project metadata. **This must be run before any other commands.**
+
+If you are logged in (`cf login`) and this repo is not yet linked to the platform, `cf init` asks which platform action to take:
+
+1. **Link to an existing platform project** (the default). Use this when the design is already registered on the [ChipFoundry platform](https://platform.chipfoundry.io). Init lists your projects and stores the one you pick in `.cf/project.json`. Later commands, including submission, use that project. Linking is the default so a second platform project is not created by accident.
+2. **Create a new platform project**. Use this the first time you register this design. Init asks you to pick a shuttle and creates a Draft project on the platform.
+
+If you are not logged in, `cf init` only writes the local config. Log in, then run `cf init` again or `cf link`. You can change the link later with `cf link` and `cf unlink`.
 
 ### 3. Environment Setup
 Install the ChipFoundry CLI tool and set up the local environment (PDKs, OpenLane, and OpenFrame):
@@ -138,24 +145,27 @@ cf harden openframe_project_wrapper
 ### Verification
 
 #### 1. Simulation
-We use cocotb for functional verification. Ensure your file lists are updated in `verilog/includes/`.
+We use cocotb for functional verification. Tests live under `verilog/dv/cocotb/<test_name>/`. The template includes `hello_world` and `timer`, which checks the example 7-segment clock (`verilog/rtl/timer.v`) on GPIOs 0–12.
 
-Run RTL Simulation:
+`cf verify --all` does not discover tests on its own. It runs the list in `verilog/dv/cocotb/user_proj_tests/user_proj_tests.yaml` (and `user_proj_tests_gl.yaml` for gate-level). Add one entry there for each test you want included. Run `cf setup` (cocotb is installed as part of setup) before the first verify.
 
-```bash
-cf verify <test_name>
-```
-
-Run Gate-Level (GL) Simulation:
+Run one RTL test:
 
 ```bash
-cf verify <test_name> --sim gl
+cf verify timer
 ```
 
-Run all tests:
+Run one Gate-Level (GL) test:
+
+```bash
+cf verify timer --sim gl
+```
+
+Run every test in the list:
 
 ```bash
 cf verify --all
+cf verify --all --sim gl
 ```
 
 ---

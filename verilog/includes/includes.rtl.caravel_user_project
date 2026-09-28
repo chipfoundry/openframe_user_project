@@ -1,25 +1,7 @@
-# Caravel user project includes
--v $(USER_PROJECT_VERILOG)/dv/firmware/spiflash.v
+# OpenFrame user project RTL includes
 -v $(USER_PROJECT_VERILOG)/../ip/CF_gpio_config/rtl/CF_gpio_config.v
--v $(USER_PROJECT_VERILOG)/rtl/openframe_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/rtl/picosoc.v
--v $(USER_PROJECT_VERILOG)/rtl/picorv32.v
--v $(USER_PROJECT_VERILOG)/rtl/spimemio.v
--v $(USER_PROJECT_VERILOG)/rtl/simpleuart.v
--v $(USER_PROJECT_VERILOG)/rtl/clock_routing.v
--v $(USER_PROJECT_VERILOG)/rtl/clock_div.v
--v $(USER_PROJECT_VERILOG)/rtl/housekeeping.v
--v $(USER_PROJECT_VERILOG)/rtl/housekeeping_spi.v
--v $(USER_PROJECT_VERILOG)/rtl/digital_locked_loop.v
--v $(USER_PROJECT_VERILOG)/rtl/dll_controller.v
--v $(USER_PROJECT_VERILOG)/rtl/ring_osc2x13.v
--v $(USER_PROJECT_VERILOG)/rtl/simple_spi_master.v
--v $(USER_PROJECT_VERILOG)/rtl/counter_timer_high.v
--v $(USER_PROJECT_VERILOG)/rtl/counter_timer_low.v
--v $(USER_PROJECT_VERILOG)/rtl/intercon_wb.v
--v $(USER_PROJECT_VERILOG)/rtl/mem_wb.v
--v $(USER_PROJECT_VERILOG)/rtl/gpio_wb.v
--v $(USER_PROJECT_VERILOG)/rtl/gpio_vector_wb.v
--v $(USER_PROJECT_VERILOG)/rtl/debug_regs.v
-
- 
+-v $(USER_PROJECT_VERILOG)/rtl/vccd1_connection.v
+-v $(USER_PROJECT_VERILOG)/rtl/vssd1_connection.v
+-v $(USER_PROJECT_VERILOG)/rtl/timer.v
+-v $(USER_PROJECT_VERILOG)/rtl/user_proj_timer.v
+-v $(USER_PROJECT_VERILOG)/rtl/openframe_project_wrapper.v
