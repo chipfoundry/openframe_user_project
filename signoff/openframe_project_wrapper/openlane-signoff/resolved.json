@@ -106,7 +106,7 @@
     "DIODE_CELL": "sky130_fd_sc_hd__diode_2/DIODE",
     "WELLTAP_CELL": "sky130_fd_sc_hd__tapvpwrvgnd_1",
     "ENDCAP_CELL": "sky130_fd_sc_hd__decap_3",
-    "DESIGN_DIR": "/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper",
+    "DESIGN_DIR": "/home/ubuntu/repos/of-2dom/openlane/openframe_project_wrapper",
     "PDK_ROOT": "/home/ubuntu/repos/openframe_user_project/dependencies/pdks",
     "DESIGN_NAME": "openframe_project_wrapper",
     "PDK": "sky130A",
@@ -114,10 +114,12 @@
     "CLOCK_PORT": null,
     "CLOCK_NET": null,
     "VDD_NETS": [
-        "vccd1"
+        "vccd1",
+        "vccd2"
     ],
     "GND_NETS": [
-        "vssd1"
+        "vssd1",
+        "vssd2"
     ],
     "DIE_AREA": [
         0,
@@ -129,10 +131,10 @@
     "MACROS": {
         "user_proj_timer": {
             "gds": [
-                "/home/ubuntu/repos/openframe_user_project/gds/user_proj_timer.gds"
+                "/home/ubuntu/repos/of-2dom/gds/user_proj_timer.gds"
             ],
             "lef": [
-                "/home/ubuntu/repos/openframe_user_project/lef/user_proj_timer.lef"
+                "/home/ubuntu/repos/of-2dom/lef/user_proj_timer.lef"
             ],
             "instances": {
                 "mprj": {
@@ -141,29 +143,36 @@
                         235
                     ],
                     "orientation": "FN"
+                },
+                "mprj2": {
+                    "location": [
+                        116,
+                        235
+                    ],
+                    "orientation": "N"
                 }
             },
             "vh": [],
             "nl": [
-                "/home/ubuntu/repos/openframe_user_project/verilog/gl/user_proj_timer.v"
+                "/home/ubuntu/repos/of-2dom/verilog/gl/user_proj_timer.v"
             ],
             "pnl": [
-                "/home/ubuntu/repos/openframe_user_project/verilog/gl/user_proj_timer.v"
+                "/home/ubuntu/repos/of-2dom/verilog/gl/user_proj_timer.v"
             ],
             "spef": {
                 "min_*": [
-                    "/home/ubuntu/repos/openframe_user_project/spef/multicorner/user_proj_timer.min.spef"
+                    "/home/ubuntu/repos/of-2dom/spef/multicorner/user_proj_timer.min.spef"
                 ],
                 "nom_*": [
-                    "/home/ubuntu/repos/openframe_user_project/spef/multicorner/user_proj_timer.nom.spef"
+                    "/home/ubuntu/repos/of-2dom/spef/multicorner/user_proj_timer.nom.spef"
                 ],
                 "max_*": [
-                    "/home/ubuntu/repos/openframe_user_project/spef/multicorner/user_proj_timer.max.spef"
+                    "/home/ubuntu/repos/of-2dom/spef/multicorner/user_proj_timer.max.spef"
                 ]
             },
             "lib": {
                 "*": [
-                    "/home/ubuntu/repos/openframe_user_project/lib/user_proj_timer.lib"
+                    "/home/ubuntu/repos/of-2dom/lib/user_proj_timer.lib"
                 ]
             },
             "spice": [],
@@ -218,10 +227,10 @@
     "RUN_EQY": false,
     "RUN_LINTER": false,
     "VERILOG_FILES": [
-        "/home/ubuntu/repos/openframe_user_project/verilog/rtl/openframe_project_netlists.v",
-        "/home/ubuntu/repos/openframe_user_project/verilog/rtl/openframe_project_wrapper.v",
-        "/home/ubuntu/repos/openframe_user_project/verilog/rtl/openframe_gpio.v",
-        "/home/ubuntu/repos/openframe_user_project/ip/CF_gpio_config/rtl/CF_gpio_config.v"
+        "/home/ubuntu/repos/of-2dom/verilog/rtl/openframe_project_netlists.v",
+        "/home/ubuntu/repos/of-2dom/verilog/rtl/openframe_project_wrapper.v",
+        "/home/ubuntu/repos/of-2dom/verilog/rtl/openframe_gpio.v",
+        "/home/ubuntu/repos/of-2dom/ip/CF_gpio_config/rtl/CF_gpio_config.v"
     ],
     "VERILOG_INCLUDE_DIRS": null,
     "VERILOG_POWER_DEFINE": "USE_POWER_PINS",
@@ -296,7 +305,8 @@
     "CLOCK_WIRE_RC_LAYERS": null,
     "PDN_CONNECT_MACROS_TO_GRID": true,
     "PDN_MACRO_CONNECTIONS": [
-        "mprj vccd1 vssd1 vccd1 vssd1"
+        "mprj vccd1 vssd1 vccd1 vssd1",
+        "mprj2 vccd2 vssd2 vccd1 vssd1"
     ],
     "PDN_ENABLE_GLOBAL_CONNECTIONS": true,
     "STA_EXTRA_CORNER_TCL_FILE": null,
@@ -329,7 +339,7 @@
     "FP_PRUNE_THRESHOLD": null,
     "FP_TAPCELL_DIST": 13,
     "PDN_OBSTRUCTIONS": null,
-    "FP_DEF_TEMPLATE": "/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/fixed_dont_change/openframe_project_wrapper.def",
+    "FP_DEF_TEMPLATE": "/home/ubuntu/repos/of-2dom/openlane/openframe_project_wrapper/fixed_dont_change/openframe_project_wrapper.def",
     "FP_TEMPLATE_MATCH_MODE": "strict",
     "FP_TEMPLATE_COPY_POWER_PINS": true,
     "PDN_SKIPTRIM": false,
@@ -363,7 +373,7 @@
     "PDN_CORE_VERTICAL_LAYER": null,
     "PDN_EXTEND_TO": "core_ring",
     "PDN_ENABLE_PINS": false,
-    "PDN_CFG": "/home/ubuntu/repos/openframe_user_project/openlane/openframe_project_wrapper/pdn_cfg.tcl",
+    "PDN_CFG": "/home/ubuntu/repos/of-2dom/openlane/openframe_project_wrapper/pdn_cfg.tcl",
     "ROUTING_OBSTRUCTIONS": null,
     "RT_CLOCK_MIN_LAYER": null,
     "RT_CLOCK_MAX_LAYER": null,

@@ -25,6 +25,10 @@
                 "mprj": {
                     "location": [2850, 235],
                     "orientation": "FN"
+                },
+                "mprj2": {
+                    "location": [116, 235],
+                    "orientation": "N"
                 }
             },
             "gds": ["dir::../../gds/user_proj_timer.gds"],

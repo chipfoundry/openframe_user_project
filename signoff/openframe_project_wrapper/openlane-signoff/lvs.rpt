@@ -128,7 +128,18 @@ Cell openframe_project_wrapper (0) disconnected node: analog_noesd_io[9]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[10]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[11]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[12]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[24]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[25]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[26]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[27]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[28]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[29]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[2]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[30]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[31]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[32]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[33]
+Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[34]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[3]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[4]
 Cell openframe_project_wrapper (0) disconnected node: gpio_dm2[5]
@@ -279,17 +290,6 @@ Cell openframe_project_wrapper (0) disconnected node: gpio_out[20]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[21]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[22]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[23]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[24]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[25]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[26]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[27]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[28]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[29]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[30]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[31]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[32]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[33]
-Cell openframe_project_wrapper (0) disconnected node: gpio_out[34]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[35]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[36]
 Cell openframe_project_wrapper (0) disconnected node: gpio_out[37]
@@ -337,7 +337,6 @@ Cell openframe_project_wrapper (0) disconnected node: porb_l
 Cell openframe_project_wrapper (0) disconnected node: resetb_h
 Cell openframe_project_wrapper (0) disconnected node: resetb_l
 Cell openframe_project_wrapper (0) disconnected node: vccd
-Cell openframe_project_wrapper (0) disconnected node: vccd2
 Cell openframe_project_wrapper (0) disconnected node: vdda
 Cell openframe_project_wrapper (0) disconnected node: vdda1
 Cell openframe_project_wrapper (0) disconnected node: vdda2
@@ -346,7 +345,6 @@ Cell openframe_project_wrapper (0) disconnected node: vssa
 Cell openframe_project_wrapper (0) disconnected node: vssa1
 Cell openframe_project_wrapper (0) disconnected node: vssa2
 Cell openframe_project_wrapper (0) disconnected node: vssd
-Cell openframe_project_wrapper (0) disconnected node: vssd2
 Cell openframe_project_wrapper (0) disconnected node: vssio
 Cell openframe_project_wrapper (0) disconnected node: vdda_uq0
 Cell openframe_project_wrapper (0) disconnected node: vssio_uq0
@@ -361,15 +359,11 @@ Cell openframe_project_wrapper (0) disconnected node: vddio_uq2
 Cell openframe_project_wrapper (0) disconnected node: vssa1_uq0
 Cell openframe_project_wrapper (0) disconnected node: vssa1_uq1
 Cell openframe_project_wrapper (0) disconnected node: vssa1_uq2
-Cell openframe_project_wrapper (0) disconnected node: vssd2_uq0
-Cell openframe_project_wrapper (0) disconnected node: vssd2_uq1
 Cell openframe_project_wrapper (0) disconnected node: vdda2_uq0
 Cell openframe_project_wrapper (0) disconnected node: vdda1_uq0
 Cell openframe_project_wrapper (0) disconnected node: vdda1_uq1
 Cell openframe_project_wrapper (0) disconnected node: vdda1_uq2
 Cell openframe_project_wrapper (0) disconnected node: vssa2_uq0
-Cell openframe_project_wrapper (0) disconnected node: vccd2_uq0
-Cell openframe_project_wrapper (0) disconnected node: vccd2_uq1
 Cell openframe_project_wrapper (1) disconnected node: por_l
 Cell openframe_project_wrapper (1) disconnected node: porb_h
 Cell openframe_project_wrapper (1) disconnected node: porb_l
@@ -378,12 +372,10 @@ Cell openframe_project_wrapper (1) disconnected node: resetb_l
 Cell openframe_project_wrapper (1) disconnected node: vdda1
 Cell openframe_project_wrapper (1) disconnected node: vssa1
 Cell openframe_project_wrapper (1) disconnected node: vssio
-Cell openframe_project_wrapper (1) disconnected node: vccd2
 Cell openframe_project_wrapper (1) disconnected node: vddio
 Cell openframe_project_wrapper (1) disconnected node: vssa2
 Cell openframe_project_wrapper (1) disconnected node: vdda2
 Cell openframe_project_wrapper (1) disconnected node: vdda
-Cell openframe_project_wrapper (1) disconnected node: vssd2
 Cell openframe_project_wrapper (1) disconnected node: vccd
 Cell openframe_project_wrapper (1) disconnected node: vssa
 Cell openframe_project_wrapper (1) disconnected node: vssd
@@ -596,29 +588,44 @@ Cell openframe_project_wrapper (1) disconnected node: mask_rev[0]
 Subcircuit summary:
 Circuit 1: openframe_project_wrapper       |Circuit 2: openframe_project_wrapper       
 -------------------------------------------|-------------------------------------------
-user_proj_timer (1)                        |user_proj_timer (1)                        
-Number of devices: 1                       |Number of devices: 1                       
-Number of nets: 15                         |Number of nets: 15                         
+user_proj_timer (2)                        |user_proj_timer (2)                        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 28                         |Number of nets: 28                         
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: openframe_project_wrapper       |Circuit 2: openframe_project_wrapper       
 -------------------------------------------|-------------------------------------------
-vccd1                                      |vccd1                                      
-vssd1                                      |vssd1                                      
 gpio_in[0]                                 |gpio_in[0]                                 
 gpio_in[1]                                 |gpio_in[1]                                 
+vccd2                                      |vccd2                                      
+vccd1                                      |vccd1                                      
+vssd2                                      |vssd2                                      
+vssd1                                      |vssd1                                      
+gpio_out[34]                               |gpio_out[34]                               
 gpio_out[12]                               |gpio_out[12]                               
+gpio_out[33]                               |gpio_out[33]                               
 gpio_out[11]                               |gpio_out[11]                               
+gpio_out[32]                               |gpio_out[32]                               
 gpio_out[10]                               |gpio_out[10]                               
+gpio_out[31]                               |gpio_out[31]                               
 gpio_out[9]                                |gpio_out[9]                                
+gpio_out[30]                               |gpio_out[30]                               
 gpio_out[8]                                |gpio_out[8]                                
+gpio_out[29]                               |gpio_out[29]                               
 gpio_out[7]                                |gpio_out[7]                                
+gpio_out[28]                               |gpio_out[28]                               
 gpio_out[6]                                |gpio_out[6]                                
+gpio_out[27]                               |gpio_out[27]                               
 gpio_out[5]                                |gpio_out[5]                                
+gpio_out[26]                               |gpio_out[26]                               
 gpio_out[4]                                |gpio_out[4]                                
+gpio_out[25]                               |gpio_out[25]                               
 gpio_out[3]                                |gpio_out[3]                                
+gpio_out[24]                               |gpio_out[24]                               
 gpio_out[2]                                |gpio_out[2]                                
 analog_io[0]                               |analog_io[0]                               
 analog_io[10]                              |analog_io[10]                              
@@ -832,7 +839,6 @@ porb_l                                     |porb_l
 resetb_h                                   |resetb_h                                   
 resetb_l                                   |resetb_l                                   
 vccd                                       |vccd                                       
-vccd2                                      |vccd2                                      
 vdda                                       |vdda                                       
 vdda1                                      |vdda1                                      
 vdda2                                      |vdda2                                      
@@ -841,7 +847,6 @@ vssa                                       |vssa
 vssa1                                      |vssa1                                      
 vssa2                                      |vssa2                                      
 vssd                                       |vssd                                       
-vssd2                                      |vssd2                                      
 vssio                                      |vssio                                      
 (no matching pin)                          |gpio_analog_en[43]                         
 (no matching pin)                          |gpio_analog_en[42]                         
@@ -1380,17 +1385,6 @@ vssio                                      |vssio
 (no matching pin)                          |gpio_out[37]                               
 (no matching pin)                          |gpio_out[36]                               
 (no matching pin)                          |gpio_out[35]                               
-(no matching pin)                          |gpio_out[34]                               
-(no matching pin)                          |gpio_out[33]                               
-(no matching pin)                          |gpio_out[32]                               
-(no matching pin)                          |gpio_out[31]                               
-(no matching pin)                          |gpio_out[30]                               
-(no matching pin)                          |gpio_out[29]                               
-(no matching pin)                          |gpio_out[28]                               
-(no matching pin)                          |gpio_out[27]                               
-(no matching pin)                          |gpio_out[26]                               
-(no matching pin)                          |gpio_out[25]                               
-(no matching pin)                          |gpio_out[24]                               
 (no matching pin)                          |gpio_out[23]                               
 (no matching pin)                          |gpio_out[22]                               
 (no matching pin)                          |gpio_out[21]                               
@@ -1495,7 +1489,18 @@ vssio                                      |vssio
 gpio_dm2[10]                               |(no matching pin)                          
 gpio_dm2[11]                               |(no matching pin)                          
 gpio_dm2[12]                               |(no matching pin)                          
+gpio_dm2[24]                               |(no matching pin)                          
+gpio_dm2[25]                               |(no matching pin)                          
+gpio_dm2[26]                               |(no matching pin)                          
+gpio_dm2[27]                               |(no matching pin)                          
+gpio_dm2[28]                               |(no matching pin)                          
+gpio_dm2[29]                               |(no matching pin)                          
 gpio_dm2[2]                                |(no matching pin)                          
+gpio_dm2[30]                               |(no matching pin)                          
+gpio_dm2[31]                               |(no matching pin)                          
+gpio_dm2[32]                               |(no matching pin)                          
+gpio_dm2[33]                               |(no matching pin)                          
+gpio_dm2[34]                               |(no matching pin)                          
 gpio_dm2[3]                                |(no matching pin)                          
 gpio_dm2[4]                                |(no matching pin)                          
 gpio_dm2[5]                                |(no matching pin)                          
@@ -1560,17 +1565,6 @@ gpio_out[20]                               |(no matching pin)
 gpio_out[21]                               |(no matching pin)                          
 gpio_out[22]                               |(no matching pin)                          
 gpio_out[23]                               |(no matching pin)                          
-gpio_out[24]                               |(no matching pin)                          
-gpio_out[25]                               |(no matching pin)                          
-gpio_out[26]                               |(no matching pin)                          
-gpio_out[27]                               |(no matching pin)                          
-gpio_out[28]                               |(no matching pin)                          
-gpio_out[29]                               |(no matching pin)                          
-gpio_out[30]                               |(no matching pin)                          
-gpio_out[31]                               |(no matching pin)                          
-gpio_out[32]                               |(no matching pin)                          
-gpio_out[33]                               |(no matching pin)                          
-gpio_out[34]                               |(no matching pin)                          
 gpio_out[35]                               |(no matching pin)                          
 gpio_out[36]                               |(no matching pin)                          
 gpio_out[37]                               |(no matching pin)                          
@@ -1593,15 +1587,11 @@ vddio_uq2                                  |(no matching pin)
 vssa1_uq0                                  |(no matching pin)                          
 vssa1_uq1                                  |(no matching pin)                          
 vssa1_uq2                                  |(no matching pin)                          
-vssd2_uq0                                  |(no matching pin)                          
-vssd2_uq1                                  |(no matching pin)                          
 vdda2_uq0                                  |(no matching pin)                          
 vdda1_uq0                                  |(no matching pin)                          
 vdda1_uq1                                  |(no matching pin)                          
 vdda1_uq2                                  |(no matching pin)                          
 vssa2_uq0                                  |(no matching pin)                          
-vccd2_uq0                                  |(no matching pin)                          
-vccd2_uq1                                  |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists for openframe_project_wrapper and openframe_project_wrapper altered to match.
 Device classes openframe_project_wrapper and openframe_project_wrapper are equivalent.

@@ -105,6 +105,7 @@ module openframe_project_wrapper (
         wire clk;
 	wire rst;
 	wire [10:0] out;
+	wire [10:0] out2;
 
 	user_proj_timer mprj (
 `ifdef USE_POWER_PINS
@@ -123,6 +124,17 @@ module openframe_project_wrapper (
 	    /* analog_noesd_io: analog signals			*/
 	);
 
+	// Second timer in the vccd2/vssd2 domain (two-domain PDN example).
+	user_proj_timer mprj2 (
+`ifdef USE_POWER_PINS
+		.vccd1(vccd2),
+		.vssd1(vssd2),
+`endif
+		.wb_clk_i(clk),
+		.wb_rst_i(rst),
+		.io_out(out2[10:0])
+	);
+
 	// Pad configuration is generated from the project.openframe spec in
 	// .cf/project.json by `cf openframe generate` (see verilog/rtl/openframe_gpio.v).
 	// Do not instantiate CF_gpio_config here; change the spec and regenerate.
@@ -131,6 +143,7 @@ module openframe_project_wrapper (
 	    .clk(clk),
 	    .rst(rst),
 	    .out(out),
+	    .out2(out2),
 
 	    // Openframe pad interface
 	    .gpio_in(gpio_in),
