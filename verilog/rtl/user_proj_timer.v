@@ -46,7 +46,11 @@ module user_proj_timer (
     input wb_rst_i,
 
     // IOs
-    output [10:0] io_out
+    output [10:0] io_out,
+
+    // ROM
+    output [9:0] rom_addr,
+    input  [7:0] rom_data
 );
 
     wire [6:0] seven_seg;
@@ -56,7 +60,10 @@ module user_proj_timer (
         .clk(wb_clk_i),
         .rst(wb_rst_i),
         .seven_seg(seven_seg),
-        .digit_en(digit_en)
+        .digit_en(digit_en),
+        // ROM interface:
+        .rom_addr(rom_addr),
+        .rom_data(rom_data)
     );
 
     assign io_out = {seven_seg, digit_en};

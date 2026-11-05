@@ -105,6 +105,8 @@ module openframe_project_wrapper (
         wire clk;
 	wire rst;
 	wire [10:0] out;
+	wire [9:0] rom_addr;
+	wire [7:0] rom_data;
 
 	user_proj_timer mprj (
 `ifdef USE_POWER_PINS
@@ -113,7 +115,9 @@ module openframe_project_wrapper (
 `endif
         .wb_clk_i(clk),
         .wb_rst_i(rst),
-        .io_out(out[10:0])
+        .io_out(out[10:0]),
+        .rom_addr(rom_addr),
+        .rom_data(rom_data)
 
 	    /* NOTE:  Openframe signals not used in picosoc:	*/
 	    /* porb_h:    3.3V domain signal			*/
@@ -121,6 +125,19 @@ module openframe_project_wrapper (
 	    /* gpio_in_h: 3.3V domain signals			*/
 	    /* analog_io: analog signals			*/
 	    /* analog_noesd_io: analog signals			*/
+	);
+
+	CF_ROM_SYNC cf_rom_sync_7seg (
+`ifdef USE_POWER_PINS
+		.vpwr(vccd1),
+		.vgnd(vssd1),
+`endif
+		.DO(rom_data),
+		.A(rom_addr),
+		.EN(1'b1),  // is always enabled
+		.CLK(clk),
+		.RST(1'b0), // never needs reset
+		.OE(1'b1)   // always drive data
 	);
 
 	(* keep *) vccd1_connection vccd1_connection ();

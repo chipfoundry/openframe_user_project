@@ -16,7 +16,10 @@ module timer #(parameter  CC = 1,
     input   wire        clk,
     input   wire        rst,
     output  wire [6:0]  seven_seg,
-    output  wire [3:0]  digit_en     
+    output  wire [3:0]  digit_en,
+    // ROM interface:
+    output  wire [9:0]  rom_addr,
+    input   wire [7:0]  rom_data
 );
     localparam DIG_DURATION = (FREQ)/(4 * SCAN_PER_SEC);
 
@@ -129,31 +132,36 @@ module timer #(parameter  CC = 1,
                                 (dig_cnt == 2'b10) ? min_ones : min_tens;
 
         // BCD to 7SEG Decoder
-        reg [7:0]   ca_7seg;
-        wire[7:0]   cc_7seg = ~ ca_7seg;
-        always @* begin
-            ca_7seg = 7'b0000000;
-            case(bcd_mux)
-                4'd0 : ca_7seg = 7'b0000001;
-                4'd1 : ca_7seg = 7'b1001111;
-                4'd2 : ca_7seg = 7'b0010010;
-                4'd3 : ca_7seg = 7'b0000110;
-                4'd4 : ca_7seg = 7'b1001100;
-                4'd5 : ca_7seg = 7'b0100100;
-                4'd6 : ca_7seg = 7'b0100000;
-                4'd7 : ca_7seg = 7'b0001111;
-                4'd8 : ca_7seg = 7'b0000000;
-                4'd9 : ca_7seg = 7'b0000100;
-            endcase
+        wire [7:0] ca_7seg;
+        assign ca_7seg = rom_data;
+        assign rom_addr = {6'b0, bcd_mux};
+        /* ROM hex contents (see cf_rom_sync_7seg_hex.rom):
+               01 // 0: 0_0000001
+               4F // 1: 0_1001111
+               12 // 2: 0_0010010
+               06 // 3: 0_0000110
+               4C // 4: 0_1001100
+               24 // 5: 0_0100100
+               20 // 6: 0_0100000
+               0F // 7: 0_0001111
+               00 // 8: 0_0000000
+               04 // 9: 0_0000100
+               00 // *: 0_0000000
+        */
+
+        // delay `digit_en` by one clk cycle to match `ca_7seg` ROM output:
+        reg [3:0] digit_en_reg;
+        always @(posedge clk) begin
+            digit_en_reg <= (4'b1 << dig_cnt);
         end
 
         generate
             if(CC==0) begin
-                assign seven_seg    =   ca_7seg;
-                assign digit_en     =   (4'b1 << dig_cnt);
+                assign seven_seg    =   ca_7seg[6:0];
+                assign digit_en     =   digit_en_reg;
             end else begin
-                assign seven_seg    =   cc_7seg;
-                assign digit_en     =   ~(4'b1 << dig_cnt);
+                assign seven_seg    =   ~ ca_7seg[6:0];
+                assign digit_en     =   ~ digit_en_reg;
             end
         endgenerate
 

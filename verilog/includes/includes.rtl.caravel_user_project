@@ -5,3 +5,4 @@
 -v $(USER_PROJECT_VERILOG)/rtl/timer.v
 -v $(USER_PROJECT_VERILOG)/rtl/user_proj_timer.v
 -v $(USER_PROJECT_VERILOG)/rtl/openframe_project_wrapper.v
+-v $(USER_PROJECT_VERILOG)/../ip/CF_ROM_SYNC/build/CF_ROM_SYNC_sim.v

@@ -8,20 +8,28 @@
     ],
     "VERILOG_FILES_BLACKBOX": [
         "dir::../../verilog/gl/user_proj_timer.v",
+        "dir::../../ip/CF_ROM_SYNC/hdl/gl/CF_ROM_SYNC.v",
         "dir::../../verilog/gl/vccd1_connection.v",
         "dir::../../verilog/gl/vssd1_connection.v"
     ],
     "EXTRA_LEFS": [
         "dir::../../lef/user_proj_timer.lef",
+        "dir::../../ip/CF_ROM_SYNC/layout/lef/CF_ROM_SYNC.lef",
         "dir::../../lef/vccd1_connection.lef",
         "dir::../../lef/vssd1_connection.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/user_proj_timer.gds",
+        "dir::../../ip/CF_ROM_SYNC/layout/gds/CF_ROM_SYNC.gds",
         "dir::../../gds/vccd1_connection.gds",
         "dir::../../gds/vssd1_connection.gds"
     ],
-    "EXTRA_LIBS": "dir::../../lib/user_proj_timer.lib",
+    "EXTRA_LIBS": [
+        "dir::../../lib/user_proj_timer.lib",
+        "dir::../../ip/CF_ROM_SYNC/timing/lib/CF_ROM_SYNC_ff_1.95V_-40C.lib",
+        "dir::../../ip/CF_ROM_SYNC/timing/lib/CF_ROM_SYNC_ss_1.60V_-40C.lib",
+        "dir::../../ip/CF_ROM_SYNC/timing/lib/CF_ROM_SYNC_tt_1.80V_25C.lib"
+    ],
     "EXTRA_SPEFS": [
         "user_proj_timer",
         "dir::../../spef/multicorner/user_proj_timer.min.spef",
@@ -73,7 +81,10 @@
     "DIE_AREA": "0 0 3166.63 4766.630",
     "CORE_AREA": "40 40 3126.63 4726.630",
     "RUN_IRDROP_REPORT": 0,
-    "FP_PDN_MACRO_HOOKS": "mprj vccd1 vssd1 vccd1 vssd1",
+    "FP_PDN_MACRO_HOOKS": [
+        "mprj vccd1 vssd1 vccd1 vssd1",
+        ".*cf_rom_sync.* vccd1 vssd1 vpwr vgnd"
+    ],
     "FP_PDN_CFG": "dir::pdn_cfg.tcl",
     "FP_DEF_TEMPLATE": "dir::fixed_dont_change/openframe_project_wrapper.def",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",

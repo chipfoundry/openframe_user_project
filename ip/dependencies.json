@@ -2,6 +2,9 @@
     "IP": [
         {
             "CF_gpio_config": "v1.1.4"
+        },
+        {
+            "CF_ROM_SYNC": "0.2.3"
         }
     ]
 }
