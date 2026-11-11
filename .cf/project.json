@@ -7,5 +7,23 @@
     "user_project_wrapper_hash": "",
     "submission_state": "Draft",
     "github_repo_url": "https://github.com/chipfoundry/openframe_user_project"
+  },
+  "precheck": {
+    "version": "1.3.7",
+    "timestamp": "2026-11-11T18:16:04.206849+00:00",
+    "pdk": "sky130A",
+    "passed": true,
+    "checks": {
+      "lvs": {
+        "status": "pass",
+        "duration_s": 88.34
+      },
+      "magic_drc": {
+        "status": "skip",
+        "duration_s": 0,
+        "reason": "optional (use --magic-drc to include)"
+      }
+    },
+    "input_file_hash": "774c8754ef5e6905911fca6b994282c7be9620b3"
   }
 }
