@@ -134,10 +134,10 @@ module openframe_project_wrapper (
 `endif
 		.DO(rom_data),
 		.A(rom_addr),
-		.EN(1'b1),  // is always enabled
+		.EN(gpio_loopback_one),  // is always enabled
 		.CLK(clk),
-		.RST(1'b0), // never needs reset
-		.OE(1'b1)   // always drive data
+		.RST(gpio_loopback_zero), // never needs reset
+		.OE(gpio_loopback_one)   // always drive data
 	);
 
 	(* keep *) vccd1_connection vccd1_connection ();
