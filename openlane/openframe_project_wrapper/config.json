@@ -114,28 +114,5 @@
         "vdda2",
         "vddio",
         "vssio"
-    ],
-    "// ROUTING_OBSTRUCTIONS": "Keep the router off the CF_ROM_SYNC core (cf_rom_sync_7seg at 2500,2500 FN), whose LEF leaves the core interior open on met1/met2. Core interior (LEF coords x 15.4-145.18, y 15.38-75.42) is obstructed on met1/met2, with 2um-tall notches (pin +/-0.4um) above the bottom-edge met1 pins (DO[*], OE, RST, CLK, EN) so they stay reachable from above. A[*] met2 pins on the left edge are reached by via from met3. Coordinates mirrored for FN.",
-    "ROUTING_OBSTRUCTIONS": [
-        "met1 2515.000 2517.380 2644.780 2575.420",
-        "met1 2629.180 2515.380 2644.780 2517.380",
-        "met1 2614.495 2515.380 2628.185 2517.380",
-        "met1 2608.045 2515.380 2613.500 2517.380",
-        "met1 2605.350 2515.380 2607.050 2517.380",
-        "met1 2593.715 2515.380 2604.355 2517.380",
-        "met1 2571.765 2515.380 2591.755 2517.380",
-        "met1 2549.815 2515.380 2569.805 2517.380",
-        "met1 2527.865 2515.380 2547.855 2517.380",
-        "met1 2515.000 2515.380 2525.905 2517.380",
-        "met2 2515.000 2517.380 2644.780 2575.420",
-        "met2 2629.180 2515.380 2644.780 2517.380",
-        "met2 2614.495 2515.380 2628.185 2517.380",
-        "met2 2608.045 2515.380 2613.500 2517.380",
-        "met2 2605.350 2515.380 2607.050 2517.380",
-        "met2 2593.715 2515.380 2604.355 2517.380",
-        "met2 2571.765 2515.380 2591.755 2517.380",
-        "met2 2549.815 2515.380 2569.805 2517.380",
-        "met2 2527.865 2515.380 2547.855 2517.380",
-        "met2 2515.000 2515.380 2525.905 2517.380"
     ]
 }
