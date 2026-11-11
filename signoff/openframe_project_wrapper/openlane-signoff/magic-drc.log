@@ -97,17 +97,25 @@ CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
 Error while reading cell "CF_ROM_SYNC_core" (byte position 11298576): Unknown layer/datatype in boundary, layer=67 type=10
 Error while reading cell "CF_ROM_SYNC_core" (byte position 11298640): Unknown layer/datatype in boundary, layer=68 type=10
 Error while reading cell "CF_ROM_SYNC_core" (byte position 11301008): Unknown layer/datatype in boundary, layer=69 type=10
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11305808): Unknown layer/datatype in boundary, layer=65 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11342352): Unknown layer/datatype in boundary, layer=66 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11379728): Unknown layer/datatype in boundary, layer=67 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11447248): Unknown layer/datatype in boundary, layer=68 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11856464): Unknown layer/datatype in boundary, layer=69 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12125136): Unknown layer/datatype in boundary, layer=70 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12195280): Unknown layer/datatype in boundary, layer=71 type=99
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12265680): Unknown layer/datatype in boundary, layer=72 type=99
 Reading "CF_ROM_SYNC".
-Error while reading cell "CF_ROM_SYNC" (byte position 11310272): Unknown layer/datatype in boundary, layer=67 type=10
-Error while reading cell "CF_ROM_SYNC" (byte position 11310336): Unknown layer/datatype in boundary, layer=68 type=10
-Error while reading cell "CF_ROM_SYNC" (byte position 11311872): Unknown layer/datatype in boundary, layer=69 type=10
+Error while reading cell "CF_ROM_SYNC" (byte position 12281984): Unknown layer/datatype in boundary, layer=67 type=10
+Error while reading cell "CF_ROM_SYNC" (byte position 12282048): Unknown layer/datatype in boundary, layer=68 type=10
+Error while reading cell "CF_ROM_SYNC" (byte position 12283008): Unknown layer/datatype in boundary, layer=69 type=10
 Reading "openframe_project_wrapper".
 [INFO] Loading openframe_project_wrapper
 
 DRC style is now "drc(full)"
 Loading DRC CIF style.
-[INFO] COUNT: 282
+[INFO] COUNT: 87
 [INFO] Should be divided by 3 or 4
-[INFO] DRC Checking DONE (/home/user/openframe_user_project/openlane/openframe_project_wrapper/runs/rom_obs_notch/51-magic-drc/reports/drc_violations.magic.rpt)
-[INFO] Saving mag view with DRC errors (/home/user/openframe_user_project/openlane/openframe_project_wrapper/runs/rom_obs_notch/51-magic-drc/views/openframe_project_wrapper.drc.mag)
+[INFO] DRC Checking DONE (/home/user/openframe_user_project/openlane/openframe_project_wrapper/runs/ip_fix3/51-magic-drc/reports/drc_violations.magic.rpt)
+[INFO] Saving mag view with DRC errors (/home/user/openframe_user_project/openlane/openframe_project_wrapper/runs/ip_fix3/51-magic-drc/views/openframe_project_wrapper.drc.mag)
 [INFO] Saved

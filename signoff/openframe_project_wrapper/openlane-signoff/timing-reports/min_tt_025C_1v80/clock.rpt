@@ -19,20 +19,20 @@ Clock __VIRTUAL_CLK__
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-3.120190         network latency cf_rom_sync_7seg/CLK
-        3.061255 network latency mprj/wb_clk_i
+3.120146         network latency cf_rom_sync_7seg/CLK
+        3.061215 network latency mprj/wb_clk_i
 ---------------
-3.120190 3.061255 latency
-        -0.058935 skew
+3.120146 3.061215 latency
+        -0.058930 skew
 
 rise -> fall
     min     max
 0.000000 0.000000 source latency
-2.603781         network latency cf_rom_sync_7seg/CLK
-        2.545393 network latency mprj/wb_clk_i
+2.603757         network latency cf_rom_sync_7seg/CLK
+        2.545373 network latency mprj/wb_clk_i
 ---------------
-2.603781 2.545393 latency
-        -0.058389 skew
+2.603757 2.545373 latency
+        -0.058384 skew
 
 
 

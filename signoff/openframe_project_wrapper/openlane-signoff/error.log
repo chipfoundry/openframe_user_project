@@ -6,9 +6,25 @@ Error while reading cell "CF_ROM_SYNC_core" (byte position 11298640): Unknown la
 
 Error while reading cell "CF_ROM_SYNC_core" (byte position 11301008): Unknown layer/datatype in boundary, layer=69 type=10
 
-Error while reading cell "CF_ROM_SYNC" (byte position 11310272): Unknown layer/datatype in boundary, layer=67 type=10
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11305808): Unknown layer/datatype in boundary, layer=65 type=99
 
-Error while reading cell "CF_ROM_SYNC" (byte position 11310336): Unknown layer/datatype in boundary, layer=68 type=10
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11342352): Unknown layer/datatype in boundary, layer=66 type=99
 
-Error while reading cell "CF_ROM_SYNC" (byte position 11311872): Unknown layer/datatype in boundary, layer=69 type=10
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11379728): Unknown layer/datatype in boundary, layer=67 type=99
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11447248): Unknown layer/datatype in boundary, layer=68 type=99
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11856464): Unknown layer/datatype in boundary, layer=69 type=99
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12125136): Unknown layer/datatype in boundary, layer=70 type=99
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12195280): Unknown layer/datatype in boundary, layer=71 type=99
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 12265680): Unknown layer/datatype in boundary, layer=72 type=99
+
+Error while reading cell "CF_ROM_SYNC" (byte position 12281984): Unknown layer/datatype in boundary, layer=67 type=10
+
+Error while reading cell "CF_ROM_SYNC" (byte position 12282048): Unknown layer/datatype in boundary, layer=68 type=10
+
+Error while reading cell "CF_ROM_SYNC" (byte position 12283008): Unknown layer/datatype in boundary, layer=69 type=10
 

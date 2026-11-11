@@ -4784,7 +4784,7 @@ MACRO openframe_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT -2.000 2393.220 0.550 2393.520 ;
+        RECT -2.000 2393.220 0.300 2393.520 ;
     END
   END gpio_loopback_one[31]
   PIN gpio_loopback_one[32]
@@ -8287,7 +8287,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 2417.510 3166.630 2419.120 ;
         RECT 0.700 2416.360 3166.630 2417.510 ;
         RECT 0.000 2393.920 3166.630 2416.360 ;
-        RECT 0.950 2392.820 3166.630 2393.920 ;
+        RECT 0.700 2392.820 3166.630 2393.920 ;
         RECT 0.000 2383.920 3166.630 2392.820 ;
         RECT 0.700 2383.220 3166.630 2383.920 ;
         RECT 0.700 2382.820 3165.930 2383.220 ;
