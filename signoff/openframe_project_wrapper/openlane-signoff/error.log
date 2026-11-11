@@ -1,2 +1,14 @@
 Macro/instance vccd1_connection has no power pins- add it to IGNORE_DISCONNECTED_MODULES if this is intentional
 Macro/instance vssd1_connection has no power pins- add it to IGNORE_DISCONNECTED_MODULES if this is intentional
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11298576): Unknown layer/datatype in boundary, layer=67 type=10
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11298640): Unknown layer/datatype in boundary, layer=68 type=10
+
+Error while reading cell "CF_ROM_SYNC_core" (byte position 11301008): Unknown layer/datatype in boundary, layer=69 type=10
+
+Error while reading cell "CF_ROM_SYNC" (byte position 11310272): Unknown layer/datatype in boundary, layer=67 type=10
+
+Error while reading cell "CF_ROM_SYNC" (byte position 11310336): Unknown layer/datatype in boundary, layer=68 type=10
+
+Error while reading cell "CF_ROM_SYNC" (byte position 11311872): Unknown layer/datatype in boundary, layer=69 type=10
+

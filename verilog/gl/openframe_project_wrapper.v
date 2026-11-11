@@ -77,7 +77,49 @@ module openframe_project_wrapper (por_l,
  output [43:0] gpio_vtrip_sel;
  input [31:0] mask_rev;
 
+ wire \rom_addr[0] ;
+ wire \rom_addr[1] ;
+ wire \rom_addr[2] ;
+ wire \rom_addr[3] ;
+ wire \rom_addr[4] ;
+ wire \rom_addr[5] ;
+ wire \rom_addr[6] ;
+ wire \rom_addr[7] ;
+ wire \rom_addr[8] ;
+ wire \rom_addr[9] ;
+ wire \rom_data[0] ;
+ wire \rom_data[1] ;
+ wire \rom_data[2] ;
+ wire \rom_data[3] ;
+ wire \rom_data[4] ;
+ wire \rom_data[5] ;
+ wire \rom_data[6] ;
+ wire \rom_data[7] ;
 
+ CF_ROM_SYNC cf_rom_sync_7seg (.vpwr(vccd1),
+    .vgnd(vssd1),
+    .OE(gpio_loopback_one[0]),
+    .EN(gpio_loopback_one[0]),
+    .CLK(gpio_in[0]),
+    .RST(gpio_loopback_zero[0]),
+    .A({\rom_addr[9] ,
+    \rom_addr[8] ,
+    \rom_addr[7] ,
+    \rom_addr[6] ,
+    \rom_addr[5] ,
+    \rom_addr[4] ,
+    \rom_addr[3] ,
+    \rom_addr[2] ,
+    \rom_addr[1] ,
+    \rom_addr[0] }),
+    .DO({\rom_data[7] ,
+    \rom_data[6] ,
+    \rom_data[5] ,
+    \rom_data[4] ,
+    \rom_data[3] ,
+    \rom_data[2] ,
+    \rom_data[1] ,
+    \rom_data[0] }));
  user_proj_timer mprj (.vccd1(vccd1),
     .vssd1(vssd1),
     .wb_clk_i(gpio_in[0]),
@@ -92,7 +134,25 @@ module openframe_project_wrapper (por_l,
     gpio_out[5],
     gpio_out[4],
     gpio_out[3],
-    gpio_out[2]}));
+    gpio_out[2]}),
+    .rom_addr({\rom_addr[9] ,
+    \rom_addr[8] ,
+    \rom_addr[7] ,
+    \rom_addr[6] ,
+    \rom_addr[5] ,
+    \rom_addr[4] ,
+    \rom_addr[3] ,
+    \rom_addr[2] ,
+    \rom_addr[1] ,
+    \rom_addr[0] }),
+    .rom_data({\rom_data[7] ,
+    \rom_data[6] ,
+    \rom_data[5] ,
+    \rom_data[4] ,
+    \rom_data[3] ,
+    \rom_data[2] ,
+    \rom_data[1] ,
+    \rom_data[0] }));
  vccd1_connection vccd1_connection ();
  vssd1_connection vssd1_connection ();
  assign gpio_dm0[0] = gpio_loopback_one[0];
@@ -123,7 +183,6 @@ module openframe_project_wrapper (por_l,
  assign gpio_dm0[1] = gpio_loopback_one[1];
  assign gpio_dm1[1] = gpio_loopback_one[1];
  assign gpio_dm2[1] = gpio_loopback_one[1];
- assign gpio_out[1] = gpio_loopback_one[1];
  assign gpio_inp_dis[20] = gpio_loopback_one[20];
  assign gpio_oeb[20] = gpio_loopback_one[20];
  assign gpio_inp_dis[21] = gpio_loopback_one[21];
@@ -318,6 +377,7 @@ module openframe_project_wrapper (por_l,
  assign gpio_ib_mode_sel[1] = gpio_loopback_zero[1];
  assign gpio_inp_dis[1] = gpio_loopback_zero[1];
  assign gpio_oeb[1] = gpio_loopback_zero[1];
+ assign gpio_out[1] = gpio_loopback_zero[1];
  assign gpio_slow_sel[1] = gpio_loopback_zero[1];
  assign gpio_vtrip_sel[1] = gpio_loopback_zero[1];
  assign gpio_analog_en[20] = gpio_loopback_zero[20];

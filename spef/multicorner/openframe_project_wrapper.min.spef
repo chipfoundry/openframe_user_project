@@ -1,6 +1,6 @@
 *SPEF "ieee 1481-1999"
 *DESIGN "openframe_project_wrapper"
-*DATE "19:47:21 Wednesday April 15, 2026"
+*DATE "12:26:22 Wednesday November 11, 2026"
 *VENDOR "The OpenROAD Project"
 *PROGRAM "OpenROAD"
 *VERSION "edf00dff99f6c40d67a30c0e22a8191c5d2ed9d6"
@@ -326,7 +326,26 @@
 *310 porb_l
 *311 resetb_h
 *312 resetb_l
-*313 mprj
+*327 rom_addr\[0\]
+*328 rom_addr\[1\]
+*329 rom_addr\[2\]
+*330 rom_addr\[3\]
+*331 rom_addr\[4\]
+*332 rom_addr\[5\]
+*333 rom_addr\[6\]
+*334 rom_addr\[7\]
+*335 rom_addr\[8\]
+*336 rom_addr\[9\]
+*337 rom_data\[0\]
+*338 rom_data\[1\]
+*339 rom_data\[2\]
+*340 rom_data\[3\]
+*341 rom_data\[4\]
+*342 rom_data\[5\]
+*343 rom_data\[6\]
+*344 rom_data\[7\]
+*345 cf_rom_sync_7seg
+*346 mprj
 
 *PORTS
 analog_io[0] I
@@ -1203,13 +1222,13 @@ porb_l I
 resetb_h I
 resetb_l I
 
-*D_NET *89 0.0117176
+*D_NET *89 0.343944
 *CONN
-*P gpio_analog_pol[0] O
-*P gpio_inp_dis[0] O
 *P gpio_analog_en[0] O
 *P gpio_dm1[0] O
 *P gpio_slow_sel[0] O
+*P gpio_analog_pol[0] O
+*P gpio_inp_dis[0] O
 *P gpio_analog_sel[0] O
 *P gpio_dm2[0] O
 *P gpio_holdover[0] O
@@ -1217,39 +1236,49 @@ resetb_l I
 *P gpio_vtrip_sel[0] O
 *P gpio_ib_mode_sel[0] O
 *P gpio_loopback_zero[0] I
+*I *345:RST I *D CF_ROM_SYNC
 *CAP
-1 gpio_analog_pol[0] 0.000121648
-2 gpio_inp_dis[0] 0.000151266
-3 gpio_analog_en[0] 2.22136e-05
-4 gpio_dm1[0] 2.22136e-05
-5 gpio_slow_sel[0] 0.000664454
-6 gpio_analog_sel[0] 0.000885105
+1 gpio_analog_en[0] 0.000112863
+2 gpio_dm1[0] 7.0766e-05
+3 gpio_slow_sel[0] 0.000386301
+4 gpio_analog_pol[0] 0.000479128
+5 gpio_inp_dis[0] 0.000713159
+6 gpio_analog_sel[0] 0.000745985
 7 gpio_dm2[0] 0.00030895
 8 gpio_holdover[0] 0.000286882
-9 gpio_out[0] 0.000567933
-10 gpio_vtrip_sel[0] 0.000577449
-11 gpio_ib_mode_sel[0] 0.00206757
-12 gpio_loopback_zero[0] 0.00192565
-13 *89:45 0.00109483
-14 *89:43 0.00112276
-15 *89:41 0.00145263
-16 gpio_ib_mode_sel[0] gpio_dm0[0] 2.34229e-05
-17 gpio_ib_mode_sel[0] gpio_oeb[0] 0.000422628
+9 gpio_out[0] 0.000579968
+10 gpio_vtrip_sel[0] 0.000589484
+11 gpio_ib_mode_sel[0] 0.00222717
+12 gpio_loopback_zero[0] 0.000997344
+13 *345:RST 0.000114326
+14 *89:117 0.000692826
+15 *89:115 0.000706101
+16 *89:23 0.12696
+17 *89:21 0.165582
+18 *89:7 0.0418185
+19 gpio_analog_en[0] gpio_dm0[0] 0
+20 gpio_ib_mode_sel[0] gpio_dm0[0] 0.000545716
+21 *345:RST *345:EN 1.50866e-05
+22 *89:23 *146:27 0
+23 *89:115 gpio_dm0[0] 1.08614e-05
 *RES
-1 gpio_loopback_zero[0] gpio_ib_mode_sel[0] 4.7582 
-2 gpio_ib_mode_sel[0] gpio_vtrip_sel[0] 0.407867 
-3 gpio_vtrip_sel[0] gpio_out[0] 1.16533 
-4 gpio_out[0] gpio_holdover[0] 0.3496 
-5 gpio_holdover[0] gpio_dm2[0] 0.407867 
-6 gpio_dm2[0] gpio_analog_sel[0] 0.407867 
-7 gpio_analog_sel[0] *89:41 2.1682 
-8 *89:41 *89:43 1.20333 
-9 *89:43 *89:45 0.795467 
-10 *89:45 gpio_slow_sel[0] 1.76033 
-11 *89:45 gpio_dm1[0] 0.557 
-12 *89:43 gpio_analog_en[0] 0.557 
-13 *89:41 gpio_inp_dis[0] 0.557 
-14 gpio_inp_dis[0] gpio_analog_pol[0] 0.3496 
+1 gpio_loopback_zero[0] *89:7 2.04503 
+2 *89:7 *89:21 20.4547 
+3 *89:21 *89:23 266.018 
+4 *89:23 *345:RST 4.00088 
+5 *89:7 gpio_ib_mode_sel[0] 25.8011 
+6 gpio_ib_mode_sel[0] gpio_vtrip_sel[0] 0.407867 
+7 gpio_vtrip_sel[0] gpio_out[0] 5.793 
+8 gpio_out[0] gpio_holdover[0] 0.3496 
+9 gpio_holdover[0] gpio_dm2[0] 0.407867 
+10 gpio_dm2[0] gpio_analog_sel[0] 0.407867 
+11 gpio_analog_sel[0] gpio_inp_dis[0] 7.47247 
+12 gpio_inp_dis[0] gpio_analog_pol[0] 0.3496 
+13 gpio_analog_pol[0] *89:115 6.3081 
+14 *89:115 *89:117 4.185 
+15 *89:117 gpio_slow_sel[0] 6.83203 
+16 *89:117 gpio_dm1[0] 0.656433 
+17 *89:115 gpio_analog_en[0] 0.724833 
 *END
 
 *D_NET *90 0.0118297
@@ -1299,7 +1328,7 @@ resetb_l I
 11 *90:29 gpio_holdover[10] 0.557 
 *END
 
-*D_NET *91 0.0124692
+*D_NET *91 0.0124838
 *CONN
 *P gpio_holdover[11] O
 *P gpio_analog_sel[11] O
@@ -1312,27 +1341,24 @@ resetb_l I
 *P gpio_oeb[11] O
 *P gpio_loopback_zero[11] I
 *CAP
-1 gpio_holdover[11] 2.4314e-05
-2 gpio_analog_sel[11] 2.67546e-05
-3 gpio_slow_sel[11] 0.00120264
-4 gpio_analog_en[11] 0.00139997
-5 gpio_dm0[11] 0.0003906
-6 gpio_analog_pol[11] 0.0012447
-7 gpio_vtrip_sel[11] 0.00101941
+1 gpio_holdover[11] 2.36844e-05
+2 gpio_analog_sel[11] 2.9471e-05
+3 gpio_slow_sel[11] 0.00106298
+4 gpio_analog_en[11] 0.00130317
+5 gpio_dm0[11] 0.000472249
+6 gpio_analog_pol[11] 0.00138333
+7 gpio_vtrip_sel[11] 0.00102859
 8 gpio_ib_mode_sel[11] 0.000472249
 9 gpio_oeb[11] 0.00158053
 10 gpio_loopback_zero[11] 0.00134547
-11 *91:31 0.0014805
-12 *91:29 0.00120884
-13 gpio_analog_pol[11] gpio_inp_dis[11] 3.59887e-06
-14 gpio_analog_pol[11] *136:13 0.000190181
-15 gpio_analog_sel[11] gpio_dm2[11] 1.30836e-05
+11 *91:31 0.00163984
+12 *91:29 0.00127418
+13 gpio_analog_pol[11] *136:13 0.000316963
+14 gpio_analog_sel[11] gpio_dm2[11] 2.76118e-06
+15 gpio_holdover[11] gpio_dm2[11] 1.32181e-06
 16 gpio_holdover[11] gpio_out[11] 1.87262e-05
 17 gpio_oeb[11] *136:11 0.000211299
-18 gpio_slow_sel[11] gpio_out[11] 0.000101735
-19 gpio_slow_sel[11] *266:19 1.11335e-05
-20 *91:29 *136:11 0.000316963
-21 *91:31 gpio_dm2[11] 0.000206451
+18 *91:29 *136:11 0.000316963
 *RES
 1 gpio_loopback_zero[11] gpio_oeb[11] 3.59033 
 2 gpio_oeb[11] gpio_ib_mode_sel[11] 0.407867 
@@ -1342,12 +1368,12 @@ resetb_l I
 6 *91:31 gpio_analog_pol[11] 2.5178 
 7 gpio_analog_pol[11] gpio_dm0[11] 0.407867 
 8 gpio_dm0[11] gpio_analog_en[11] 0.407867 
-9 gpio_analog_en[11] gpio_slow_sel[11] 3.42187 
+9 gpio_analog_en[11] gpio_slow_sel[11] 3.0748 
 10 *91:31 gpio_analog_sel[11] 0.557 
 11 *91:29 gpio_holdover[11] 0.557 
 *END
 
-*D_NET *92 0.0127652
+*D_NET *92 0.0127409
 *CONN
 *P gpio_holdover[12] O
 *P gpio_analog_sel[12] O
@@ -1362,24 +1388,23 @@ resetb_l I
 *CAP
 1 gpio_holdover[12] 2.0311e-05
 2 gpio_analog_sel[12] 3.07487e-05
-3 gpio_slow_sel[12] 0.00116215
-4 gpio_analog_en[12] 0.00138739
+3 gpio_slow_sel[12] 0.00116036
+4 gpio_analog_en[12] 0.0013856
 5 gpio_dm0[12] 0.000447146
 6 gpio_analog_pol[12] 0.00124021
-7 gpio_vtrip_sel[12] 0.00108394
+7 gpio_vtrip_sel[12] 0.00108787
 8 gpio_ib_mode_sel[12] 0.000447146
 9 gpio_oeb[12] 0.00149882
 10 gpio_loopback_zero[12] 0.00127391
 11 *92:31 0.00156533
-12 *92:29 0.00139829
+12 *92:29 0.00140223
 13 gpio_analog_pol[12] gpio_inp_dis[12] 5.23378e-06
 14 gpio_analog_pol[12] *137:13 0.000380362
 15 gpio_holdover[12] gpio_dm2[12] 1.48897e-05
 16 gpio_holdover[12] gpio_out[12] 1.75585e-05
 17 gpio_oeb[12] *137:11 0.000253564
-18 gpio_slow_sel[12] *267:19 2.8517e-05
-19 *92:29 *137:11 0.00029583
-20 *92:31 gpio_dm2[12] 0.000213809
+18 *92:29 *137:11 0.00029583
+19 *92:31 gpio_dm2[12] 0.000213809
 *RES
 1 gpio_loopback_zero[12] gpio_oeb[12] 3.59033 
 2 gpio_oeb[12] gpio_ib_mode_sel[12] 0.407867 
@@ -1389,7 +1414,7 @@ resetb_l I
 6 *92:31 gpio_analog_pol[12] 2.5178 
 7 gpio_analog_pol[12] gpio_dm0[12] 0.407867 
 8 gpio_dm0[12] gpio_analog_en[12] 0.407867 
-9 gpio_analog_en[12] gpio_slow_sel[12] 5.10353 
+9 gpio_analog_en[12] gpio_slow_sel[12] 3.0748 
 10 *92:31 gpio_analog_sel[12] 0.557 
 11 *92:29 gpio_holdover[12] 0.557 
 *END
@@ -1832,54 +1857,53 @@ resetb_l I
 21 *99:99 gpio_slow_sel[19] 2.26583 
 *END
 
-*D_NET *100 0.0142254
+*D_NET *100 0.0139353
 *CONN
-*P gpio_holdover[1] O
 *P gpio_analog_sel[1] O
 *P gpio_inp_dis[1] O
 *P gpio_analog_pol[1] O
 *P gpio_analog_en[1] O
 *P gpio_slow_sel[1] O
+*P gpio_holdover[1] O
+*P gpio_out[1] O
 *P gpio_vtrip_sel[1] O
 *P gpio_ib_mode_sel[1] O
 *P gpio_oeb[1] O
 *P gpio_loopback_zero[1] I
 *CAP
-1 gpio_holdover[1] 2.37378e-05
-2 gpio_analog_sel[1] 3.07487e-05
-3 gpio_inp_dis[1] 0.000198309
-4 gpio_analog_pol[1] 0.000225823
-5 gpio_analog_en[1] 2.87984e-05
-6 gpio_slow_sel[1] 0.00108723
-7 gpio_vtrip_sel[1] 0.00117407
-8 gpio_ib_mode_sel[1] 0.000472249
-9 gpio_oeb[1] 0.0017157
-10 gpio_loopback_zero[1] 0.00148544
-11 *100:35 0.00172981
-12 *100:33 0.00166123
-13 *100:31 0.00158707
-14 *100:29 0.00149219
+1 gpio_analog_sel[1] 3.07487e-05
+2 gpio_inp_dis[1] 0.000198309
+3 gpio_analog_pol[1] 0.000225823
+4 gpio_analog_en[1] 2.87984e-05
+5 gpio_slow_sel[1] 0.00109212
+6 gpio_holdover[1] 0.000753034
+7 gpio_out[1] 0.00061416
+8 gpio_vtrip_sel[1] 0.000681964
+9 gpio_ib_mode_sel[1] 0.000481407
+10 gpio_oeb[1] 0.00172442
+11 gpio_loopback_zero[1] 0.00149416
+12 *100:41 0.0017347
+13 *100:39 0.00166123
+14 *100:37 0.00162037
 15 gpio_analog_pol[1] gpio_dm0[1] 9.28995e-06
-16 gpio_holdover[1] gpio_dm2[1] 1.08062e-05
-17 gpio_holdover[1] *134:27 1.01404e-05
-18 gpio_oeb[1] gpio_out[1] 0.000577786
-19 gpio_slow_sel[1] *313:wb_rst_i 0
-20 *100:29 gpio_out[1] 0.000261232
-21 *100:33 *134:29 0.000443761
+16 gpio_oeb[1] *134:11 0.000577786
+17 gpio_out[1] *134:11 0.000552438
+18 *100:37 gpio_dm2[1] 1.08062e-05
+19 *100:39 *134:13 0.000443761
 *RES
 1 gpio_loopback_zero[1] gpio_oeb[1] 4.22367 
 2 gpio_oeb[1] gpio_ib_mode_sel[1] 0.407867 
 3 gpio_ib_mode_sel[1] gpio_vtrip_sel[1] 0.407867 
-4 gpio_vtrip_sel[1] *100:29 2.10993 
-5 *100:29 *100:31 0.853733 
-6 *100:31 *100:33 1.9608 
-7 *100:33 *100:35 0.853733 
-8 *100:35 gpio_slow_sel[1] 2.5178 
-9 *100:35 gpio_analog_en[1] 0.557 
-10 *100:33 gpio_analog_pol[1] 0.557 
-11 gpio_analog_pol[1] gpio_inp_dis[1] 0.3496 
-12 *100:31 gpio_analog_sel[1] 0.557 
-13 *100:29 gpio_holdover[1] 0.557 
+4 gpio_vtrip_sel[1] gpio_out[1] 1.16533 
+5 gpio_out[1] gpio_holdover[1] 0.3496 
+6 gpio_holdover[1] *100:37 1.41073 
+7 *100:37 *100:39 1.9608 
+8 *100:39 *100:41 0.853733 
+9 *100:41 gpio_slow_sel[1] 2.5178 
+10 *100:41 gpio_analog_en[1] 0.557 
+11 *100:39 gpio_analog_pol[1] 0.557 
+12 gpio_analog_pol[1] gpio_inp_dis[1] 0.3496 
+13 *100:37 gpio_analog_sel[1] 0.557 
 *END
 
 *D_NET *101 0.0141608
@@ -2421,7 +2445,7 @@ resetb_l I
 12 *110:83 gpio_slow_sel[29] 6.43857 
 *END
 
-*D_NET *111 0.0122625
+*D_NET *111 0.0123792
 *CONN
 *P gpio_holdover[2] O
 *P gpio_analog_sel[2] O
@@ -2434,24 +2458,24 @@ resetb_l I
 *P gpio_oeb[2] O
 *P gpio_loopback_zero[2] I
 *CAP
-1 gpio_holdover[2] 2.19032e-05
+1 gpio_holdover[2] 1.90285e-05
 2 gpio_analog_sel[2] 3.2536e-05
 3 gpio_slow_sel[2] 0.00108585
 4 gpio_analog_en[2] 0.0013159
 5 gpio_dm0[2] 0.000447146
 6 gpio_analog_pol[2] 0.00132938
-7 gpio_vtrip_sel[2] 0.000878025
+7 gpio_vtrip_sel[2] 0.000932995
 8 gpio_ib_mode_sel[2] 0.000283846
 9 gpio_oeb[2] 0.00185281
 10 gpio_loopback_zero[2] 0.00171089
 11 *111:31 0.00166472
-12 *111:29 0.00127791
+12 *111:29 0.00133001
 13 gpio_analog_pol[2] gpio_inp_dis[2] 7.44467e-07
 14 gpio_analog_pol[2] *138:27 0.000338096
 15 gpio_analog_sel[2] gpio_dm2[2] 2.17231e-06
 16 gpio_analog_sel[2] *138:27 2.85392e-06
 17 gpio_holdover[2] gpio_dm2[2] 7.92449e-06
-18 gpio_holdover[2] gpio_out[2] 9.81883e-06
+18 gpio_holdover[2] gpio_out[2] 2.23272e-05
 *RES
 1 gpio_loopback_zero[2] gpio_oeb[2] 4.22367 
 2 gpio_oeb[2] gpio_ib_mode_sel[2] 0.407867 
@@ -2871,10 +2895,10 @@ resetb_l I
 12 *119:83 gpio_slow_sel[37] 6.03497 
 *END
 
-*D_NET *120 0.0103918
+*D_NET *120 0.0106263
 *CONN
-*P gpio_ib_mode_sel[38] O
 *P gpio_vtrip_sel[38] O
+*P gpio_ib_mode_sel[38] O
 *P gpio_dm1[38] O
 *P gpio_slow_sel[38] O
 *P gpio_analog_en[38] O
@@ -2886,38 +2910,38 @@ resetb_l I
 *P gpio_out[38] O
 *P gpio_loopback_zero[38] I
 *CAP
-1 gpio_ib_mode_sel[38] 0.000131292
-2 gpio_vtrip_sel[38] 0.000179585
+1 gpio_vtrip_sel[38] 0.000131292
+2 gpio_ib_mode_sel[38] 0.000179585
 3 gpio_dm1[38] 1.37255e-05
 4 gpio_slow_sel[38] 0.000483822
 5 gpio_analog_en[38] 0.000465143
-6 gpio_dm0[38] 0.000265437
-7 gpio_analog_pol[38] 0.00103616
-8 gpio_analog_sel[38] 0.00103331
+6 gpio_dm0[38] 0.000262583
+7 gpio_analog_pol[38] 0.000761526
+8 gpio_analog_sel[38] 0.000761526
 9 gpio_dm2[38] 0.000262583
 10 gpio_holdover[38] 0.000243827
-11 gpio_out[38] 0.000462405
-12 gpio_loopback_zero[38] 0.00122527
-13 *120:60 0.000831399
+11 gpio_out[38] 0.00056017
+12 gpio_loopback_zero[38] 0.0011275
+13 *120:55 0.000831399
 14 *120:9 0.00162343
-15 gpio_analog_pol[38] gpio_inp_dis[38] 0.000276647
-16 gpio_out[38] gpio_inp_dis[38] 0.000790809
-17 *120:9 gpio_inp_dis[38] 0.000536355
+15 gpio_analog_pol[38] gpio_inp_dis[38] 0.00106041
+16 gpio_out[38] gpio_inp_dis[38] 0.00106041
+17 *120:9 gpio_inp_dis[38] 0.000266755
 18 *120:9 *259:9 0.000530595
 *RES
-1 gpio_loopback_zero[38] *120:9 4.87253 
-2 *120:9 gpio_out[38] 2.41583 
+1 gpio_loopback_zero[38] *120:9 4.46467 
+2 *120:9 gpio_out[38] 2.8237 
 3 gpio_out[38] gpio_holdover[38] 2.07 
 4 gpio_holdover[38] gpio_dm2[38] 2.415 
 5 gpio_dm2[38] gpio_analog_sel[38] 2.415 
-6 gpio_analog_sel[38] gpio_analog_pol[38] 7.87503 
+6 gpio_analog_sel[38] gpio_analog_pol[38] 4.3858 
 7 gpio_analog_pol[38] gpio_dm0[38] 2.415 
 8 gpio_dm0[38] gpio_analog_en[38] 2.415 
-9 gpio_analog_en[38] *120:60 1.49797 
-10 *120:60 gpio_slow_sel[38] 1.90583 
-11 *120:60 gpio_dm1[38] 0.7025 
-12 *120:9 gpio_vtrip_sel[38] 1.2125 
-13 gpio_vtrip_sel[38] gpio_ib_mode_sel[38] 2.415 
+9 gpio_analog_en[38] *120:55 1.49797 
+10 *120:55 gpio_slow_sel[38] 1.90583 
+11 *120:55 gpio_dm1[38] 0.7025 
+12 *120:9 gpio_ib_mode_sel[38] 1.2125 
+13 gpio_ib_mode_sel[38] gpio_vtrip_sel[38] 2.415 
 *END
 
 *D_NET *121 0.0104908
@@ -2968,7 +2992,7 @@ resetb_l I
 12 *121:75 gpio_dm1[39] 0.7025 
 *END
 
-*D_NET *122 0.0133284
+*D_NET *122 0.0133676
 *CONN
 *P gpio_holdover[3] O
 *P gpio_analog_sel[3] O
@@ -2981,22 +3005,23 @@ resetb_l I
 *P gpio_oeb[3] O
 *P gpio_loopback_zero[3] I
 *CAP
-1 gpio_holdover[3] 2.92454e-05
+1 gpio_holdover[3] 2.1365e-05
 2 gpio_analog_sel[3] 3.07487e-05
 3 gpio_slow_sel[3] 0.00121243
 4 gpio_analog_en[3] 0.00144181
 5 gpio_dm0[3] 0.000463221
 6 gpio_analog_pol[3] 0.0012644
-7 gpio_vtrip_sel[3] 0.00118822
+7 gpio_vtrip_sel[3] 0.00114977
 8 gpio_ib_mode_sel[3] 0.000453008
 9 gpio_oeb[3] 0.00166603
 10 gpio_loopback_zero[3] 0.00143271
 11 *122:31 0.00157802
-12 *122:29 0.00151449
+12 *122:29 0.00146816
 13 gpio_analog_pol[3] *139:13 0.00029583
 14 gpio_holdover[3] gpio_dm2[3] 3.39978e-06
-15 gpio_oeb[3] *139:11 0.000543571
-16 *122:29 *139:11 0.000211299
+15 gpio_holdover[3] gpio_out[3] 2.6169e-05
+16 gpio_oeb[3] *139:11 0.000543571
+17 *122:29 *139:11 0.000316963
 *RES
 1 gpio_loopback_zero[3] gpio_oeb[3] 4.097 
 2 gpio_oeb[3] gpio_ib_mode_sel[3] 0.407867 
@@ -3011,7 +3036,7 @@ resetb_l I
 11 *122:29 gpio_holdover[3] 0.557 
 *END
 
-*D_NET *123 0.00937154
+*D_NET *123 0.00948142
 *CONN
 *P gpio_dm1[40] O
 *P gpio_slow_sel[40] O
@@ -3030,17 +3055,19 @@ resetb_l I
 2 gpio_slow_sel[40] 0.000483822
 3 gpio_analog_en[40] 0.000465143
 4 gpio_dm0[40] 0.000262583
-5 gpio_analog_pol[40] 0.00094868
-6 gpio_analog_sel[40] 0.00094868
+5 gpio_analog_pol[40] 0.000848481
+6 gpio_analog_sel[40] 0.000848481
 7 gpio_dm2[40] 0.000262583
 8 gpio_holdover[40] 0.000243827
-9 gpio_out[40] 0.000615659
-10 gpio_vtrip_sel[40] 0.000634415
-11 gpio_ib_mode_sel[40] 0.00161619
-12 gpio_loopback_zero[40] 0.0014849
+9 gpio_out[40] 0.00052436
+10 gpio_vtrip_sel[40] 0.000543116
+11 gpio_ib_mode_sel[40] 0.00160626
+12 gpio_loopback_zero[40] 0.00147497
 13 *123:69 0.000831399
-14 gpio_ib_mode_sel[40] gpio_inp_dis[40] 2.91093e-05
-15 gpio_ib_mode_sel[40] gpio_oeb[40] 0.000530828
+14 gpio_analog_pol[40] gpio_inp_dis[40] 0.000266096
+15 gpio_ib_mode_sel[40] gpio_inp_dis[40] 6.27374e-05
+16 gpio_ib_mode_sel[40] gpio_oeb[40] 0.000530828
+17 gpio_out[40] gpio_inp_dis[40] 0.000213007
 *RES
 1 gpio_loopback_zero[40] gpio_ib_mode_sel[40] 6.29403 
 2 gpio_ib_mode_sel[40] gpio_vtrip_sel[40] 2.415 
@@ -3056,7 +3083,7 @@ resetb_l I
 12 *123:69 gpio_dm1[40] 0.7025 
 *END
 
-*D_NET *124 0.00939441
+*D_NET *124 0.00946596
 *CONN
 *P gpio_dm1[41] O
 *P gpio_slow_sel[41] O
@@ -3075,17 +3102,19 @@ resetb_l I
 2 gpio_slow_sel[41] 0.000482633
 3 gpio_analog_en[41] 0.000463953
 4 gpio_dm0[41] 0.000262583
-5 gpio_analog_pol[41] 0.000979916
-6 gpio_analog_sel[41] 0.000979916
+5 gpio_analog_pol[41] 0.000871592
+6 gpio_analog_sel[41] 0.000871592
 7 gpio_dm2[41] 0.000262583
 8 gpio_holdover[41] 0.000243827
-9 gpio_out[41] 0.00061447
-10 gpio_vtrip_sel[41] 0.000633226
-11 gpio_ib_mode_sel[41] 0.00161196
-12 gpio_loopback_zero[41] 0.00148066
+9 gpio_out[41] 0.000523031
+10 gpio_vtrip_sel[41] 0.000541787
+11 gpio_ib_mode_sel[41] 0.00159621
+12 gpio_loopback_zero[41] 0.00146492
 13 *124:69 0.000829019
-14 gpio_ib_mode_sel[41] gpio_inp_dis[41] 5.11337e-06
-15 gpio_ib_mode_sel[41] gpio_oeb[41] 0.000530822
+14 gpio_analog_pol[41] gpio_inp_dis[41] 0.000252898
+15 gpio_ib_mode_sel[41] gpio_inp_dis[41] 4.14197e-05
+16 gpio_ib_mode_sel[41] gpio_oeb[41] 0.000530822
+17 gpio_out[41] gpio_inp_dis[41] 0.000213368
 *RES
 1 gpio_loopback_zero[41] gpio_ib_mode_sel[41] 5.28227 
 2 gpio_ib_mode_sel[41] gpio_vtrip_sel[41] 2.415 
@@ -3199,7 +3228,7 @@ resetb_l I
 12 *126:73 gpio_dm1[43] 0.7025 
 *END
 
-*D_NET *127 0.0134164
+*D_NET *127 0.0132185
 *CONN
 *P gpio_holdover[4] O
 *P gpio_analog_sel[4] O
@@ -3212,23 +3241,24 @@ resetb_l I
 *P gpio_oeb[4] O
 *P gpio_loopback_zero[4] I
 *CAP
-1 gpio_holdover[4] 2.73801e-05
+1 gpio_holdover[4] 1.98995e-05
 2 gpio_analog_sel[4] 3.07487e-05
 3 gpio_slow_sel[4] 0.00107182
 4 gpio_analog_en[4] 0.00129881
 5 gpio_dm0[4] 0.000472249
 6 gpio_analog_pol[4] 0.00131469
-7 gpio_vtrip_sel[4] 0.00113929
+7 gpio_vtrip_sel[4] 0.00106035
 8 gpio_ib_mode_sel[4] 0.000472249
 9 gpio_oeb[4] 0.00170375
 10 gpio_loopback_zero[4] 0.0014759
 11 *127:31 0.00163328
-12 *127:29 0.00145538
+12 *127:29 0.00136896
 13 gpio_analog_pol[4] gpio_inp_dis[4] 6.64568e-06
 14 gpio_analog_pol[4] *140:13 0.000401495
 15 gpio_holdover[4] gpio_dm2[4] 9.84252e-06
-16 gpio_oeb[4] *140:11 0.00053703
-17 *127:29 gpio_out[4] 0.000365888
+16 gpio_holdover[4] gpio_out[4] 2.38537e-05
+17 gpio_oeb[4] *140:11 0.00053703
+18 *127:29 *140:11 0.000316963
 *RES
 1 gpio_loopback_zero[4] gpio_oeb[4] 4.097 
 2 gpio_oeb[4] gpio_ib_mode_sel[4] 0.407867 
@@ -3243,7 +3273,7 @@ resetb_l I
 11 *127:29 gpio_holdover[4] 0.557 
 *END
 
-*D_NET *128 0.0119981
+*D_NET *128 0.012117
 *CONN
 *P gpio_holdover[5] O
 *P gpio_analog_sel[5] O
@@ -3256,24 +3286,24 @@ resetb_l I
 *P gpio_oeb[5] O
 *P gpio_loopback_zero[5] I
 *CAP
-1 gpio_holdover[5] 2.18645e-05
+1 gpio_holdover[5] 1.88321e-05
 2 gpio_analog_sel[5] 3.23027e-05
 3 gpio_slow_sel[5] 0.00112995
 4 gpio_analog_en[5] 0.00136239
 5 gpio_dm0[5] 0.000447146
 6 gpio_analog_pol[5] 0.0012762
-7 gpio_vtrip_sel[5] 0.000927898
+7 gpio_vtrip_sel[5] 0.000983563
 8 gpio_ib_mode_sel[5] 0.000283846
 9 gpio_oeb[5] 0.00167715
 10 gpio_loopback_zero[5] 0.00153523
 11 *128:31 0.00161371
-12 *128:29 0.00132775
+12 *128:29 0.00138038
 13 gpio_analog_pol[5] gpio_inp_dis[5] 1.04833e-06
 14 gpio_analog_pol[5] *141:25 0.000338096
 15 gpio_analog_sel[5] gpio_dm2[5] 2.59006e-06
 16 gpio_analog_sel[5] *141:25 2.94665e-06
 17 gpio_holdover[5] gpio_dm2[5] 7.70269e-06
-18 gpio_holdover[5] gpio_out[5] 1.02617e-05
+18 gpio_holdover[5] gpio_out[5] 2.38787e-05
 *RES
 1 gpio_loopback_zero[5] gpio_oeb[5] 4.097 
 2 gpio_oeb[5] gpio_ib_mode_sel[5] 0.407867 
@@ -3288,7 +3318,7 @@ resetb_l I
 11 *128:29 gpio_holdover[5] 0.557 
 *END
 
-*D_NET *129 0.0130562
+*D_NET *129 0.0131106
 *CONN
 *P gpio_holdover[6] O
 *P gpio_analog_sel[6] O
@@ -3301,25 +3331,26 @@ resetb_l I
 *P gpio_oeb[6] O
 *P gpio_loopback_zero[6] I
 *CAP
-1 gpio_holdover[6] 2.93052e-05
+1 gpio_holdover[6] 2.09569e-05
 2 gpio_analog_sel[6] 3.06474e-05
 3 gpio_slow_sel[6] 0.00119044
 4 gpio_analog_en[6] 0.00142222
 5 gpio_dm0[6] 0.000472249
 6 gpio_analog_pol[6] 0.00121218
-7 gpio_vtrip_sel[6] 0.00118868
+7 gpio_vtrip_sel[6] 0.00115677
 8 gpio_ib_mode_sel[6] 0.000468601
 9 gpio_oeb[6] 0.00156268
 10 gpio_loopback_zero[6] 0.00132286
 11 *129:31 0.00147331
-12 *129:29 0.00146015
+12 *129:29 0.0014199
 13 gpio_analog_pol[6] gpio_inp_dis[6] 0.000230162
 14 gpio_analog_pol[6] *142:13 0.000274697
 15 gpio_analog_sel[6] gpio_dm2[6] 2.12705e-07
 16 gpio_holdover[6] gpio_dm2[6] 3.2188e-06
-17 gpio_oeb[6] *142:11 0.000502815
-18 gpio_slow_sel[6] gpio_dm1[6] 4.86182e-07
-19 *129:29 *142:11 0.000211299
+17 gpio_holdover[6] gpio_out[6] 2.92677e-05
+18 gpio_oeb[6] *142:11 0.000502815
+19 gpio_slow_sel[6] gpio_dm1[6] 4.86182e-07
+20 *129:29 *142:11 0.000316963
 *RES
 1 gpio_loopback_zero[6] gpio_oeb[6] 3.97033 
 2 gpio_oeb[6] gpio_ib_mode_sel[6] 0.407867 
@@ -3469,50 +3500,64 @@ resetb_l I
 11 *132:29 gpio_holdover[9] 0.557 
 *END
 
-*D_NET *133 0.00739979
+*D_NET *133 0.292975
 *CONN
 *P gpio_dm0[0] O
 *P gpio_oeb[0] O
 *P gpio_loopback_one[0] I
+*I *345:OE I *D CF_ROM_SYNC
+*I *345:EN I *D CF_ROM_SYNC
 *CAP
-1 gpio_dm0[0] 0.00276895
-2 gpio_oeb[0] 0.00347687
-3 gpio_loopback_one[0] 0.000707922
-4 gpio_ib_mode_sel[0] gpio_dm0[0] 2.34229e-05
-5 gpio_ib_mode_sel[0] gpio_oeb[0] 0.000422628
+1 gpio_dm0[0] 0.00263758
+2 gpio_oeb[0] 0.00332245
+3 gpio_loopback_one[0] 0.0040564
+4 *345:OE 3.24377e-05
+5 *345:EN 0.00104884
+6 *133:68 0.0335017
+7 *133:46 0.137599
+8 *133:44 0.10855
+9 *345:EN *345:CLK 0.000126832
+10 *133:68 *345:A[3] 0.000302349
+11 *133:68 *331:21 0.000640058
+12 *133:68 *332:29 0.000586
+13 gpio_analog_en[0] gpio_dm0[0] 0
+14 gpio_ib_mode_sel[0] gpio_dm0[0] 0.000545716
+15 *345:RST *345:EN 1.50866e-05
+16 *89:115 gpio_dm0[0] 1.08614e-05
 *RES
 1 gpio_loopback_one[0] gpio_oeb[0] 12.069 
 2 gpio_oeb[0] gpio_dm0[0] 33.3534 
+3 gpio_loopback_one[0] *133:44 7.41473 
+4 *133:44 *133:46 266.621 
+5 *133:46 *133:68 11.0263 
+6 *133:68 *345:EN 19.1475 
+7 *133:68 *345:OE 0.5625 
 *END
 
-*D_NET *134 0.00806448
+*D_NET *134 0.00818316
 *CONN
 *P gpio_dm2[1] O
 *P gpio_dm0[1] O
 *P gpio_dm1[1] O
-*P gpio_out[1] O
 *P gpio_loopback_one[1] I
 *CAP
-1 gpio_dm2[1] 0.000184812
+1 gpio_dm2[1] 0.000188584
 2 gpio_dm0[1] 0.000187261
 3 gpio_dm1[1] 0.000525171
-4 gpio_out[1] 0.00154984
-5 gpio_loopback_one[1] 0.00134085
-6 *134:29 0.00164107
-7 *134:27 0.00132245
-8 gpio_analog_pol[1] gpio_dm0[1] 9.28995e-06
-9 gpio_holdover[1] gpio_dm2[1] 1.08062e-05
-10 gpio_holdover[1] *134:27 1.01404e-05
-11 gpio_oeb[1] gpio_out[1] 0.000577786
-12 *100:29 gpio_out[1] 0.000261232
-13 *100:33 *134:29 0.000443761
+4 gpio_loopback_one[1] 0.00146488
+5 *134:13 0.00164107
+6 *134:11 0.00258211
+7 gpio_analog_pol[1] gpio_dm0[1] 9.28995e-06
+8 gpio_oeb[1] *134:11 0.000577786
+9 gpio_out[1] *134:11 0.000552438
+10 *100:37 gpio_dm2[1] 1.08062e-05
+11 *100:39 *134:13 0.000443761
 *RES
-1 gpio_loopback_one[1] gpio_out[1] 19.8575 
-2 gpio_out[1] *134:27 2.4181 
-3 *134:27 *134:29 16.425 
-4 *134:29 gpio_dm1[1] 8.03443 
-5 *134:29 gpio_dm0[1] 0.829967 
-6 *134:27 gpio_dm2[1] 0.8477 
+1 gpio_loopback_one[1] *134:11 24.0059 
+2 *134:11 *134:13 16.425 
+3 *134:13 gpio_dm1[1] 8.03443 
+4 *134:13 gpio_dm0[1] 0.829967 
+5 *134:11 gpio_dm2[1] 0.8477 
 *END
 
 *D_NET *135 0.0084494
@@ -3539,34 +3584,30 @@ resetb_l I
 3 gpio_inp_dis[10] gpio_dm1[10] 12.0607 
 *END
 
-*D_NET *136 0.00726596
+*D_NET *136 0.00669972
 *CONN
 *P gpio_dm2[11] O
 *P gpio_inp_dis[11] O
 *P gpio_dm1[11] O
 *P gpio_loopback_one[11] I
 *CAP
-1 gpio_dm2[11] 0.000197435
-2 gpio_inp_dis[11] 5.56206e-05
-3 gpio_dm1[11] 0.000512032
-4 gpio_loopback_one[11] 0.00137044
-5 *136:13 0.000975844
-6 *136:11 0.00197607
-7 gpio_dm1[11] gpio_out[11] 0.000483516
-8 *136:11 gpio_out[11] 0.000249927
-9 *136:13 gpio_out[11] 0.000503508
-10 gpio_analog_pol[11] gpio_inp_dis[11] 3.59887e-06
-11 gpio_analog_pol[11] *136:13 0.000190181
-12 gpio_analog_sel[11] gpio_dm2[11] 1.30836e-05
-13 gpio_oeb[11] *136:11 0.000211299
-14 *91:29 *136:11 0.000316963
-15 *91:31 gpio_dm2[11] 0.000206451
+1 gpio_dm2[11] 5.03822e-05
+2 gpio_inp_dis[11] 0.000160856
+3 gpio_dm1[11] 0.000761338
+4 gpio_loopback_one[11] 0.00137477
+5 *136:13 0.00150006
+6 *136:11 0.00200301
+7 gpio_analog_pol[11] *136:13 0.000316963
+8 gpio_analog_sel[11] gpio_dm2[11] 2.76118e-06
+9 gpio_holdover[11] gpio_dm2[11] 1.32181e-06
+10 gpio_oeb[11] *136:11 0.000211299
+11 *91:29 *136:11 0.000316963
 *RES
-1 gpio_loopback_one[11] *136:11 24.8036 
+1 gpio_loopback_one[11] *136:11 23.2736 
 2 *136:11 *136:13 10.305 
-3 *136:13 gpio_dm1[11] 10.6047 
-4 *136:13 gpio_inp_dis[11] 0.6083 
-5 *136:11 gpio_dm2[11] 0.8667 
+3 *136:13 gpio_dm1[11] 12.1347 
+4 *136:13 gpio_inp_dis[11] 0.781833 
+5 *136:11 gpio_dm2[11] 0.6083 
 *END
 
 *D_NET *137 0.00724239
@@ -3621,23 +3662,24 @@ resetb_l I
 4 *138:27 gpio_inp_dis[2] 0.685567 
 *END
 
-*D_NET *139 0.00738273
+*D_NET *139 0.00748847
 *CONN
 *P gpio_dm2[3] O
 *P gpio_inp_dis[3] O
 *P gpio_dm1[3] O
 *P gpio_loopback_one[3] I
 *CAP
-1 gpio_dm2[3] 8.13556e-05
+1 gpio_dm2[3] 8.07389e-05
 2 gpio_inp_dis[3] 0.000180301
 3 gpio_dm1[3] 0.000790552
-4 gpio_loopback_one[3] 0.0015025
+4 gpio_loopback_one[3] 0.00150251
 5 *139:13 0.00158046
-6 *139:11 0.00219346
-7 gpio_analog_pol[3] *139:13 0.00029583
-8 gpio_holdover[3] gpio_dm2[3] 3.39978e-06
-9 gpio_oeb[3] *139:11 0.000543571
-10 *122:29 *139:11 0.000211299
+6 *139:11 0.00219285
+7 gpio_dm2[3] gpio_out[3] 1.29488e-06
+8 gpio_analog_pol[3] *139:13 0.00029583
+9 gpio_holdover[3] gpio_dm2[3] 3.39978e-06
+10 gpio_oeb[3] *139:11 0.000543571
+11 *122:29 *139:11 0.000316963
 *RES
 1 gpio_loopback_one[3] *139:11 24.4957 
 2 *139:11 *139:13 10.815 
@@ -3646,24 +3688,25 @@ resetb_l I
 5 *139:11 gpio_dm2[3] 0.655167 
 *END
 
-*D_NET *140 0.00757804
+*D_NET *140 0.00765632
 *CONN
 *P gpio_dm2[4] O
 *P gpio_inp_dis[4] O
 *P gpio_dm1[4] O
 *P gpio_loopback_one[4] I
 *CAP
-1 gpio_dm2[4] 0.00018286
+1 gpio_dm2[4] 0.000181582
 2 gpio_inp_dis[4] 0.000123251
 3 gpio_dm1[4] 0.000639124
-4 gpio_loopback_one[4] 0.0014448
+4 gpio_loopback_one[4] 0.00144481
 5 *140:13 0.00156424
-6 *140:11 0.00242952
-7 *140:11 gpio_out[4] 0.00023923
+6 *140:11 0.00242825
+7 gpio_dm2[4] gpio_out[4] 3.08723e-06
 8 gpio_analog_pol[4] gpio_inp_dis[4] 6.64568e-06
 9 gpio_analog_pol[4] *140:13 0.000401495
 10 gpio_holdover[4] gpio_dm2[4] 9.84252e-06
 11 gpio_oeb[4] *140:11 0.00053703
+12 *127:29 *140:11 0.000316963
 *RES
 1 gpio_loopback_one[4] *140:11 23.4655 
 2 *140:11 *140:13 14.385 
@@ -3696,26 +3739,27 @@ resetb_l I
 4 *141:25 gpio_inp_dis[5] 0.675433 
 *END
 
-*D_NET *142 0.0075403
+*D_NET *142 0.00764605
 *CONN
 *P gpio_dm2[6] O
 *P gpio_inp_dis[6] O
 *P gpio_dm1[6] O
 *P gpio_loopback_one[6] I
 *CAP
-1 gpio_dm2[6] 7.20533e-05
+1 gpio_dm2[6] 7.14366e-05
 2 gpio_inp_dis[6] 0.000224761
 3 gpio_dm1[6] 0.000817644
-4 gpio_loopback_one[6] 0.00145589
+4 gpio_loopback_one[6] 0.0014559
 5 *142:13 0.00163076
-6 *142:11 0.0021163
-7 gpio_analog_pol[6] gpio_inp_dis[6] 0.000230162
-8 gpio_analog_pol[6] *142:13 0.000274697
-9 gpio_analog_sel[6] gpio_dm2[6] 2.12705e-07
-10 gpio_holdover[6] gpio_dm2[6] 3.2188e-06
-11 gpio_oeb[6] *142:11 0.000502815
-12 gpio_slow_sel[6] gpio_dm1[6] 4.86182e-07
-13 *129:29 *142:11 0.000211299
+6 *142:11 0.00211569
+7 gpio_dm2[6] gpio_out[6] 1.29488e-06
+8 gpio_analog_pol[6] gpio_inp_dis[6] 0.000230162
+9 gpio_analog_pol[6] *142:13 0.000274697
+10 gpio_analog_sel[6] gpio_dm2[6] 2.12705e-07
+11 gpio_holdover[6] gpio_dm2[6] 3.2188e-06
+12 gpio_oeb[6] *142:11 0.000502815
+13 gpio_slow_sel[6] gpio_dm1[6] 4.86182e-07
+14 *129:29 *142:11 0.000316963
 *RES
 1 gpio_loopback_one[6] *142:11 23.9553 
 2 *142:11 *142:13 10.305 
@@ -3803,27 +3847,40 @@ resetb_l I
 5 *145:11 gpio_dm2[9] 0.888233 
 *END
 
-*D_NET *146 0.0211795
+*D_NET *146 0.286064
 *CONN
 *P gpio_in[0] I
-*I *313:wb_clk_i I *D user_proj_timer
+*I *345:CLK I *D CF_ROM_SYNC
+*I *346:wb_clk_i I *D user_proj_timer
 *CAP
-1 gpio_in[0] 0.0105898
-2 *313:wb_clk_i 0.0105898
+1 gpio_in[0] 0.00684261
+2 *345:CLK 0.000147541
+3 *346:wb_clk_i 0.00892235
+4 *146:27 0.111419
+5 *146:25 0.111271
+6 *146:23 0.0226273
+7 *146:21 0.024707
+8 *345:EN *345:CLK 0.000126832
+9 *89:23 *146:27 0
 *RES
-1 gpio_in[0] *313:wb_clk_i 25.7906 
+1 gpio_in[0] *346:wb_clk_i 15.2576 
+2 *346:wb_clk_i *146:21 35.8247 
+3 *146:21 *146:23 55.8866 
+4 *146:23 *146:25 0.5 
+5 *146:25 *146:27 285.656 
+6 *146:27 *345:CLK 5.02838 
 *END
 
-*D_NET *157 0.0255104
+*D_NET *157 0.0252453
 *CONN
 *P gpio_in[1] I
-*I *313:wb_rst_i I *D user_proj_timer
+*I *346:wb_rst_i I *D user_proj_timer
 *CAP
-1 gpio_in[1] 0.0127552
-2 *313:wb_rst_i 0.0127552
-3 gpio_slow_sel[1] *313:wb_rst_i 0
+1 gpio_in[1] 0.0125873
+2 *346:wb_rst_i 0.0125873
+3 *346:wb_rst_i *268:16 7.07318e-05
 *RES
-1 gpio_in[1] *313:wb_rst_i 31.2727 
+1 gpio_in[1] *346:wb_rst_i 30.8382 
 *END
 
 *D_NET *234 0.00617729
@@ -4326,17 +4383,17 @@ resetb_l I
 3 gpio_oeb[36] gpio_inp_dis[36] 29.225 
 *END
 
-*D_NET *258 0.00788853
+*D_NET *258 0.00800963
 *CONN
 *P gpio_inp_dis[37] O
 *P gpio_oeb[37] O
 *P gpio_loopback_one[37] I
 *CAP
-1 gpio_inp_dis[37] 0.00199111
+1 gpio_inp_dis[37] 0.00205167
 2 gpio_oeb[37] 0.000132337
 3 gpio_loopback_one[37] 0.000812733
 4 *258:40 0
-5 *258:11 0.00293618
+5 *258:11 0.00299674
 6 gpio_analog_pol[37] gpio_inp_dis[37] 1.61906e-05
 7 gpio_ib_mode_sel[37] gpio_inp_dis[37] 2.39315e-06
 8 gpio_ib_mode_sel[37] gpio_oeb[37] 2.58445e-06
@@ -4345,23 +4402,23 @@ resetb_l I
 *RES
 1 gpio_loopback_one[37] *258:11 23.2499 
 2 *258:11 gpio_oeb[37] 1.2337 
-3 *258:11 gpio_inp_dis[37] 29.0077 
+3 *258:11 gpio_inp_dis[37] 29.1243 
 4 gpio_inp_dis[37] *258:40 0.04 
 *END
 
-*D_NET *259 0.00629069
+*D_NET *259 0.00683042
 *CONN
 *P gpio_oeb[38] O
 *P gpio_inp_dis[38] O
 *P gpio_loopback_one[38] I
 *CAP
 1 gpio_oeb[38] 1.37255e-05
-2 gpio_inp_dis[38] 0.00184155
+2 gpio_inp_dis[38] 0.00171953
 3 gpio_loopback_one[38] 0.000222871
-4 *259:9 0.00207814
-5 gpio_analog_pol[38] gpio_inp_dis[38] 0.000276647
-6 gpio_out[38] gpio_inp_dis[38] 0.000790809
-7 *120:9 gpio_inp_dis[38] 0.000536355
+4 *259:9 0.00195612
+5 gpio_analog_pol[38] gpio_inp_dis[38] 0.00106041
+6 gpio_out[38] gpio_inp_dis[38] 0.00106041
+7 *120:9 gpio_inp_dis[38] 0.000266755
 8 *120:9 *259:9 0.000530595
 *RES
 1 gpio_loopback_one[38] *259:9 1.51317 
@@ -4390,36 +4447,40 @@ resetb_l I
 3 *260:11 gpio_oeb[39] 2.9825 
 *END
 
-*D_NET *261 0.00568017
+*D_NET *261 0.00552025
 *CONN
 *P gpio_inp_dis[40] O
 *P gpio_oeb[40] O
 *P gpio_loopback_one[40] I
 *CAP
-1 gpio_inp_dis[40] 0.00232533
-2 gpio_oeb[40] 0.00256012
+1 gpio_inp_dis[40] 0.001989
+2 gpio_oeb[40] 0.00222379
 3 gpio_loopback_one[40] 0.000234786
-4 gpio_ib_mode_sel[40] gpio_inp_dis[40] 2.91093e-05
-5 gpio_ib_mode_sel[40] gpio_oeb[40] 0.000530828
+4 gpio_analog_pol[40] gpio_inp_dis[40] 0.000266096
+5 gpio_ib_mode_sel[40] gpio_inp_dis[40] 6.27374e-05
+6 gpio_ib_mode_sel[40] gpio_oeb[40] 0.000530828
+7 gpio_out[40] gpio_inp_dis[40] 0.000213007
 *RES
 1 gpio_loopback_one[40] gpio_oeb[40] 2.21567 
-2 gpio_oeb[40] gpio_inp_dis[40] 13.6395 
+2 gpio_oeb[40] gpio_inp_dis[40] 11.8863 
 *END
 
-*D_NET *262 0.00583214
+*D_NET *262 0.00568189
 *CONN
 *P gpio_inp_dis[41] O
 *P gpio_oeb[41] O
 *P gpio_loopback_one[41] I
 *CAP
-1 gpio_inp_dis[41] 0.0023581
-2 gpio_oeb[41] 0.0026481
+1 gpio_inp_dis[41] 0.00203169
+2 gpio_oeb[41] 0.00232169
 3 gpio_loopback_one[41] 0.000290002
-4 gpio_ib_mode_sel[41] gpio_inp_dis[41] 5.11337e-06
-5 gpio_ib_mode_sel[41] gpio_oeb[41] 0.000530822
+4 gpio_analog_pol[41] gpio_inp_dis[41] 0.000252898
+5 gpio_ib_mode_sel[41] gpio_inp_dis[41] 4.14197e-05
+6 gpio_ib_mode_sel[41] gpio_oeb[41] 0.000530822
+7 gpio_out[41] gpio_inp_dis[41] 0.000213368
 *RES
 1 gpio_loopback_one[41] gpio_oeb[41] 3.23567 
-2 gpio_oeb[41] gpio_inp_dis[41] 14.4997 
+2 gpio_oeb[41] gpio_inp_dis[41] 12.4597 
 *END
 
 *D_NET *263 0.00602065
@@ -4464,155 +4525,585 @@ resetb_l I
 3 *264:11 gpio_oeb[43] 2.7425 
 *END
 
-*D_NET *265 0.0342191
+*D_NET *265 0.309031
 *CONN
 *P gpio_out[10] O
-*I *313:io_out[8] O *D user_proj_timer
+*I *346:io_out[8] O *D user_proj_timer
 *CAP
-1 gpio_out[10] 0.0171025
-2 *313:io_out[8] 0.0171025
-3 gpio_holdover[10] gpio_out[10] 1.40606e-05
+1 gpio_out[10] 0.00675689
+2 *346:io_out[8] 0.000265922
+3 *265:9 0.0839451
+4 *265:7 0.0774541
+5 *265:9 *266:9 0.117198
+6 *265:9 *271:9 0.00332517
+7 *265:9 *273:9 0.0181215
+8 *265:9 *274:9 0.00195014
+9 *265:9 *275:6 0
+10 gpio_holdover[10] gpio_out[10] 1.40606e-05
 *RES
-1 *313:io_out[8] gpio_out[10] 41.8595 
+1 *346:io_out[8] *265:7 1.10167 
+2 *265:7 *265:9 233.632 
+3 *265:9 gpio_out[10] 14.933 
 *END
 
-*D_NET *266 0.0319082
+*D_NET *266 0.350185
 *CONN
 *P gpio_out[11] O
-*I *313:io_out[9] O *D user_proj_timer
+*I *346:io_out[9] O *D user_proj_timer
 *CAP
-1 gpio_out[11] 0.00175733
-2 *313:io_out[9] 0.0135125
-3 *266:19 0.0152698
-4 gpio_dm1[11] gpio_out[11] 0.000483516
-5 gpio_holdover[11] gpio_out[11] 1.87262e-05
-6 gpio_slow_sel[11] gpio_out[11] 0.000101735
-7 gpio_slow_sel[11] *266:19 1.11335e-05
-8 *136:11 gpio_out[11] 0.000249927
-9 *136:13 gpio_out[11] 0.000503508
+1 gpio_out[11] 0.00700652
+2 *346:io_out[9] 0.000182072
+3 *266:9 0.0756147
+4 *266:7 0.0687903
+5 *266:9 gpio_out[9] 0
+6 *266:9 *345:A[6] 2.37229e-05
+7 *266:9 *346:rom_data[2] 0
+8 *266:9 *346:rom_data[3] 0
+9 *266:9 *267:9 0.0571012
+10 *266:9 *274:9 0.0241085
+11 *266:9 *275:6 0
+12 *266:9 *329:12 0.000140717
+13 gpio_holdover[11] gpio_out[11] 1.87262e-05
+14 *265:9 *266:9 0.117198
 *RES
-1 *313:io_out[9] *266:19 30.8132 
-2 *266:19 gpio_out[11] 35.1544 
+1 *346:io_out[9] *266:7 0.985133 
+2 *266:7 *266:9 247.241 
+3 *266:9 gpio_out[11] 15.7184 
 *END
 
-*D_NET *267 0.0276697
+*D_NET *267 0.283006
 *CONN
 *P gpio_out[12] O
-*I *313:io_out[10] O *D user_proj_timer
+*I *346:io_out[10] O *D user_proj_timer
 *CAP
-1 gpio_out[12] 0.00244291
-2 *313:io_out[10] 0.0113674
-3 *267:19 0.0138103
-4 gpio_dm2[12] gpio_out[12] 3.08723e-06
-5 gpio_holdover[12] gpio_out[12] 1.75585e-05
-6 gpio_slow_sel[12] *267:19 2.8517e-05
+1 gpio_out[12] 0.00696127
+2 *346:io_out[10] 0.00019721
+3 *267:9 0.0740376
+4 *267:7 0.0672735
+5 *267:9 *274:9 0.0774141
+6 gpio_dm2[12] gpio_out[12] 3.08723e-06
+7 gpio_holdover[12] gpio_out[12] 1.75585e-05
+8 *266:9 *267:9 0.0571012
 *RES
-1 *313:io_out[10] *267:19 26.1721 
-2 *267:19 gpio_out[12] 34.3134 
+1 *346:io_out[10] *267:7 1.01427 
+2 *267:7 *267:9 1549.99 
+3 *267:9 gpio_out[12] 15.3346 
 *END
 
-*D_NET *268 0.0242765
+*D_NET *268 0.0424448
 *CONN
 *P gpio_out[2] O
-*I *313:io_out[0] O *D user_proj_timer
+*I *346:io_out[0] O *D user_proj_timer
 *CAP
-1 gpio_out[2] 0.0121334
-2 *313:io_out[0] 0.0121334
-3 gpio_holdover[2] gpio_out[2] 9.81883e-06
+1 gpio_out[2] 0.00274426
+2 *346:io_out[0] 0.0184316
+3 *268:16 0.0211759
+4 *268:16 *270:9 0
+5 gpio_holdover[2] gpio_out[2] 2.23272e-05
+6 *346:wb_rst_i *268:16 7.07318e-05
 *RES
-1 *313:io_out[0] gpio_out[2] 29.9592 
+1 *346:io_out[0] *268:16 46.8711 
+2 *268:16 gpio_out[2] 5.42957 
 *END
 
-*D_NET *269 0.0291459
+*D_NET *269 0.0532316
 *CONN
 *P gpio_out[3] O
-*I *313:io_out[1] O *D user_proj_timer
+*I *346:io_out[1] O *D user_proj_timer
 *CAP
-1 gpio_out[3] 0.0145729
-2 *313:io_out[1] 0.0145729
+1 gpio_out[3] 0.005527
+2 *346:io_out[1] 0.00178131
+3 *269:9 0.0248207
+4 *269:7 0.021075
+5 gpio_dm2[3] gpio_out[3] 1.29488e-06
+6 gpio_holdover[3] gpio_out[3] 2.6169e-05
 *RES
-1 *313:io_out[1] gpio_out[3] 35.3716 
+1 *346:io_out[1] *269:7 4.48113 
+2 *269:7 *269:9 49.6508 
+3 *269:9 gpio_out[3] 12.0906 
 *END
 
-*D_NET *270 0.0336793
+*D_NET *270 0.0906452
 *CONN
 *P gpio_out[4] O
-*I *313:io_out[2] O *D user_proj_timer
+*I *346:io_out[2] O *D user_proj_timer
 *CAP
-1 gpio_out[4] 0.0165371
-2 *313:io_out[2] 0.0165371
-3 *127:29 gpio_out[4] 0.000365888
-4 *140:11 gpio_out[4] 0.00023923
+1 gpio_out[4] 0.00671409
+2 *346:io_out[2] 0.000238756
+3 *270:9 0.0295809
+4 *270:7 0.0231056
+5 *270:9 *271:9 0.0266319
+6 *270:9 *273:9 0.004347
+7 gpio_dm2[4] gpio_out[4] 3.08723e-06
+8 gpio_holdover[4] gpio_out[4] 2.38537e-05
+9 *268:16 *270:9 0
 *RES
-1 *313:io_out[2] gpio_out[4] 40.9804 
+1 *346:io_out[2] *270:7 1.10167 
+2 *270:7 *270:9 64.2073 
+3 *270:9 gpio_out[4] 15.0394 
 *END
 
-*D_NET *271 0.037661
+*D_NET *271 0.101523
 *CONN
 *P gpio_out[5] O
-*I *313:io_out[3] O *D user_proj_timer
+*I *346:io_out[3] O *D user_proj_timer
 *CAP
-1 gpio_out[5] 0.0188254
-2 *313:io_out[3] 0.0188254
-3 gpio_holdover[5] gpio_out[5] 1.02617e-05
+1 gpio_out[5] 0.00723548
+2 *346:io_out[3] 0.000182072
+3 *271:9 0.0308276
+4 *271:7 0.0237742
+5 *271:9 *274:9 0.0095231
+6 *271:9 *275:6 0
+7 gpio_holdover[5] gpio_out[5] 2.38787e-05
+8 *265:9 *271:9 0.00332517
+9 *270:9 *271:9 0.0266319
 *RES
-1 *313:io_out[3] gpio_out[5] 46.3486 
+1 *346:io_out[3] *271:7 0.985133 
+2 *271:7 *271:9 77.8164 
+3 *271:9 gpio_out[5] 15.8248 
 *END
 
-*D_NET *272 0.0419619
+*D_NET *272 0.0979541
 *CONN
 *P gpio_out[6] O
-*I *313:io_out[4] O *D user_proj_timer
+*I *346:io_out[4] O *D user_proj_timer
 *CAP
-1 gpio_out[6] 0.00497048
-2 *313:io_out[4] 0.0160105
-3 *272:15 0.020981
+1 gpio_out[6] 0.00688958
+2 *346:io_out[4] 0.000288039
+3 *272:9 0.028159
+4 *272:7 0.0215575
+5 *272:9 *273:9 0.0410294
+6 gpio_dm2[6] gpio_out[6] 1.29488e-06
+7 gpio_holdover[6] gpio_out[6] 2.92677e-05
 *RES
-1 *313:io_out[4] *272:15 41.4409 
-2 *272:15 gpio_out[6] 10.2999 
+1 *346:io_out[4] *272:7 1.18907 
+2 *272:7 *272:9 546.825 
+3 *272:9 gpio_out[6] 15.3928 
 *END
 
-*D_NET *273 0.0471542
+*D_NET *273 0.23252
 *CONN
 *P gpio_out[7] O
-*I *313:io_out[5] O *D user_proj_timer
+*I *346:io_out[5] O *D user_proj_timer
 *CAP
-1 gpio_out[7] 0.00521687
-2 *313:io_out[5] 0.0183545
-3 *273:15 0.0235714
-4 *273:15 *274:19 0
-5 gpio_holdover[7] gpio_out[7] 1.13688e-05
+1 gpio_out[7] 0.00673457
+2 *346:io_out[5] 0.000264434
+3 *273:9 0.0378642
+4 *273:7 0.031394
+5 *273:9 *274:9 0.0927537
+6 gpio_holdover[7] gpio_out[7] 1.13688e-05
+7 *265:9 *273:9 0.0181215
+8 *270:9 *273:9 0.004347
+9 *272:9 *273:9 0.0410294
 *RES
-1 *313:io_out[5] *273:15 47.4297 
-2 *273:15 gpio_out[7] 11.0029 
+1 *346:io_out[5] *273:7 1.1308 
+2 *273:7 *273:9 1129.76 
+3 *273:9 gpio_out[7] 14.8532 
 *END
 
-*D_NET *274 0.042567
+*D_NET *274 0.274625
 *CONN
 *P gpio_out[8] O
-*I *313:io_out[6] O *D user_proj_timer
+*I *346:io_out[6] O *D user_proj_timer
 *CAP
-1 gpio_out[8] 0.00276631
-2 *313:io_out[6] 0.0185084
-3 *274:19 0.0212747
-4 *274:19 gpio_out[9] 0
+1 gpio_out[8] 0.00697407
+2 *346:io_out[6] 0.000240034
+3 *274:9 0.0341891
+4 *274:7 0.0274551
 5 gpio_holdover[8] gpio_out[8] 1.75585e-05
-6 *273:15 *274:19 0
+6 *265:9 *274:9 0.00195014
+7 *266:9 *274:9 0.0241085
+8 *267:9 *274:9 0.0774141
+9 *271:9 *274:9 0.0095231
+10 *273:9 *274:9 0.0927537
 *RES
-1 *313:io_out[6] *274:19 47.6171 
-2 *274:19 gpio_out[8] 5.4093 
+1 *346:io_out[6] *274:7 1.07253 
+2 *274:7 *274:9 1210.84 
+3 *274:9 gpio_out[8] 15.6208 
 *END
 
-*D_NET *275 0.0387131
+*D_NET *275 0.191516
 *CONN
 *P gpio_out[9] O
-*I *313:io_out[7] O *D user_proj_timer
+*I *346:io_out[7] O *D user_proj_timer
 *CAP
-1 gpio_out[9] 0.019337
-2 *313:io_out[7] 0.019337
-3 gpio_dm2[9] gpio_out[9] 5.12818e-06
-4 gpio_holdover[9] gpio_out[9] 3.39158e-05
-5 *274:19 gpio_out[9] 0
+1 gpio_out[9] 0.0125577
+2 *346:io_out[7] 0
+3 *275:6 0.0851522
+4 *275:4 0.0725945
+5 *275:6 *345:A[8] 0.000217681
+6 *275:6 *345:A[6] 0.000123126
+7 *275:6 *345:A[7] 0.000612857
+8 *275:6 *327:16 0.000689814
+9 *275:6 *328:8 0.00314182
+10 *275:6 *328:10 0.015688
+11 *275:6 *329:12 0.000699449
+12 gpio_dm2[9] gpio_out[9] 5.12818e-06
+13 gpio_holdover[9] gpio_out[9] 3.39158e-05
+14 *265:9 *275:6 0
+15 *266:9 gpio_out[9] 0
+16 *266:9 *275:6 0
+17 *271:9 *275:6 0
 *RES
-1 *313:io_out[7] gpio_out[9] 47.4176 
+1 *346:io_out[7] *275:4 0.5 
+2 *275:4 *275:6 205.897 
+3 *275:6 gpio_out[9] 29.3072 
+*END
+
+*D_NET *327 0.137157
+*CONN
+*I *345:A[0] I *D CF_ROM_SYNC
+*I *346:rom_addr[0] O *D user_proj_timer
+*CAP
+1 *345:A[0] 0.00696034
+2 *346:rom_addr[0] 0.0127437
+3 *327:18 0.0373926
+4 *327:16 0.043176
+5 *345:A[0] *339:37 0.0154634
+6 *345:A[0] *343:25 0.00012083
+7 *345:A[0] *344:29 0.00121773
+8 *327:18 *329:14 0.0193926
+9 *275:6 *327:16 0.000689814
+*RES
+1 *346:rom_addr[0] *327:16 4.87224 
+2 *327:16 *327:18 94.4401 
+3 *327:18 *345:A[0] 26.1414 
+*END
+
+*D_NET *328 0.126809
+*CONN
+*I *345:A[1] I *D CF_ROM_SYNC
+*I *346:rom_addr[1] O *D user_proj_timer
+*CAP
+1 *345:A[1] 0.0215668
+2 *346:rom_addr[1] 0.00165801
+3 *328:10 0.0451855
+4 *328:8 0.0252767
+5 *345:A[1] *345:A[2] 0.00534677
+6 *345:A[1] *345:A[7] 0.00893494
+7 *345:A[1] *332:29 1.06097e-05
+8 *275:6 *328:8 0.00314182
+9 *275:6 *328:10 0.015688
+*RES
+1 *346:rom_addr[1] *328:8 6.69907 
+2 *328:8 *328:10 77.2667 
+3 *328:10 *345:A[1] 6.66024 
+*END
+
+*D_NET *329 0.111956
+*CONN
+*I *345:A[2] I *D CF_ROM_SYNC
+*I *346:rom_addr[2] O *D user_proj_timer
+*CAP
+1 *345:A[2] 0.0102736
+2 *346:rom_addr[2] 0.0134432
+3 *329:14 0.0293882
+4 *329:12 0.0325578
+5 *345:A[2] *345:A[3] 0
+6 *329:14 *339:39 0.00071345
+7 *345:A[1] *345:A[2] 0.00534677
+8 *266:9 *329:12 0.000140717
+9 *275:6 *329:12 0.000699449
+10 *327:18 *329:14 0.0193926
+*RES
+1 *346:rom_addr[2] *329:12 5.82382 
+2 *329:12 *329:14 66.1023 
+3 *329:14 *345:A[2] 26.1136 
+*END
+
+*D_NET *330 0.0965713
+*CONN
+*I *345:A[3] I *D CF_ROM_SYNC
+*I *346:rom_addr[3] O *D user_proj_timer
+*CAP
+1 *345:A[3] 0.00446503
+2 *346:rom_addr[3] 0.0215648
+3 *330:15 0.0243915
+4 *330:13 0.0414912
+5 *345:A[3] *345:A[4] 0.00171908
+6 *345:A[3] *345:A[6] 0.00171422
+7 *345:A[3] *331:21 0.000872089
+8 *345:A[3] *343:25 5.11038e-05
+9 *345:A[2] *345:A[3] 0
+10 *133:68 *345:A[3] 0.000302349
+*RES
+1 *346:rom_addr[3] *330:13 4.99078 
+2 *330:13 *330:15 50.426 
+3 *330:15 *345:A[3] 16.01 
+*END
+
+*D_NET *331 0.0922414
+*CONN
+*I *345:A[4] I *D CF_ROM_SYNC
+*I *346:rom_addr[4] O *D user_proj_timer
+*CAP
+1 *345:A[4] 0.00219909
+2 *346:rom_addr[4] 0.0384106
+3 *331:21 0.0406097
+4 *345:A[4] *345:A[9] 0.00149132
+5 *345:A[4] *345:A[8] 0.00017004
+6 *345:A[4] *345:A[5] 9.44308e-05
+7 *345:A[4] *345:A[6] 0.0018649
+8 *345:A[4] *345:A[7] 9.94668e-05
+9 *345:A[4] *332:29 0.00365423
+10 *331:21 *345:A[6] 0.00041648
+11 *345:A[3] *345:A[4] 0.00171908
+12 *345:A[3] *331:21 0.000872089
+13 *133:68 *331:21 0.000640058
+*RES
+1 *346:rom_addr[4] *331:21 46.4132 
+2 *331:21 *345:A[4] 13.1144 
+*END
+
+*D_NET *332 0.0779147
+*CONN
+*I *345:A[5] I *D CF_ROM_SYNC
+*I *346:rom_addr[5] O *D user_proj_timer
+*CAP
+1 *345:A[5] 0.000594495
+2 *346:rom_addr[5] 0.0346744
+3 *332:29 0.0352689
+4 *345:A[5] *345:A[9] 0.0016339
+5 *345:A[5] *345:A[8] 0.000877834
+6 *345:A[5] *345:A[6] 0.000186436
+7 *332:29 *345:A[6] 4.28189e-05
+8 *332:29 *345:A[7] 0.000290629
+9 *345:A[1] *332:29 1.06097e-05
+10 *345:A[4] *345:A[5] 9.44308e-05
+11 *345:A[4] *332:29 0.00365423
+12 *133:68 *332:29 0.000586
+*RES
+1 *346:rom_addr[5] *332:29 48.408 
+2 *332:29 *345:A[5] 4.47763 
+*END
+
+*D_NET *333 0.0751132
+*CONN
+*I *345:A[6] I *D CF_ROM_SYNC
+*I *346:rom_addr[6] O *D user_proj_timer
+*CAP
+1 *345:A[6] 0.0351728
+2 *346:rom_addr[6] 0.0351728
+3 *345:A[6] *345:A[9] 3.90873e-05
+4 *345:A[6] *345:A[8] 0.000249021
+5 *345:A[6] *345:A[7] 1.21166e-05
+6 *345:A[6] *344:29 9.56853e-05
+7 *345:A[3] *345:A[6] 0.00171422
+8 *345:A[5] *345:A[6] 0.000186436
+9 *345:A[4] *345:A[6] 0.0018649
+10 *266:9 *345:A[6] 2.37229e-05
+11 *275:6 *345:A[6] 0.000123126
+12 *331:21 *345:A[6] 0.00041648
+13 *332:29 *345:A[6] 4.28189e-05
+*RES
+1 *346:rom_addr[6] *345:A[6] 23.6331 
+*END
+
+*D_NET *334 0.0564428
+*CONN
+*I *345:A[7] I *D CF_ROM_SYNC
+*I *346:rom_addr[7] O *D user_proj_timer
+*CAP
+1 *345:A[7] 0.0232344
+2 *346:rom_addr[7] 0.0232344
+3 *345:A[7] *345:A[9] 2.40315e-05
+4 *345:A[1] *345:A[7] 0.00893494
+5 *345:A[4] *345:A[7] 9.94668e-05
+6 *345:A[6] *345:A[7] 1.21166e-05
+7 *275:6 *345:A[7] 0.000612857
+8 *332:29 *345:A[7] 0.000290629
+*RES
+1 *346:rom_addr[7] *345:A[7] 11.0668 
+*END
+
+*D_NET *335 0.0688627
+*CONN
+*I *345:A[8] I *D CF_ROM_SYNC
+*I *346:rom_addr[8] O *D user_proj_timer
+*CAP
+1 *345:A[8] 0.0333703
+2 *346:rom_addr[8] 0.0333703
+3 *345:A[8] *345:A[9] 0.000607521
+4 *345:A[8] *341:25 0
+5 *345:A[5] *345:A[8] 0.000877834
+6 *345:A[4] *345:A[8] 0.00017004
+7 *345:A[6] *345:A[8] 0.000249021
+8 *275:6 *345:A[8] 0.000217681
+*RES
+1 *346:rom_addr[8] *345:A[8] 26.7203 
+*END
+
+*D_NET *336 0.0791442
+*CONN
+*I *345:A[9] I *D CF_ROM_SYNC
+*I *346:rom_addr[9] O *D user_proj_timer
+*CAP
+1 *345:A[9] 0.0376741
+2 *346:rom_addr[9] 0.0376741
+3 *345:A[8] *345:A[9] 0.000607521
+4 *345:A[5] *345:A[9] 0.0016339
+5 *345:A[4] *345:A[9] 0.00149132
+6 *345:A[6] *345:A[9] 3.90873e-05
+7 *345:A[7] *345:A[9] 2.40315e-05
+*RES
+1 *346:rom_addr[9] *345:A[9] 36.282 
+*END
+
+*D_NET *337 0.103947
+*CONN
+*I *346:rom_data[0] I *D user_proj_timer
+*I *345:DO[0] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[0] 0.0421241
+2 *345:DO[0] 0.00708775
+3 *337:25 0.0492119
+4 *337:25 *338:17 4.02768e-05
+5 *337:25 *338:19 0.00548272
+6 *337:25 *340:25 0
+*RES
+1 *345:DO[0] *337:25 26.2541 
+2 *337:25 *346:rom_data[0] 43.3558 
+*END
+
+*D_NET *338 0.122091
+*CONN
+*I *346:rom_data[1] I *D user_proj_timer
+*I *345:DO[1] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[1] 0.035578
+2 *345:DO[1] 0.000102075
+3 *338:19 0.0581818
+4 *338:17 0.0227059
+5 *337:25 *338:17 4.02768e-05
+6 *337:25 *338:19 0.00548272
+*RES
+1 *345:DO[1] *338:17 4.17338 
+2 *338:17 *338:19 61.3649 
+3 *338:19 *346:rom_data[1] 7.42036 
+*END
+
+*D_NET *339 0.137758
+*CONN
+*I *346:rom_data[2] I *D user_proj_timer
+*I *345:DO[2] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[2] 0.0138695
+2 *345:DO[2] 0.00807135
+3 *339:39 0.035804
+4 *339:37 0.0300058
+5 *339:37 *340:25 0.000255024
+6 *339:37 *341:25 4.43752e-05
+7 *339:37 *342:17 4.27041e-05
+8 *339:37 *343:25 3.88229e-05
+9 *339:37 *344:29 0.0188039
+10 *339:39 *343:27 0.0146455
+11 *345:A[0] *339:37 0.0154634
+12 *266:9 *346:rom_data[2] 0
+13 *329:14 *339:39 0.00071345
+*RES
+1 *345:DO[2] *339:37 43.826 
+2 *339:37 *339:39 72.2177 
+3 *339:39 *346:rom_data[2] 6.83304 
+*END
+
+*D_NET *340 0.121677
+*CONN
+*I *346:rom_data[3] I *D user_proj_timer
+*I *345:DO[3] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[3] 0.0295944
+2 *345:DO[3] 0.00399824
+3 *340:27 0.0565799
+4 *340:25 0.0309837
+5 *346:rom_data[3] *343:27 0.000265667
+6 *266:9 *346:rom_data[3] 0
+7 *337:25 *340:25 0
+8 *339:37 *340:25 0.000255024
+*RES
+1 *345:DO[3] *340:25 15.3713 
+2 *340:25 *340:27 472.875 
+3 *340:27 *346:rom_data[3] 43.1517 
+*END
+
+*D_NET *341 0.149141
+*CONN
+*I *346:rom_data[4] I *D user_proj_timer
+*I *345:DO[4] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[4] 0.0239002
+2 *345:DO[4] 0.0106974
+3 *341:27 0.0608292
+4 *341:25 0.0476265
+5 *341:25 *342:17 2.46251e-05
+6 *341:25 *342:19 0.0060183
+7 *345:A[8] *341:25 0
+8 *339:37 *341:25 4.43752e-05
+*RES
+1 *345:DO[4] *341:25 34.6858 
+2 *341:25 *341:27 92.8036 
+3 *341:27 *346:rom_data[4] 5.24219 
+*END
+
+*D_NET *342 0.157458
+*CONN
+*I *346:rom_data[5] I *D user_proj_timer
+*I *345:DO[5] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[5] 0.0303568
+2 *345:DO[5] 0.000118332
+3 *342:19 0.0755678
+4 *342:17 0.0453294
+5 *339:37 *342:17 4.27041e-05
+6 *341:25 *342:17 2.46251e-05
+7 *341:25 *342:19 0.0060183
+*RES
+1 *345:DO[5] *342:17 4.22415 
+2 *342:17 *342:19 118.644 
+3 *342:19 *346:rom_data[5] 6.95937 
+*END
+
+*D_NET *343 0.202866
+*CONN
+*I *346:rom_data[6] I *D user_proj_timer
+*I *345:DO[6] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[6] 0.0125675
+2 *345:DO[6] 0.00921948
+3 *343:27 0.058352
+4 *343:25 0.055004
+5 *343:25 *344:29 0.016199
+6 *343:27 *344:31 0.0364017
+7 *345:A[0] *343:25 0.00012083
+8 *345:A[3] *343:25 5.11038e-05
+9 *346:rom_data[3] *343:27 0.000265667
+10 *339:37 *343:25 3.88229e-05
+11 *339:39 *343:27 0.0146455
+*RES
+1 *345:DO[6] *343:25 35.796 
+2 *343:25 *343:27 132.769 
+3 *343:27 *346:rom_data[6] 3.30014 
+*END
+
+*D_NET *344 0.203911
+*CONN
+*I *346:rom_data[7] I *D user_proj_timer
+*I *345:DO[7] O *D CF_ROM_SYNC
+*CAP
+1 *346:rom_data[7] 0.00205237
+2 *345:DO[7] 0.00484471
+3 *344:35 0.0110827
+4 *344:33 0.0090303
+5 *344:31 0.049669
+6 *344:29 0.0545138
+7 *345:A[0] *344:29 0.00121773
+8 *345:A[6] *344:29 9.56853e-05
+9 *339:37 *344:29 0.0188039
+10 *343:25 *344:29 0.016199
+11 *343:27 *344:31 0.0364017
+*RES
+1 *345:DO[7] *344:29 36.7609 
+2 *344:29 *344:31 907.523 
+3 *344:31 *344:33 2 
+4 *344:33 *344:35 155.7 
+5 *344:35 *346:rom_data[7] 37.3332 
 *END
