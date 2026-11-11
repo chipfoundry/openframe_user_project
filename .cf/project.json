@@ -10,13 +10,931 @@
   },
   "precheck": {
     "version": "1.3.7",
-    "timestamp": "2026-11-11T18:16:04.206849+00:00",
+    "timestamp": "2026-11-11T18:20:52.071193+00:00",
     "pdk": "sky130A",
     "passed": true,
     "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 0.47
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 7.48
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 34.54
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 87.52
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 22.4
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 6.93
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 6.49
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 3.7
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 3.76
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 0.51
+      },
       "lvs": {
         "status": "pass",
-        "duration_s": 88.34
+        "duration_s": 87.41
+      },
+      "oeb": {
+        "status": "pass",
+        "duration_s": 1.16,
+        "details": "0 errors, 31 warnings across 44 GPIOs",
+        "report": {
+          "report_relpath": "/home/user/openframe_user_project/precheck_results/11_NOV_2026___18_16_28/outputs/reports/cvc.oeb.report",
+          "design_type": "openframe",
+          "gpios": [
+            {
+              "gpio": 0,
+              "user_index": 0,
+              "analog_index": null,
+              "in": 2,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00100000000",
+              "dm": "001",
+              "resolved_mode": "USER_STD_INPUT_NOPULL",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 1,
+              "user_index": 1,
+              "analog_index": null,
+              "in": 2,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11100000000",
+              "dm": "111",
+              "resolved_mode": "USER_STD_INPUT_PULLDOWN",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 2,
+              "user_index": 2,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 3,
+              "user_index": 3,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 4,
+              "user_index": 4,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 5,
+              "user_index": 5,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 6,
+              "user_index": 6,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 7,
+              "user_index": 7,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 8,
+              "user_index": 8,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 9,
+              "user_index": 9,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 10,
+              "user_index": 10,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 11,
+              "user_index": 11,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 12,
+              "user_index": 12,
+              "analog_index": null,
+              "in": null,
+              "out": "2",
+              "analog": null,
+              "oeb_min": "vssd1",
+              "oeb_sim": "vssd1",
+              "oeb_max": "vssd1",
+              "configuration": "11000000010",
+              "dm": "110",
+              "resolved_mode": "USER_STD_OUTPUT",
+              "warning_count": 0,
+              "error_count": 0
+            },
+            {
+              "gpio": 13,
+              "user_index": 13,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 14,
+              "user_index": 14,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 15,
+              "user_index": 15,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 16,
+              "user_index": 16,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 17,
+              "user_index": 17,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 18,
+              "user_index": 18,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 19,
+              "user_index": 19,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 20,
+              "user_index": 20,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 21,
+              "user_index": 21,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 22,
+              "user_index": 22,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 23,
+              "user_index": 23,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 24,
+              "user_index": 24,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 25,
+              "user_index": 25,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 26,
+              "user_index": 26,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 27,
+              "user_index": 27,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 28,
+              "user_index": 28,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 29,
+              "user_index": 29,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 30,
+              "user_index": 30,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 31,
+              "user_index": 31,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 32,
+              "user_index": 32,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 33,
+              "user_index": 33,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 34,
+              "user_index": 34,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 35,
+              "user_index": 35,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 36,
+              "user_index": 36,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 37,
+              "user_index": 37,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 38,
+              "user_index": 38,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 39,
+              "user_index": 39,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 40,
+              "user_index": 40,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 41,
+              "user_index": 41,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 42,
+              "user_index": 42,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            },
+            {
+              "gpio": 43,
+              "user_index": 43,
+              "analog_index": null,
+              "in": null,
+              "out": "vssd1",
+              "analog": null,
+              "oeb_min": "vccd1",
+              "oeb_sim": "vccd1",
+              "oeb_max": "vccd1",
+              "configuration": "00000000010",
+              "dm": "000",
+              "resolved_mode": "USER_STD_ANALOG",
+              "warning_count": 1,
+              "error_count": 0
+            }
+          ],
+          "messages": [
+            {
+              "gpio": 13,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 14,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 15,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 16,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 17,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 18,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 19,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 20,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 21,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 22,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 23,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 24,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 25,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 26,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 27,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 28,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 29,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 30,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 31,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 32,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 33,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 34,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 35,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 36,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 37,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 38,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 39,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 40,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 41,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 42,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            },
+            {
+              "gpio": 43,
+              "severity": "warning",
+              "text": "missing analog connection to analog gpio"
+            }
+          ],
+          "summary": {
+            "total": 44,
+            "errors": 0,
+            "warnings": 31,
+            "no_issues_banner": false
+          }
+        }
       },
       "magic_drc": {
         "status": "skip",
