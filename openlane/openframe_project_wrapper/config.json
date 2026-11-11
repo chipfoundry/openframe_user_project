@@ -114,5 +114,10 @@
         "vdda2",
         "vddio",
         "vssio"
+    ],
+    "// ROUTING_OBSTRUCTIONS": "Keep the router off the CF_ROM_SYNC core (cf_rom_sync_7seg at 2500,2500 FN): its LEF only obstructs met1/met2 on the 15um halo ring, so the router used the core interior and violated m2.2 against real core metal. Core interior in LEF coords is x 15.4-145.18 (right of the A[*] met2 pins), y 15.38-75.42 (above the DO/CLK/EN/RST/OE met1 pins); mirrored for FN.",
+    "ROUTING_OBSTRUCTIONS": [
+        "met1 2515.0 2515.38 2644.78 2575.42",
+        "met2 2515.0 2515.38 2644.78 2575.42"
     ]
 }
